@@ -18,7 +18,7 @@ const HeaderComponent = () => {
                     <a className="underline font-medium">Contact Us</a>
                   </Link></li>
               </ul>
-              <p className="mt-12 text-sm text-white font-light text-center">Verifrica helps you access a broad range of high-quality <br className="hidden md:block"/> financial data from banks across Africa through a single API. </p>
+              <p className="mt-12 text-sm px-4 text-white font-light text-center">Verifrica helps you access a broad range of high-quality <br className="hidden md:block"/> financial data from banks across Africa through a single API. </p>
               <div className="mt-12 md:mt-24">
                 <svg width="725" height="438" viewBox="0 0 725 438" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M418.768 126.134C397.825 139.663 461.668 219.32 491.317 206.402C520.966 193.484 469.39 93.4355 418.768 126.134Z" fill="#CAF5FC"/>
