@@ -122,7 +122,7 @@ const links = [
 
 const NavLink = () => {
     return(
-        <ul className="md:flex md:space-x-4 xl:space-x-16 text-white hidden">
+        <ul className="lg:flex md:space-x-4 xl:space-x-16 text-white hidden">
             {links.map((link, index) => {
                 return(
                     <LinkItem link={link} key={index} />

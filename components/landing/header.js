@@ -8,17 +8,24 @@ const HeaderComponent = () => {
         <header className="bg-card-blue w-full overflow-hidden">
           <Nav />
           <div className="hero pt-8 lg:pt-24 flex flex-col justify-center items-center bg-center" style={{backgroundImage:`url(${HeroBackground})` }}>
-              <h1 className="text-center text-2xl md:text-4xl lg:text-6xl font-bold leading-tight text-white mt-12">
-                Build the future of financial <br/>services across Africa.
+              <h1 className="text-center text-2xl md:text-4xl lg:text-6xl font-bold leading-normal text-white mt-12">
+                Build the future of financial <br/>services across <span className="relative">
+                  Africa
+                  <span className="absolute -bottom-4 md:-bottom-2 -right-3 md:right-9">
+                  <svg width="81" height="15" viewBox="0 0 81 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 13.2705C5 7.93717 14.1 -1.1295 26.5 5.2705C42 13.2705 47 14.2704 54 8.27043C61 2.27043 67.5 -0.729425 79.5 5.2705" stroke="#FCE476" strokeWidth="3"/>
+                  </svg>
+                </span>
+                </span>.
               </h1>
-              <ul className="w-full md:w-auto hero-action flex flex-col md:flex-row space-x-0 md:space-x-16 space-y-6 lg:space-y-0 mt-12 text-white items-center px-4 lg:px-0">
-                  <li className="w-full md:w-auto"><button className="w-full md:w-auto border border-white px-16 py-3 lg:py-4 rounded text-sm font-medium bg-card-blue">Try Demo</button></li>
+              <ul className="w-full sm:w-auto hero-action flex flex-col sm:flex-row space-x-0 sm:space-x-16 space-y-6 lg:space-y-0 mt-12 text-white items-center px-4 lg:px-0">
+                  <li className="w-full sm:w-auto"><button className="w-full sm:w-auto border border-white px-16 py-3 lg:py-4 rounded text-sm font-medium bg-card-blue">Try Demo</button></li>
                   
                   <li> <Link href="/">
                     <a className="underline font-medium">Contact Us</a>
                   </Link></li>
               </ul>
-              <p className="mt-12 text-sm px-4 text-white font-light text-center">Verifrica helps you access a broad range of high-quality <br className="hidden md:block"/> financial data from banks across Africa through a single API. </p>
+              <p className="mt-12 text-sm text-white font-light text-center px-4 sm:px-24">Verifrica helps you access a broad range of high-quality <br className="hidden md:block"/> financial data from banks across Africa through a single API. </p>
               <div className="mt-12 md:mt-24">
                 <svg width="725" height="438" viewBox="0 0 725 438" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M418.768 126.134C397.825 139.663 461.668 219.32 491.317 206.402C520.966 193.484 469.39 93.4355 418.768 126.134Z" fill="#CAF5FC"/>

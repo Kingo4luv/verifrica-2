@@ -1,8 +1,15 @@
 import Link from 'next/link';
+import { useState } from 'react';
 import NavLink from './link';
+import MobileNav from './mobileNav';
+import { Transition } from "@headlessui/react";
 const Nav = () => {
-    
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleMobileNav = () => {
+      setIsOpen(!isOpen);
+    }
     return(
+      <>
         <nav className="flex justify-between px-4 lg:px-12 items-center bg-card-blue h-16">
               <div className="logo">
                 <svg width="120" height="28" viewBox="0 0 120 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -17,12 +24,12 @@ const Nav = () => {
                 </svg>
               </div>
               <NavLink />
-              <div className="block md:hidden">
+              <div className="block lg:hidden" onClick={toggleMobileNav}>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                   </svg>
               </div>
-              <ul className="md:flex space-x-12 items-center hidden">
+              <ul className="lg:flex space-x-12 items-center hidden">
                 <li className="text-white font-medium text-sm">Sign in</li>
                 <li>
                   <button className="bg-yellow px-4 py-2 leading-loose tracking-wider rounded font-medium text-sm text-hair focus:outline-none">
@@ -31,6 +38,18 @@ const Nav = () => {
                 </li>
               </ul>
           </nav>
+          <Transition
+            show={isOpen}
+            enter="transition ease-in-out duration-500"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="transition ease-in-out duration-500"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+          <MobileNav toggleMobileNav={toggleMobileNav}/>
+        </Transition>
+      </>
     )
 }
 

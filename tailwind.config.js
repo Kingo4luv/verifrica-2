@@ -25,6 +25,9 @@ module.exports = {
         "footer-black": "#191919",
 
       },
+      fontSize: {
+        '4xl': '2.125rem',
+      },
       boxShadow: {
         "button-shadow": "0px 0px 8px #CAF1FF",
         "box-shadow": "0px 0px 20px rgba(137, 137, 137, 0.25)",
