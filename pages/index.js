@@ -212,14 +212,14 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 flex items-center px-2">
+        <div className="w-full lg:w-1/2 flex items-center px-2 py-12 lg:py-0">
           <div className="w-full md:w-full lg:w-3/4 rounded-lg" style={{backgroundColor: '#000'}}>
             <div className="h-16 w-full flex items-center px-5 space-x-3">
               <span className="w-3 h-3 bg-yellow rounded-full"></span>
               <span className="w-3 h-3 bg-green-500 rounded-full"></span>
               <span className="w-3 h-3 bg-red-500 rounded-full"></span>
             </div>
-            <div className="overflow-auto h-96 rounded-b-lg">
+            <div className="overflow-auto rounded-b-lg">
               <Highlight {...defaultProps} theme={theme} code={HomeCode} language="jsx">
                 {({ className, style, tokens, getLineProps, getTokenProps }) => (
                   <pre className={className} style={style}>
