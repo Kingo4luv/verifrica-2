@@ -25,7 +25,7 @@ const Nav = () => {
               <ul className="md:flex space-x-12 items-center hidden">
                 <li className="text-white font-medium text-sm">Sign in</li>
                 <li>
-                  <button className="bg-yellow px-5 py-2 leading-loose tracking-wider rounded font-medium text-sm text-hair focus:outline-none">
+                  <button className="bg-yellow px-4 py-2 leading-loose tracking-wider rounded font-medium text-sm text-hair focus:outline-none">
                     Try demo
                   </button>
                 </li>

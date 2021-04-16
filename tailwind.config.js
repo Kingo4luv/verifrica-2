@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors:{
         grey: "#686666",
+        "client-grey": "#FAFAFA",
         "dark-blue": "#007499",
         "slightly-dark-blue": "#0086B3",
         "slightly-slight-dark-blue": "#0099CC",
@@ -20,7 +21,8 @@ module.exports = {
         "skin-tone": "#A26744",
         "hair": "#101010",
         "icon-yellow": "#FFF59B",
-        "card-blue": "#029CCF"
+        "card-blue": "#029CCF",
+        "footer-black": "#191919",
 
       },
       boxShadow: {

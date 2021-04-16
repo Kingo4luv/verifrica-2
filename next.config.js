@@ -1,2 +1,11 @@
+const withPlugins = require('next-compose-plugins');
 const withImages = require('next-images');
-module.exports = withImages();
+const withMDX = require("@zeit/next-mdx")()
+
+
+module.exports = withPlugins(
+    [withMDX({
+        pageExtensions: ["js", "jsx", "mdx"],
+    }), withImages],
+);
+
