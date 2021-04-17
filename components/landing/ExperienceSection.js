@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Zoom from 'react-reveal/Zoom';
 const ExperienceSection = () => {
     return(
         <section className="flex flex-col md:flex-row mt-6 lg:mt-16">
@@ -20,13 +21,14 @@ const ExperienceSection = () => {
           </div>
         </div>
         <div className="w-full md:w-1/2 mt-16 sm:mt-0 py-16 flex justify-center items-center px-4 lg:px-0">
+          <Zoom>
           <div className="w-4/5 md:w-2/5 h-auto relative">
             <img src="/assets/img/phone-background.png" className="w-full h-full" />
             <div className="w-full h-full absolute top-0 rounded-lg flex justify-center items-center pr-6 pl-6 lg:pl-8 pt-4 lg:pt-6 pb-8">
                <img src="/assets/img/phone-screen.gif" className="w-full h-full rounded-2xl" />
             </div>
-           
           </div>
+          </Zoom>
         </div>
       </section>
     )

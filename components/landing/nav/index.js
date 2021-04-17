@@ -10,7 +10,7 @@ const Nav = () => {
     }
     return(
       <>
-        <nav className="flex justify-between px-4 lg:px-12 items-center bg-card-blue h-16 relative">
+        <nav className="flex justify-between px-4 lg:px-12 items-center bg-card-blue h-16">
               <div className="logo">
                 <svg width="120" height="28" viewBox="0 0 120 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" clipRule="evenodd" d="M18.4371 25.6852L33.2324 0.0615293V0.0400391C32.4534 1.19282 31.1342 1.95136 29.6393 1.95136H4.6182C2.22642 1.95136 0.284477 3.89331 0.284477 6.28523C0.284477 7.081 0.499363 7.8269 0.874352 8.46817L10.8162 25.6852C11.5504 27.036 12.9821 27.954 14.6266 27.954C16.271 27.954 17.7028 27.036 18.4371 25.6852Z" fill="#007499"/>
@@ -40,14 +40,15 @@ const Nav = () => {
           </nav>
           <Transition
             show={isOpen}
-            enter="transition ease-in-out duration-75"
+            className="relative z-10"
+            enter=" ease-in-out duration-500"
             enterFrom="opacity-0"
             enterTo="opacity-100"
-            leave="transition ease-in-out duration-75"
+            leave="transition ease-in-out duration-500"
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <MobileNav toggleMobileNav={toggleMobileNav}/>
+          <MobileNav toggleMobileNav={toggleMobileNav}/>
         </Transition>
       </>
     )

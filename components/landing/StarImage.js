@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Slide from 'react-reveal/Slide';
+import Rotate from 'react-reveal/Rotate';
 
 const StarImage = () => {
     return (
@@ -21,14 +23,20 @@ const StarImage = () => {
         <div className="w-full lg:w-1/2 space-y-12 md:space-y-40 mt-16 md:mt-0">
           <div className="w-full h-20 lg:h-32 flex justify-center items-center">
             <div className="w-20 lg:w-32 h-full rounded-full flex justify-center items-center">
+              <Slide bottom>
               <img src="/assets/img/top-boy.png" className="w-full h-full object-cover object-center" />
+              </Slide>
             </div>
           </div>
           <div className="w-full h-20 lg:h-32 flex items-center justify-between">
             <div className="w-20 lg:w-32 h-full rounded-full flex items-center justify-center">
+              <Slide right>
               <img src="/assets/img/left-girl.png" className="w-full h-full object-cover object-center" />
+              </Slide>
             </div>
+            <Rotate>
             <div className=" w-20 lg:w-32 h-full rounded-full flex items-center justify-center">
+              
               <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="49.8392" cy="49.8345" r="44.1895" fill="#00ACE6" stroke="white" strokeWidth="10"/>
                 <path fillRule="evenodd" clipRule="evenodd" d="M43.7965 51.5676C43.5971 51.2138 43.4833 50.8048 43.4833 50.3692C43.4833 49.026 44.566 47.9354 45.8997 47.9354H47.2948L45.234 44.342C44.8246 43.5833 44.0264 43.0679 43.1095 43.0679C41.7758 43.0679 40.6931 44.1584 40.6931 45.5017C40.6931 45.9485 40.813 46.3675 41.022 46.7276L43.7965 51.5676Z" stroke="white" strokeWidth="2" strokeMiterlimit="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -38,14 +46,20 @@ const StarImage = () => {
                 <path fillRule="evenodd" clipRule="evenodd" d="M45.1777 44.2401C44.7537 43.5375 43.9865 43.0679 43.1113 43.0679H48.6918C49.567 43.0679 50.3341 43.5375 50.7581 44.2401L52.1639 46.691C52.5779 47.4334 53.3673 47.9354 54.2722 47.9354H47.2966L45.1777 44.2401Z" stroke="white" strokeWidth="2" strokeMiterlimit="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 <path fillRule="evenodd" clipRule="evenodd" d="M48.6866 43.0709C49.5617 43.0709 50.3289 43.5406 50.7529 44.2431L52.1587 46.6941C52.5727 47.4364 53.3621 47.9386 54.2669 47.9386C55.1422 47.9386 55.9093 47.4689 56.3334 46.7663L59.0607 42.0096V41.9976C58.6263 42.6449 57.8908 43.0709 57.0573 43.0709H48.6866Z" stroke="white" strokeWidth="2" strokeMiterlimit="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
+             
             </div>
+             </Rotate>
             <div className="w-20 lg:w-32 h-full rounded-full">
+              <Slide left>
               <img src="/assets/img/right-boy.png" className="w-full h-full object-cover object-center" />
+              </Slide>
             </div>
           </div>
           <div className="w-full h-20 lg:h-32 flex justify-center items-center">
             <div className="w-20 lg:w-32 h-full rounded-full">
+              <Slide top>
               <img src="/assets/img/bottom-girl.png" className="w-full h-full object-cover object-center" />
+              </Slide>
             </div>
           </div>
         </div>

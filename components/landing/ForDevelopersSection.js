@@ -24,7 +24,7 @@ const ForDevelopersSection = () => {
             </div>
           </div>
         </div>
-        <div className="w-full md:w-1/2 flex items-center py-12 md:py-0 px-4">
+        <div className="w-full md:w-1/2 flex items-center px-4 py-12 md:py-0">
           <div className="w-full md:w-full lg:w-4/5 rounded-lg" style={{backgroundColor: '#000'}}>
             <div className="h-16 w-full flex items-center px-5 space-x-3">
               <span className="w-3 h-3 bg-yellow rounded-full"></span>

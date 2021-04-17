@@ -100,12 +100,12 @@ const MobileNav = ({toggleMobileNav}) => {
                 </ul>
                 <ul className="flex flex-col items-center w-full space-y-3 px-4 mt-16">
                 <li className="w-full">
-                    <button className="w-full bg-transparent border border-white px-4 py-3 leading-loose tracking-wider rounded font-medium text-sm text-white focus:outline-none">
+                    <button className="w-full bg-transparent border border-white px-4 py-2 leading-loose tracking-wider rounded font-medium text-sm text-white focus:outline-none">
                     Login
                     </button>
                 </li>
                 <li className="w-full">
-                    <button className="w-full bg-yellow px-4 py-3 leading-loose tracking-wider rounded font-medium text-sm text-hair focus:outline-none">
+                    <button className="w-full bg-yellow px-4 py-2 leading-loose tracking-wider rounded font-medium text-sm text-hair focus:outline-none">
                     Try demo
                     </button>
                 </li>

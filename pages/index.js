@@ -1,7 +1,5 @@
 import Head from 'next/head';
 import HeaderComponent from '../components/landing/header';
-import Link from 'next/link';
-
 import ClientSection from '../components/landing/ClientSection';
 import ServicesSection from '../components/landing/ServicesSection';
 import BlueSection from '../components/landing/BlueSection';

@@ -5,20 +5,21 @@ import WealthIcon from '../../public/assets/svgs/wealth.svg';
 import BankingIcon from '../../public/assets/svgs/banking.svg';
 import BusinessFinancesIcon from '../../public/assets/svgs/business-finances.svg';
 import Link from 'next/link';
+import Pulse from 'react-reveal/Pulse';
 
 const ServicesSection = () => {
     return (
         <section className="features py-6 md:py-48 px-4 md:px-6 xl:px-48">
           <h4 className="text-lg md:text-2xl font-medium text-black">Building the future of financial services</h4>
           <ul className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-24 mt-12">
+           <Pulse>
             <li className="space-y-4 sm:hover:bg-yellow px-0 sm:px-4 py-0 sm:py-12 rounded-lg transition ease-in-out delay-75">
               <img src={PersonalFinancesIcon} />
               <dl className="space-y-3">
                 <dt className="text-base md:text-xl text-black">Personal Finances</dt>
                 <dd className="text-xs sm:text-sm text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio ac felis in libero. Nisl.</dd>
               </dl>
-            </li>
-            <Link href="/">
+              <Link href="/">
                 <a className="flex sm:hidden text-sm font-medium space-x-2 items-center">
                   <span>
                     Learn more
@@ -30,6 +31,9 @@ const ServicesSection = () => {
                   </span>
                 </a>
               </Link>
+            </li>
+            </Pulse>
+            <Pulse>
             <li className="space-y-4 sm:hover:bg-yellow px-0 sm:px-4 py-0 sm:py-12 rounded-lg transition ease-in-out delay-75">
               <img src={ConsumersPaymentIcon} />
               <dl className="space-y-3">
@@ -49,6 +53,8 @@ const ServicesSection = () => {
                 </a>
               </Link>
             </li>
+            </Pulse>
+            <Pulse>
             <li className="space-y-4 sm:hover:bg-yellow px-0 sm:px-4 py-0 sm:py-12 rounded-lg transition ease-in-out delay-75">
               <img src={LendingIcon} />
               <dl className="space-y-3">
@@ -68,6 +74,8 @@ const ServicesSection = () => {
                 </a>
               </Link>
             </li>
+            </Pulse>
+            <Pulse>
             <li className="space-y-4 sm:hover:bg-yellow px-0 sm:px-4 py-0 sm:py-12 rounded-lg transition ease-in-out delay-75">
               <img src={WealthIcon} />
               <dl className="space-y-3">
@@ -87,6 +95,8 @@ const ServicesSection = () => {
                 </a>
               </Link>
             </li>
+            </Pulse>
+            <Pulse>
             <li className="space-y-4 sm:hover:bg-yellow px-0 sm:px-4 py-0 sm:py-12 rounded-lg transition ease-in-out delay-75">
               <img src={BankingIcon} />
               <dl className="space-y-3">
@@ -106,6 +116,8 @@ const ServicesSection = () => {
                 </a>
               </Link>
             </li>
+            </Pulse>
+            <Pulse>
             <li className="space-y-4 sm:hover:bg-yellow px-0 sm:px-4 py-0 sm:py-12 rounded-lg transition ease-in-out delay-75">
               <img src={BusinessFinancesIcon} />
               <dl className="space-y-3">
@@ -125,6 +137,7 @@ const ServicesSection = () => {
                 </a>
               </Link>
             </li>
+            </Pulse>
           </ul>
       </section>
     )

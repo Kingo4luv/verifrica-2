@@ -1,6 +1,8 @@
 import Link from 'next/link';
+import Pulse from 'react-reveal/Pulse';
 const DropdownItem = ({item, totalItems}) => {
     return(
+        <Pulse>
         <li className={`py-6 flex ${totalItems > 3 ? 'flex-row space-x-5' : 'flex-col space-y-5'}`}>
             <div className="flex-none">
                 <img src={item.icon} className="w-8 h-8 " />
@@ -33,6 +35,7 @@ const DropdownItem = ({item, totalItems}) => {
                 </p>
             </div>
         </li>
+        </Pulse>
     )
 }
 

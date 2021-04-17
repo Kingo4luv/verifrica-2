@@ -1,6 +1,7 @@
 import { Transition } from "@headlessui/react";
 import Link from "next/link";
 import { useState } from "react";
+import Pulse from 'react-reveal/Pulse';
 
 const MobileNavList = ({link}) => {
     const [isOpen, setIsOpen] = useState(false)
@@ -8,6 +9,7 @@ const MobileNavList = ({link}) => {
         setIsOpen(!isOpen);
     }
     return (
+        <Pulse>
         <li onClick={toggleLink}>
           <div className="flex justify-between px-4">  
             <span>{link.name}</span>
@@ -40,6 +42,7 @@ const MobileNavList = ({link}) => {
             </ul>)}
             </Transition>
         </li>
+        </Pulse>
     )
 }
 

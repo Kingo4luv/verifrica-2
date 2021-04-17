@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import HeroBackground from '../../public/assets/svgs/hero-background.svg';
 import Nav from './nav';
+import Slide from 'react-reveal/Slide';
 
 
 const HeaderComponent = () => {
@@ -11,11 +12,13 @@ const HeaderComponent = () => {
               <h1 className="text-center text-2xl md:text-4xl lg:text-6xl font-bold leading-normal text-white mt-12">
                 Build the future of financial <br/>services across <span className="relative">
                   Africa
-                  <span className="absolute -bottom-4 md:-bottom-2 -right-3 md:right-9">
-                  <svg width="81" height="15" viewBox="0 0 81 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2 13.2705C5 7.93717 14.1 -1.1295 26.5 5.2705C42 13.2705 47 14.2704 54 8.27043C61 2.27043 67.5 -0.729425 79.5 5.2705" stroke="#FCE476" strokeWidth="3"/>
-                  </svg>
-                </span>
+                  <Slide left>
+                    <span className="absolute -bottom-4 md:-bottom-2 -right-3 md:right-9">
+                      <svg width="81" height="15" viewBox="0 0 81 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 13.2705C5 7.93717 14.1 -1.1295 26.5 5.2705C42 13.2705 47 14.2704 54 8.27043C61 2.27043 67.5 -0.729425 79.5 5.2705" stroke="#FCE476" strokeWidth="3"/>
+                      </svg>
+                    </span>
+                  </Slide>
                 </span>.
               </h1>
               <ul className="w-full sm:w-auto hero-action flex flex-col sm:flex-row space-x-0 sm:space-x-16 space-y-6 lg:space-y-0 mt-12 text-white items-center px-4 lg:px-0">
