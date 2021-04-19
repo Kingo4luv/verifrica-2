@@ -1,22 +1,27 @@
 import Link from "next/link";
-import Pulse from 'react-reveal/Pulse';
+import Slide from 'react-reveal/Slide';
 const FooterSection = () => {
     return(
         <footer className="py-12 md:py-32 px-6 bg-footer-black">
           <div className="text-white flex flex-col justify-start sm:justify-center itmes-start sm:items-center">
+            <Slide bottom>
             <h2 className="text-left md:text-center text-2xl md:text-4xl font-bold leading-relaxed">
               Ready to use Verifrica?<br/>
               Get started for free
             </h2>
-            <ul className="w-full md:w-auto hero-action flex flex-col md:flex-row space-x-0 md:space-x-16 space-y-6 lg:space-y-0 mt-12 text-white items-center px-4 lg:px-0">
+            </Slide>
+            <ul className="w-full md:w-auto hero-action flex flex-col md:flex-row space-x-0 md:space-x-16 space-y-6 lg:space-y-0 mt-12 text-white items-center">
+                  <Slide bottom>
                   <li className="w-full sm:w-auto"><button className="w-full md:w-auto border border-white px-16 py-3 lg:py-4 rounded text-sm font-medium bg-transparent">Try demo</button></li>
+                  </Slide>
+                  <Slide bottom>
                   <li> <Link href="/">
                     <a className="underline font-light">Talk to an expert</a>
                   </Link></li>
+                  </Slide>
               </ul>
           </div>
           <div className="flex flex-col sm:flex-row text-white pb-32 pt-24 md:pt-52">
-            <Pulse>
             <div className="w-full sm:w-2/6 md:w-2/7 lg:w-1/6 pl-0 lg:pl-4">
               <svg width="104" height="26" viewBox="0 0 104 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fillRule="evenodd" clipRule="evenodd" d="M5.78555 15.6569C5.47814 15.1152 5.30259 14.489 5.30259 13.8221C5.30259 11.7655 6.97223 10.0959 9.02876 10.0959H11.1801L8.00231 4.59421C7.37103 3.43268 6.14005 2.64355 4.72618 2.64355C2.66964 2.64355 1.00001 4.31319 1.00001 6.36973C1.00001 7.05389 1.18486 7.69531 1.50718 8.24668L5.78555 15.6569Z" stroke="white" strokeMiterlimit="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -28,11 +33,14 @@ const FooterSection = () => {
                 <path fillRule="evenodd" clipRule="evenodd" d="M88.4419 21.3461C90.8072 21.3461 92.7917 19.9826 93.433 18.1614C93.433 18.1614 92.9735 17.928 92.4739 17.6727C91.8603 17.3614 91.1129 17.5046 90.6599 18.0214C90.1319 18.6346 89.3621 19.002 88.4419 19.002C86.6176 19.002 85.3347 17.5575 85.3347 15.615C85.3347 13.6102 86.6578 12.2249 88.4216 12.2249C89.3275 12.2249 90.1266 12.5922 90.6711 13.2148C91.1194 13.7191 91.8488 13.8623 92.4543 13.5666C92.962 13.3175 93.433 13.0872 93.433 13.0872C92.7515 11.1851 90.7872 9.86206 88.4419 9.86206C85.1343 9.86206 82.6709 12.3245 82.6709 15.5932C82.6709 18.8619 85.1545 21.3461 88.4419 21.3461ZM101.312 13.7534C101.312 12.8661 100.504 12.1408 99.3229 12.1471C98.1405 12.1502 97.8028 12.5922 97.2583 13.2148C96.81 13.7191 96.0806 13.8623 95.4751 13.5666C94.9671 13.3175 94.4961 13.0872 94.4961 13.0872C95.1779 11.1851 97.1422 9.86206 99.4875 9.86206C101.579 9.86206 103.413 11.0824 103.809 13.0374L103.813 13.0529C103.9 13.3736 103.875 13.7502 103.875 14.1082C103.875 14.1082 103.875 17.4548 103.875 19.6028C103.875 20.4308 103.202 21.1064 102.372 21.1064H101.452V19.9047C100.63 20.8666 99.4869 21.3461 98.143 21.3461C95.6775 21.3461 94.0755 19.9452 94.0755 18.0992C94.0755 16.4773 95.3771 15.1325 97.9425 14.7122L101.312 14.1301V13.7534ZM51.4771 15.2321C51.4771 12.2871 49.2139 9.86206 46.0862 9.86206C42.9579 9.86206 40.5546 12.3058 40.5546 15.5932C40.5546 18.8027 42.8776 21.3461 46.2665 21.3461C48.553 21.3461 50.3554 20.2254 51.0366 18.6408C51.0366 18.6408 50.5288 18.3918 50.0149 18.1397C49.4673 17.8719 48.8117 17.9591 48.355 18.3638C47.8423 18.8245 47.1484 19.1047 46.2867 19.1047C44.6221 19.1047 43.3788 18.0182 43.2182 16.3341H50.3766C50.6686 16.3341 50.9485 16.2189 51.1549 16.0134C51.3616 15.8049 51.4774 15.5247 51.4774 15.2352C51.477 15.2321 51.4771 15.2321 51.4771 15.2321ZM78.9826 21.1064H80.0426C80.8728 21.1064 81.5459 20.4308 81.5459 19.6028C81.5459 16.5893 81.5459 10.1018 81.5459 10.1018H78.9826V21.1064ZM60.4 21.1064H61.4599C62.2902 21.1064 62.9632 20.4308 62.9632 19.6028C62.9632 16.5893 62.9632 10.1018 62.9632 10.1018H60.4V21.1064ZM58.1925 9.98348C56.7692 9.98348 55.6466 10.4442 55.0452 11.705V10.1018H54.1459C53.3153 10.1018 52.6423 10.7773 52.6423 11.6054C52.6423 14.6188 52.6423 21.1064 52.6423 21.1064H53.7022C54.5325 21.1064 55.2055 20.4308 55.2055 19.6028C55.2055 17.7816 55.2055 14.9519 55.2055 14.9519C55.2055 13.2491 56.2882 12.2654 57.8918 12.2654H59.2749V9.98348H58.1925ZM37.6863 10.1018L34.8603 17.6789C34.8603 17.6789 33.1631 13.1276 32.3994 11.0793C32.18 10.4909 31.6184 10.1018 30.9908 10.1018C30.229 10.1018 29.329 10.1018 29.329 10.1018C29.329 10.1018 32.2762 17.4921 33.3405 20.16C33.5684 20.7297 34.1216 21.1064 34.737 21.1064C34.8123 21.1064 34.8883 21.1064 34.9636 21.1064C35.5791 21.1064 36.1323 20.7297 36.3601 20.16C37.4245 17.4921 40.3716 10.1018 40.3716 10.1018H37.6863ZM71.4254 12.4054H68.4761C68.4761 12.4054 68.4761 17.1123 68.4761 19.6028C68.4761 20.4308 67.8028 21.1064 66.9725 21.1064H65.9125V12.4054H63.8881V10.1018H65.9125V9.62239C65.9125 7.11329 67.5749 5.7124 70.0597 5.7124C70.3803 5.7124 70.8815 5.75289 71.162 5.81204C71.162 5.81204 71.162 6.55294 71.162 7.17244C71.162 7.60515 70.8121 7.95689 70.3803 7.95689C69.1977 7.95689 68.4761 8.51727 68.4761 9.62239V10.1018H73.8283V11.705C74.4298 10.4442 75.5523 9.98348 76.9756 9.98348H78.058V12.2654H76.6749C75.0711 12.2654 73.9887 13.2491 73.9887 14.9519C73.9887 14.9519 73.9887 17.7816 73.9887 19.6028C73.9887 20.4308 73.3156 21.1064 72.4854 21.1064H71.4254V12.4054ZM98.464 19.3631C97.441 19.3631 96.739 18.9023 96.739 17.9995C96.739 17.4174 97.1403 16.7979 98.3033 16.5769L101.312 16.0352V16.717C101.312 18.2019 100.089 19.3631 98.464 19.3631ZM43.2783 14.3915C43.5793 12.8475 44.6822 11.9634 46.0862 11.9634C47.4699 11.9634 48.633 12.9689 48.7332 14.3915H43.2783ZM60.4 8.65732H61.4599C61.8587 8.65732 62.241 8.49858 62.523 8.21529C62.8051 7.93512 62.9632 7.55221 62.9632 7.15374C62.9632 6.54981 62.9632 5.99258 62.9632 5.99258H60.4V8.65732ZM78.9826 8.65732H80.0426C80.4414 8.65732 80.8236 8.49858 81.1057 8.21529C81.3874 7.93512 81.5459 7.55221 81.5459 7.15374C81.5459 6.54981 81.5459 5.99258 81.5459 5.99258H78.9826V8.65732Z" fill="white"/>
               </svg>
             </div>
-            </Pulse>
+            
             <div className="w-full sm:w-5/6 md:w-5/7 lg:w-5/6 mt-12 sm:mt-0 flex flex-wrap">
-              <Pulse>
+              
               <div className="space-y-6 w-1/2 sm:w-1/3 lg:w-1/5 pb-12 ">
+                <Slide bottom>
                 <h4 className="font-medium">Products</h4>
+                </Slide>
+                <Slide bottom cascade>
                 <ul className="text-sm font-light space-y-3 text-gray-400">
                   <li>Transaction</li>
                   <li>Authentication</li>
@@ -42,11 +50,15 @@ const FooterSection = () => {
                   <li>Assets</li>
                   <li>Pricing</li>
                 </ul>
+                </Slide>
               </div>
-              </Pulse>
-              <Pulse>
+              
+              
               <div className="space-y-6 w-1/2 sm:w-1/3 lg:w-1/5 pb-12">
+                <Slide bottom>
                 <h4 className="font-medium">Use Cases</h4>
+                </Slide>
+                <Slide bottom cascade>
                 <ul className="text-sm font-light space-y-3 text-gray-400">
                   <li>Personal finances</li>
                   <li>Consumer payments</li>
@@ -55,11 +67,15 @@ const FooterSection = () => {
                   <li>Wealth</li>
                   <li>Business finances</li>
                 </ul>
+                </Slide>
               </div>
-              </Pulse>
-              <Pulse>
+              
+              
               <div className = "space-y-6 w-1/2 sm:w-1/3 lg:w-1/5 pb-12">
+                <Slide bottom>
                 <h4 className="font-medium">About</h4>
+                </Slide>
+                <Slide bottom cascade>
                 <ul className="text-sm font-light space-y-3 text-gray-400">
                   <li>Company</li>
                   <li>Career</li>
@@ -68,11 +84,15 @@ const FooterSection = () => {
                   <li>Security</li>
                   <li>Legal & Privacy</li>
                 </ul>
+                </Slide>
               </div>
-              </Pulse>
-              <Pulse>
+              
+              
               <div className="space-y-6 w-1/2 sm:w-1/3 lg:w-1/5 pb-12">
+                <Slide bottom>
                 <h4 className="font-medium">For Consumers</h4>
+                </Slide>
+                <Slide bottom cascade>
                 <ul className="text-sm font-light space-y-3 text-gray-400">
                   <li>How it works</li>
                   <li>Discover apps</li>
@@ -81,18 +101,23 @@ const FooterSection = () => {
                   <li>Help</li>
                   <li>Trouble connecting?</li>
                 </ul>
+                </Slide>
               </div>
-              </Pulse>
-              <Pulse>
+              
+              
               <div className="space-y-6 w-1/2 sm:w-1/3 lg:w-1/5 pb-12">
+                <Slide bottom>
                 <h4 className="font-medium">For Developers</h4>
+                </Slide>
+                <Slide bottom cascade>
                 <ul className="text-sm font-light space-y-3 text-gray-400">
                   <li>Quickstart</li>
                   <li>API documentation</li>
                   <li>Libraries</li>
                 </ul>
+                </Slide>
               </div>
-              </Pulse>
+              
             </div>
           </div>
           

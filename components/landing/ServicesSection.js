@@ -5,22 +5,26 @@ import WealthIcon from '../../public/assets/svgs/wealth.svg';
 import BankingIcon from '../../public/assets/svgs/banking.svg';
 import BusinessFinancesIcon from '../../public/assets/svgs/business-finances.svg';
 import Link from 'next/link';
-import Pulse from 'react-reveal/Pulse';
+import Slide from 'react-reveal/Slide';
+
 
 const ServicesSection = () => {
     return (
-        <section className="features py-6 md:py-48 px-4 md:px-6 xl:px-48">
-          <h4 className="text-lg md:text-2xl font-medium text-black">Building the future of financial services</h4>
-          <ul className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-24 mt-12">
-           <Pulse>
-            <li className="space-y-4 sm:hover:bg-yellow px-0 sm:px-4 py-0 sm:py-12 rounded-lg transition ease-in-out delay-75">
+        <section className="features py-6 mb-20 sm:py-6 md:py-48 px-0 md:px-6 xl:px-48">
+          <Slide bottom>
+          <h4 className="text-lg md:text-2xl font-medium text-black leading-relaxed" >Building the future of financial <br className="hidden md:block"/> services accross Africa</h4>
+          </Slide>
+          <ul className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mt-12">
+           
+           <Slide bottom>
+            <li className="service-box space-y-4 sm:hover:card-shadow px-4 py-4 sm:pt-12 sm:pb-20 rounded-lg">
               <img src={PersonalFinancesIcon} />
-              <dl className="space-y-3">
-                <dt className="text-base md:text-xl text-black">Personal Finances</dt>
+              <dl className="space-y-3 pr-0 md:pr-12">
+                <dt className="text-base md:text-lg text-black font-bold">Personal Finances</dt>
                 <dd className="text-xs sm:text-sm text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio ac felis in libero. Nisl.</dd>
               </dl>
               <Link href="/">
-                <a className="flex sm:hidden text-sm font-medium space-x-2 items-center">
+                <a className="flex text-sm font-medium text-black md:text-grey space-x-2 items-center">
                   <span>
                     Learn more
                   </span>
@@ -32,16 +36,16 @@ const ServicesSection = () => {
                 </a>
               </Link>
             </li>
-            </Pulse>
-            <Pulse>
-            <li className="space-y-4 sm:hover:bg-yellow px-0 sm:px-4 py-0 sm:py-12 rounded-lg transition ease-in-out delay-75">
+            </Slide>
+            <Slide bottom>
+            <li className="service-box space-y-4 sm:hover:card-shadow px-4 py-4 sm:pt-12 sm:pb-20 rounded-lg">
               <img src={ConsumersPaymentIcon} />
-              <dl className="space-y-3">
-                <dt className="text-base md:text-xl text-black">Consumer Payments</dt>
+              <dl className="space-y-3 pr-0 md:pr-12">
+                <dt className="text-base md:text-lg text-black font-bold">Consumer Payments</dt>
                 <dd className="text-xs sm:text-sm text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio ac felis in libero. Nisl.</dd>
               </dl>
               <Link href="/">
-                <a className="flex sm:hidden text-sm font-medium space-x-2 items-center">
+                <a className="flex text-sm text-black md:text-grey font-medium space-x-2 items-center">
                   <span>
                     Learn more
                   </span>
@@ -53,16 +57,16 @@ const ServicesSection = () => {
                 </a>
               </Link>
             </li>
-            </Pulse>
-            <Pulse>
-            <li className="space-y-4 sm:hover:bg-yellow px-0 sm:px-4 py-0 sm:py-12 rounded-lg transition ease-in-out delay-75">
+            </Slide>
+            <Slide bottom>
+            <li className="service-box space-y-4 sm:hover:card-shadow px-4 py-4 sm:pt-12 sm:pb-20 rounded-lg" >
               <img src={LendingIcon} />
-              <dl className="space-y-3">
-                <dt className="text-base md:text-xl text-black">Lending</dt>
+              <dl className="space-y-3 pr-0 md:pr-12">
+                <dt className="text-base md:text-lg text-black font-bold">Lending</dt>
                 <dd className="text-xs sm:text-sm text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio ac felis in libero. Nisl.</dd>
               </dl>
               <Link href="/">
-                <a className="flex sm:hidden text-sm font-medium space-x-2 items-center">
+                <a className="flex text-sm text-black md:text-grey font-medium space-x-2 items-center">
                   <span>
                     Learn more
                   </span>
@@ -74,16 +78,16 @@ const ServicesSection = () => {
                 </a>
               </Link>
             </li>
-            </Pulse>
-            <Pulse>
-            <li className="space-y-4 sm:hover:bg-yellow px-0 sm:px-4 py-0 sm:py-12 rounded-lg transition ease-in-out delay-75">
+            </Slide>
+            <Slide bottom>
+            <li className="service-box space-y-4 sm:hover:card-shadow px-4 py-4 sm:pt-12 sm:pb-20 rounded-lg">
               <img src={WealthIcon} />
-              <dl className="space-y-3">
-                <dt className="text-base md:text-xl text-black">Wealth</dt>
+              <dl className="space-y-3 pr-0 md:pr-12">
+                <dt className="text-base md:text-lg text-black font-bold">Wealth</dt>
                 <dd className="text-xs sm:text-sm text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio ac felis in libero. Nisl.</dd>
               </dl>
               <Link href="/">
-                <a className="flex sm:hidden text-sm font-medium space-x-2 items-center">
+                <a className="flex text-sm text-black md:text-grey font-medium space-x-2 items-center">
                   <span>
                     Learn more
                   </span>
@@ -95,16 +99,16 @@ const ServicesSection = () => {
                 </a>
               </Link>
             </li>
-            </Pulse>
-            <Pulse>
-            <li className="space-y-4 sm:hover:bg-yellow px-0 sm:px-4 py-0 sm:py-12 rounded-lg transition ease-in-out delay-75">
+            </Slide>
+            <Slide bottom>
+            <li className="service-box space-y-4 sm:hover:card-shadow px-4 py-4 sm:pt-12 sm:pb-20 rounded-lg" >
               <img src={BankingIcon} />
-              <dl className="space-y-3">
-                <dt className="text-base md:text-xl text-black">Banking</dt>
+              <dl className="space-y-3 pr-0 md:pr-12">
+                <dt className="text-base md:text-lg text-black font-bold">Banking</dt>
                 <dd className="text-xs sm:text-sm text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio ac felis in libero. Nisl.</dd>
               </dl>
               <Link href="/">
-                <a className="flex sm:hidden text-sm font-medium space-x-2 items-center">
+                <a className="flex text-sm text-black md:text-grey font-medium space-x-2 items-center">
                   <span>
                     Learn more
                   </span>
@@ -116,16 +120,16 @@ const ServicesSection = () => {
                 </a>
               </Link>
             </li>
-            </Pulse>
-            <Pulse>
-            <li className="space-y-4 sm:hover:bg-yellow px-0 sm:px-4 py-0 sm:py-12 rounded-lg transition ease-in-out delay-75">
+            </Slide>
+            <Slide bottom>
+            <li className="service-box space-y-4 sm:hover:card-shadow px-4 py-4 sm:pt-12 sm:pb-20 rounded-lg" >
               <img src={BusinessFinancesIcon} />
-              <dl className="space-y-3">
-                <dt className="text-base md:text-xl text-black">Business Finances</dt>
+              <dl className="space-y-3 pr-0 md:pr-12">
+                <dt className="text-base md:text-lg text-black font-bold">Business Finances</dt>
                 <dd className="text-xs sm:text-sm text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio ac felis in libero. Nisl.</dd>
               </dl>
               <Link href="/">
-                <a className="flex sm:hidden text-sm font-medium space-x-2 items-center">
+                <a className="flex text-sm text-black md:text-grey font-medium space-x-2 items-center">
                   <span>
                     Learn more
                   </span>
@@ -137,7 +141,7 @@ const ServicesSection = () => {
                 </a>
               </Link>
             </li>
-            </Pulse>
+            </Slide>
           </ul>
       </section>
     )

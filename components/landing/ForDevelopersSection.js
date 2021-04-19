@@ -2,6 +2,7 @@ import Highlight, { defaultProps } from "prism-react-renderer";
 import theme from "prism-react-renderer/themes/dracula";
 import HomeCode from '../../markdown/home.js';
 import Link from "next/link";
+import Slide from 'react-reveal/Slide'
 
 
 const ForDevelopersSection = () => {
@@ -11,15 +12,21 @@ const ForDevelopersSection = () => {
           <div className="w-full md:w-full lg:w-3/5 flex flex-col justify-center items-center">
             <div className="space-y-12 px-0 md:px-4 sm:px-0 box-border">
               <dl className="text-black space-y-8">
+                <Slide bottom>
                 <dt className="text-2xl md:text-4xl font-bold leading-normal">For developers, by <br/> developers</dt>
+                </Slide>
+                <Slide bottom>
                 <dd className="font-light pr-12 text-sm md:text-base text-grey">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam morbi etiam dolor ac bibendum cras congue sed vitae. Malesuada mollis.
                 </dd>
+                </Slide>
               </dl>
               <div>
+                <Slide bottom>
                 <Link href="/" className="block">
-                  <a className="px-6 py-4 rounded text-sm font-medium text-black tracking-wide mt-6 border border-black">Read our API documentation</a>
+                  <a className="px-16 py-4 rounded text-sm font-medium text-black block sm:inline tracking-wide mt-6 border border-black">Read our API documentation</a>
                 </Link>
+                </Slide>
               </div>
             </div>
           </div>

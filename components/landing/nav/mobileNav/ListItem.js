@@ -1,7 +1,7 @@
 import { Transition } from "@headlessui/react";
 import Link from "next/link";
 import { useState } from "react";
-import Pulse from 'react-reveal/Pulse';
+import Slide from 'react-reveal/Slide';
 
 const MobileNavList = ({link}) => {
     const [isOpen, setIsOpen] = useState(false)
@@ -9,7 +9,6 @@ const MobileNavList = ({link}) => {
         setIsOpen(!isOpen);
     }
     return (
-        <Pulse>
         <li onClick={toggleLink}>
           <div className="flex justify-between px-4">  
             <span>{link.name}</span>
@@ -29,7 +28,8 @@ const MobileNavList = ({link}) => {
             leaveTo = "transform scale-95 opacity-0"
             >
             {link.hasDropdown && (
-            <ul className="bg-white w-full space-y-4 text-hair px-4 mt-2 py-2 text-sm font-light">
+            <Slide top cascade>    
+            <ul className="bg-white border-l border-card-blue w-full space-y-5 text-hair px-4 mt-2 py-4 text-sm font-light">
                 {link.dropdownItems.map((item, index) => {
                     return(
                         <li key={index}>
@@ -39,10 +39,11 @@ const MobileNavList = ({link}) => {
                         </li>
                     )
                 })}
-            </ul>)}
+            </ul>
+            </Slide>
+            )}
             </Transition>
         </li>
-        </Pulse>
     )
 }
 

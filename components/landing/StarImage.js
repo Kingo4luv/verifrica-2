@@ -8,15 +8,21 @@ const StarImage = () => {
         <div className="w-full lg:w-1/2 flex flex-col justify-center items-center">
             <div className="space-y-12 px-0 md:px-4 sm:px-0 box-border">
               <dl className="text-black space-y-8">
+                <Slide bottom>
                 <dt className="text-2xl md:text-4xl font-bold leading-normal">Secure, easy and <br/> reliable to use</dt>
+                </Slide>
+                <Slide bottom>
                 <dd className="font-light pr-6 lg:pr-52  text-sm md:text-base text-grey">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam morbi etiam dolor ac bibendum cras congue sed vitae. Malesuada mollis.
                 </dd>
+                </Slide>
               </dl>
               <div>
+                <Slide bottom>
                 <Link href="/" className="block">
                   <a className="px-16 py-4 bg-blue rounded text-sm font-medium text-white tracking-wide mt-6">Learn more</a>
                 </Link>
+                </Slide>
               </div>
             </div>
         </div>
