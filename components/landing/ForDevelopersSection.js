@@ -7,7 +7,7 @@ import Slide from 'react-reveal/Slide'
 
 const ForDevelopersSection = () => {
     return(
-        <section className="py-12 md:py-52 flex flex-col md:flex-row bg-client-grey overflow-x-hidden">
+        <section className="py-12 md:py-40 flex flex-col md:flex-row bg-client-grey overflow-x-hidden">
         <div className="w-full md:w-1/2 flex justify-center items-center py-12 lg:py-32 px-4 lg:px-0">
           <div className="w-full md:w-full lg:w-3/5 flex flex-col justify-center items-center">
             <div className="space-y-12 px-0 md:px-4 sm:px-0 box-border">
@@ -17,7 +17,7 @@ const ForDevelopersSection = () => {
                 </Slide>
                 <Slide bottom>
                 <dd className="font-light pr-12 text-sm md:text-base text-grey">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam morbi etiam dolor ac bibendum cras congue sed vitae. Malesuada mollis.
+                  Verifrica provides developers with access to tools, documentation, and resources on how to access data and financial accounts across Africa 's various banking channels, through our easy and reliable APIs. 
                 </dd>
                 </Slide>
               </dl>
@@ -38,7 +38,7 @@ const ForDevelopersSection = () => {
               <span className="w-3 h-3 bg-green-500 rounded-full"></span>
               <span className="w-3 h-3 bg-red-500 rounded-full"></span>
             </div>
-            <div className="overflow-auto h-96 md:h-auto rounded-b-lg">
+            <div className="scrolling-wrapper overflow-auto h-96 rounded-b-lg">
               <Highlight {...defaultProps} theme={theme} code={HomeCode} language="jsx">
                 {({ className, style, tokens, getLineProps, getTokenProps }) => (
                   <pre className={className} style={style}>

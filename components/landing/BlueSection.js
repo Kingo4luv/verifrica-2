@@ -18,7 +18,7 @@ const BlueSection = () => {
                 </Slide>
                 <Slide bottom>
                 <dd className="font-light pr-6 md:pr-16 text-sm md:text-base text-black">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam morbi etiam dolor ac bibendum cras congue sed vitae. Malesuada mollis.
+                  Verifrica prioritizes the interest of our users, with a flexibility that allows you connect with your financial institution securing services, and sharing data across various banking channels.
                 </dd>
                 </Slide>
               </dl>

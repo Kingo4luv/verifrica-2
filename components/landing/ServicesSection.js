@@ -12,7 +12,7 @@ const ServicesSection = () => {
     return (
         <section className="features py-6 mb-20 sm:py-6 md:py-48 px-0 md:px-6 xl:px-48">
           <Slide bottom>
-          <h4 className="text-lg md:text-2xl font-medium text-black leading-relaxed" >Building the future of financial <br className="hidden md:block"/> services accross Africa</h4>
+          <h4 className="text-lg md:text-2xl font-medium text-black leading-relaxed px-4" >Building the future of financial <br className="hidden md:block"/> services accross Africa</h4>
           </Slide>
           <ul className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mt-12">
            
@@ -21,7 +21,7 @@ const ServicesSection = () => {
               <img src={PersonalFinancesIcon} />
               <dl className="space-y-3 pr-0 md:pr-12">
                 <dt className="text-base md:text-lg text-black font-bold">Personal Finances</dt>
-                <dd className="text-xs sm:text-sm text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio ac felis in libero. Nisl.</dd>
+                <dd className="text-xs sm:text-sm text-grey">Fostering saving, budgeting and managing your finances. </dd>
               </dl>
               <Link href="/">
                 <a className="flex text-sm font-medium text-black md:text-grey space-x-2 items-center">
@@ -42,7 +42,7 @@ const ServicesSection = () => {
               <img src={ConsumersPaymentIcon} />
               <dl className="space-y-3 pr-0 md:pr-12">
                 <dt className="text-base md:text-lg text-black font-bold">Consumer Payments</dt>
-                <dd className="text-xs sm:text-sm text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio ac felis in libero. Nisl.</dd>
+                <dd className="text-xs sm:text-sm text-grey">A simple and seamless means to pay bills and send money with ease.</dd>
               </dl>
               <Link href="/">
                 <a className="flex text-sm text-black md:text-grey font-medium space-x-2 items-center">
@@ -63,7 +63,7 @@ const ServicesSection = () => {
               <img src={LendingIcon} />
               <dl className="space-y-3 pr-0 md:pr-12">
                 <dt className="text-base md:text-lg text-black font-bold">Lending</dt>
-                <dd className="text-xs sm:text-sm text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio ac felis in libero. Nisl.</dd>
+                <dd className="text-xs sm:text-sm text-grey">Aiding individuals and businesses access capital through an efficient process.</dd>
               </dl>
               <Link href="/">
                 <a className="flex text-sm text-black md:text-grey font-medium space-x-2 items-center">
@@ -84,7 +84,7 @@ const ServicesSection = () => {
               <img src={WealthIcon} />
               <dl className="space-y-3 pr-0 md:pr-12">
                 <dt className="text-base md:text-lg text-black font-bold">Wealth</dt>
-                <dd className="text-xs sm:text-sm text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio ac felis in libero. Nisl.</dd>
+                <dd className="text-xs sm:text-sm text-grey">Providing individuals with good plans on expanding finances through investment.</dd>
               </dl>
               <Link href="/">
                 <a className="flex text-sm text-black md:text-grey font-medium space-x-2 items-center">
@@ -105,7 +105,7 @@ const ServicesSection = () => {
               <img src={BankingIcon} />
               <dl className="space-y-3 pr-0 md:pr-12">
                 <dt className="text-base md:text-lg text-black font-bold">Banking</dt>
-                <dd className="text-xs sm:text-sm text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio ac felis in libero. Nisl.</dd>
+                <dd className="text-xs sm:text-sm text-grey">Providing users with a banking experience, fund your account and manage savings. </dd>
               </dl>
               <Link href="/">
                 <a className="flex text-sm text-black md:text-grey font-medium space-x-2 items-center">
@@ -126,7 +126,7 @@ const ServicesSection = () => {
               <img src={BusinessFinancesIcon} />
               <dl className="space-y-3 pr-0 md:pr-12">
                 <dt className="text-base md:text-lg text-black font-bold">Business Finances</dt>
-                <dd className="text-xs sm:text-sm text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio ac felis in libero. Nisl.</dd>
+                <dd className="text-xs sm:text-sm text-grey">Aiding businesses manage funds, make payment, analyze financial reports and send payroll..</dd>
               </dl>
               <Link href="/">
                 <a className="flex text-sm text-black md:text-grey font-medium space-x-2 items-center">

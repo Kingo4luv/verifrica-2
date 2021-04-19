@@ -13,7 +13,7 @@ const StarImage = () => {
                 </Slide>
                 <Slide bottom>
                 <dd className="font-light pr-6 lg:pr-52  text-sm md:text-base text-grey">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam morbi etiam dolor ac bibendum cras congue sed vitae. Malesuada mollis.
+                  We are aware of the importance of your information. Verifrica provides a secure, easy, and reliable to use platform where you can securely and reliably retrieve balance, past transactions, personal identity, etc. 
                 </dd>
                 </Slide>
               </dl>
