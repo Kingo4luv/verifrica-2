@@ -12,18 +12,18 @@ const StarImage = () => {
                 <dt className="text-2xl md:text-4xl font-bold leading-normal">Secure, easy and <br/> reliable to use</dt>
                 </Slide>
                 <Slide bottom>
-                <dd className="font-light pr-6 lg:pr-52  text-sm md:text-base text-grey">
+                <dd className="font-light pr-0 lg:pr-52  text-sm md:text-base text-grey">
                   We are aware of the importance of your information. Verifrica provides a secure, easy, and reliable to use platform where you can securely and reliably retrieve balance, past transactions, personal identity, etc. 
                 </dd>
                 </Slide>
               </dl>
+              <Slide bottom>
               <div>
-                <Slide bottom>
-                <Link href="/" className="block">
+                <Link href="/" className="">
                   <a className="px-16 py-4 bg-blue rounded text-sm font-medium text-white tracking-wide mt-6">Learn more</a>
                 </Link>
-                </Slide>
               </div>
+                </Slide>
             </div>
         </div>
         <div className="w-full lg:w-1/2 space-y-12 md:space-y-40 mt-16 md:mt-0">

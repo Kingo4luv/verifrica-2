@@ -16,7 +16,7 @@ const ForDevelopersSection = () => {
                 <dt className="text-2xl md:text-4xl font-bold leading-normal">For developers, by <br/> developers</dt>
                 </Slide>
                 <Slide bottom>
-                <dd className="font-light pr-12 text-sm md:text-base text-grey">
+                <dd className="font-light pr-0 md:pr-12 text-sm md:text-base text-grey">
                   Verifrica provides developers with access to tools, documentation, and resources on how to access data and financial accounts across Africa 's various banking channels, through our easy and reliable APIs. 
                 </dd>
                 </Slide>
