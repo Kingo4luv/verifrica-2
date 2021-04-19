@@ -21,7 +21,7 @@ module.exports = {
         "skin-tone": "#A26744",
         "hair": "#101010",
         "icon-yellow": "#FFF59B",
-        "card-blue": "#029CCF",
+        "card-blue": "#039FD3",
         "footer-black": "#191919",
 
       },
