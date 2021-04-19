@@ -14,10 +14,10 @@ const BlueSection = () => {
             <div className="space-y-12 w-full lg:w-3/5 px-4 sm:px-0 box-border">
               <dl className="space-y-5">
                 <Slide bottom>
-                <dt className="text-2xl md:text-4xl font-bold text-black leading-normal">Connect to financial bank accounts in seconds</dt>
+                <dt className="text-2xl md:text-4xl font-bold text-hair leading-normal">Connect to financial bank accounts in seconds</dt>
                 </Slide>
                 <Slide bottom>
-                <dd className="font-light pr-6 md:pr-16 text-sm md:text-base text-black">
+                <dd className="font-light pr-6 md:pr-16 text-sm md:text-base text-hair">
                   Verifrica prioritizes the interest of our users, with a flexibility that allows you connect with your financial institution securing services, and sharing data across various banking channels.
                 </dd>
                 </Slide>

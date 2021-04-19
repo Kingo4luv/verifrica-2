@@ -11,7 +11,7 @@ const ExperienceSection = () => {
                 <dt className="text-2xl md:text-4xl font-bold leading-normal">Beautiful user experience <br/> for customers</dt>
                 </Slide>
                 <Slide bottom>
-                <dd className="font-light pr-16 text-sm md:text-base text-grey">
+                <dd className="font-light pr-16 text-sm md:text-base text-hair">
                   We focus on having a sound understanding of users, what they need, and value.With our beautiful user experience, we hope to improve the quality of our user’ s interaction and perception of our product.
                 </dd>
                 </Slide>

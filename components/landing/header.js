@@ -16,9 +16,9 @@ const icon = {
 }
 const HeaderComponent = () => {
     return(
-        <header className="bg-card-blue w-full overflow-hidden">
+        <header className="bg-card-blue w-full overflow-hidden h-auto lg:h-screen">
           <Nav />
-          <div className="hero pt-8 lg:pt-24 flex flex-col justify-center items-center bg-center" style={{backgroundImage:`url(${HeroBackground})` }}>
+          <div className="hero pt-8 lg:pt-16 flex flex-col justify-center items-center bg-center" style={{backgroundImage:`url(${HeroBackground})` }}>
             <Slide bottom>
               <h1 className="text-center text-2xl md:text-4xl lg:text-6xl font-bold leading-normal text-white mt-12">
                 Build the future of financial <br/>services across <span className="relative">

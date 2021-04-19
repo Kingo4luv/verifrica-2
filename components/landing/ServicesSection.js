@@ -14,9 +14,9 @@ const ServicesSection = () => {
           <Slide bottom>
           <h4 className="text-lg md:text-2xl font-medium text-black leading-relaxed px-4" >Building the future of financial <br className="hidden md:block"/> services accross Africa</h4>
           </Slide>
+
+          <Slide bottom cascade>
           <ul className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mt-12">
-           
-           <Slide bottom>
             <li className="service-box space-y-4 sm:hover:card-shadow px-4 py-4 sm:pt-12 sm:pb-20 rounded-lg">
               <img src={PersonalFinancesIcon} />
               <dl className="space-y-3 pr-0 md:pr-12">
@@ -36,8 +36,6 @@ const ServicesSection = () => {
                 </a>
               </Link>
             </li>
-            </Slide>
-            <Slide bottom>
             <li className="service-box space-y-4 sm:hover:card-shadow px-4 py-4 sm:pt-12 sm:pb-20 rounded-lg">
               <img src={ConsumersPaymentIcon} />
               <dl className="space-y-3 pr-0 md:pr-12">
@@ -57,8 +55,6 @@ const ServicesSection = () => {
                 </a>
               </Link>
             </li>
-            </Slide>
-            <Slide bottom>
             <li className="service-box space-y-4 sm:hover:card-shadow px-4 py-4 sm:pt-12 sm:pb-20 rounded-lg" >
               <img src={LendingIcon} />
               <dl className="space-y-3 pr-0 md:pr-12">
@@ -78,8 +74,6 @@ const ServicesSection = () => {
                 </a>
               </Link>
             </li>
-            </Slide>
-            <Slide bottom>
             <li className="service-box space-y-4 sm:hover:card-shadow px-4 py-4 sm:pt-12 sm:pb-20 rounded-lg">
               <img src={WealthIcon} />
               <dl className="space-y-3 pr-0 md:pr-12">
@@ -99,8 +93,6 @@ const ServicesSection = () => {
                 </a>
               </Link>
             </li>
-            </Slide>
-            <Slide bottom>
             <li className="service-box space-y-4 sm:hover:card-shadow px-4 py-4 sm:pt-12 sm:pb-20 rounded-lg" >
               <img src={BankingIcon} />
               <dl className="space-y-3 pr-0 md:pr-12">
@@ -120,8 +112,6 @@ const ServicesSection = () => {
                 </a>
               </Link>
             </li>
-            </Slide>
-            <Slide bottom>
             <li className="service-box space-y-4 sm:hover:card-shadow px-4 py-4 sm:pt-12 sm:pb-20 rounded-lg" >
               <img src={BusinessFinancesIcon} />
               <dl className="space-y-3 pr-0 md:pr-12">
@@ -141,8 +131,8 @@ const ServicesSection = () => {
                 </a>
               </Link>
             </li>
-            </Slide>
           </ul>
+          </Slide>
       </section>
     )
 }
