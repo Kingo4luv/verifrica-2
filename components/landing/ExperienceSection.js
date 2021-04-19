@@ -5,15 +5,15 @@ const ExperienceSection = () => {
     return(
         <section className="flex flex-col md:flex-row mt-6 lg:mt-16 bg-light-blue">
         <div className="w-full md:w-1/2 flex justify-center items-center py-12 lg:py-32 px-4 lg:px-0">
-          <div className="w-full md:w-full lg:w-4/5 xl:w-3/5 flex flex-col justify-center items-center">
+          <div className="w-full lg:w-5/5 flex flex-col justify-center items-center">
             <div className="space-y-12 sm:px-0 box-border">
               <dl className="text-black space-y-8">
                 <Slide bottom>
                 <dt className="text-2xl md:text-4xl font-bold leading-normal">Beautiful user experience <br/> for customers</dt>
                 </Slide>
                 <Slide bottom>
-                <dd className="font-light pr-0 md:pr-16 text-sm md:text-base text-hair">
-                  We focus on having a sound understanding of users, what they need, and value.With our beautiful user experience, we hope to improve the quality of our user’ s interaction and perception of our product.
+                <dd className="font-light text-sm md:text-base text-hair">
+                  We focus on having a sound understanding of users, what <br className="hidden lg:block" /> they need, and value.With our beautiful user experience, <br className="hidden lg:block" /> we hope to improve the quality of our user’ s interaction <br className="hidden lg:block" /> and perception of our product.
                 </dd>
                 </Slide>
               </dl>

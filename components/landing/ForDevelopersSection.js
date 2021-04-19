@@ -7,17 +7,17 @@ import Slide from 'react-reveal/Slide'
 
 const ForDevelopersSection = () => {
     return(
-        <section className="py-12 md:py-40 flex flex-col md:flex-row bg-client-grey overflow-x-hidden">
-        <div className="w-full md:w-1/2 flex justify-center items-center py-12 lg:py-32 px-4 lg:px-0">
-          <div className="w-full md:w-full lg:w-3/5 flex flex-col justify-center items-center">
-            <div className="space-y-12 px-0 md:px-4 sm:px-0 box-border">
+        <section className="py-12 md:py-40 flex flex-col md:flex-row bg-client-grey">
+        <div className="w-full md:w-1/2 flex justify-center items-center py-12 lg:py-32">
+          <div className="w-full lg:w-5/5 flex flex-col justify-center items-center px-4">
+           <div className = "space-y-12 sm:px-0 box-border" >
               <dl className="text-black space-y-8">
                 <Slide bottom>
                 <dt className="text-2xl md:text-4xl font-bold leading-normal">For developers, by <br/> developers</dt>
                 </Slide>
                 <Slide bottom>
-                <dd className="font-light pr-0 md:pr-12 text-sm md:text-base text-grey">
-                  Verifrica provides developers with access to tools, documentation, and resources on how to access data and financial accounts across Africa 's various banking channels, through our easy and reliable APIs. 
+                <dd className="font-light text-sm md:text-base text-grey">
+                  Verifrica provides developers with access to tools, <br className="hidden lg:block" />documentation, and resources on how to access data and <br className="hidden lg:block" /> financial accounts across Africa 's various banking channels, <br className="hidden lg:block" /> through our easy and reliable APIs. 
                 </dd>
                 </Slide>
               </dl>
