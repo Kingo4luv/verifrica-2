@@ -20,9 +20,9 @@ const MobileNavList = ({link}) => {
             </div>
             <Transition
             show={isOpen}
-            enter = "transition ease-in-out duration-300 transform"
-            enterFrom = "-translate-x-full"
-            enterTo = "translate-x-0"
+            enter = "transition ease-in-out duration-1000 delay-500 transform"
+            enterFrom="opacity-0"
+            enterTo="opacity-1"
             leave = "transition ease-in-out duration-500 transform"
             leaveFrom = "translate-x-0"
             leaveTo = "-translate-x-full"
