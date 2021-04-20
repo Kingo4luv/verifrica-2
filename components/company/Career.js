@@ -18,7 +18,7 @@ const CareerSection = () => {
                 <h2 className="text-2xl lg:text-4xl font-bold text-black text-center">Join Our Team</h2>
                 </Slide>
                 <Slide bottom>
-                <p className="text-center text-base lg:text-xl text-black lg:text-grey">We have diverse backgrounds and skills, but we're all passionate about building a more efficient and inclusive financial infrastructure—together.</p>
+                <p className="text-center text-sm lg:text-xl text-black lg:text-grey">We have diverse backgrounds and skills, but we're all passionate about building a more efficient and inclusive financial infrastructure—together.</p>
                 </Slide>
                 <Slide bottom>
                 <div className="mt-5 flex justify-center items-center w-full">
