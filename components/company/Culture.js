@@ -2,7 +2,7 @@ import Slide from 'react-reveal/Slide'
 import Zoom from 'react-reveal/Zoom'
 const Culture = () => {
     return (
-        <section className="py-32 bg-white w-full">
+        <section className="py-12 md:py-32 bg-white w-full">
         <div className="flex flex-col sm:flex-row w-full md:w-5/6 mx-auto h-auto sm:h-100 px-4 sm:px-6 md:px-0 space-x-0 sm:space-x-4">
             <div className="w-full md:w-3/5 lg:w-1/2 h-full space-y-4 pr-0 sm:pr-6 lg:pr-6 xl:pr-32">
                 <Slide bottom>
