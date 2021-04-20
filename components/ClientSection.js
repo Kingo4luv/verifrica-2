@@ -1,8 +1,8 @@
-import dominosIcon from '../../public/assets/svgs/dominos.svg';
-import AbnAmbroIcon from '../../public/assets/svgs/abn-ambro.svg';
-import PaypalIcon from '../../public/assets/svgs/paypal.svg';
-import PiggyvestIcon from '../../public/assets/svgs/piggyvest.svg';
-import CowrywiseIcon from '../../public/assets/svgs/cowrywise.svg';
+import dominosIcon from '../public/assets/svgs/dominos.svg';
+import AbnAmbroIcon from '../public/assets/svgs/abn-ambro.svg';
+import PaypalIcon from '../public/assets/svgs/paypal.svg';
+import PiggyvestIcon from '../public/assets/svgs/piggyvest.svg';
+import CowrywiseIcon from '../public/assets/svgs/cowrywise.svg';
 import Slide from 'react-reveal/Slide';
 const ClientSection = () => {
     return(

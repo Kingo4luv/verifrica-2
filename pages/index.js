@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import HeaderComponent from '../components/landing/header';
-import ClientSection from '../components/landing/ClientSection';
+import ClientSection from '../components/ClientSection';
 import ServicesSection from '../components/landing/ServicesSection';
 import BlueSection from '../components/landing/BlueSection';
 import StarImage from '../components/landing/StarImage';

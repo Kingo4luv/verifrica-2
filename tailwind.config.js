@@ -41,7 +41,6 @@ module.exports = {
         '-15': '-25deg',
         '20': '20deg',
       },
-
       height:{
         100: "30rem",
         104: "34rem",
