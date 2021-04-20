@@ -6,7 +6,7 @@ const webpack = require("webpack");
 module.exports = withPlugins(
     [withMDX({
         pageExtensions: ["js", "jsx", "mdx"],
-    }), withImages, {
+    }), withImages], {
         webpack: (config) => {
             config.node = {
                 fs: "empty",
@@ -25,6 +25,7 @@ module.exports = withPlugins(
                 }));
             return config;
         },
-],
+    }
+
 );
 

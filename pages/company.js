@@ -94,7 +94,7 @@ export default function Company() {
         </div>
       </section>
       <section className="py-16 bg-yellow">
-            <h5 className="text-left md:text-center text-black text-lg md:text-2xl px-4">Meet the Team</h5>
+            <h5 className="text-left md:text-center text-black text-lg md:text-2xl px-4 font-medium md:font-normal">Meet the Team</h5>
             <TeamSection />
       </section>
       <ClientSection />
