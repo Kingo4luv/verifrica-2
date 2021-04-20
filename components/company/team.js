@@ -60,21 +60,21 @@ class TeamSection extends Component{
                <OwlCarousel className='owl-theme ' {...options}> 
                     <div className="overflow-hidden relative">
                         <img src="/assets/img/member-1.jpg" className="w-full h-full object-cover rounded-lg" />
-                        <dl className="space-y-4 mt-4">
+                        <dl className="space-y-3 mt-4">
                             <dt className="text-2xl md:text-4xl font-bold italic">Tobi</dt>
                             <dd className="text-sm md:text-base text-black">Product Manager</dd>
                         </dl>
                     </div>
                     <div className="overflow-hidden">
                         <img src="/assets/img/member-2.jpg" className="w-full h-full object-cover rounded-lg" />
-                        <dl className="space-y-4 mt-4">
+                        <dl className="space-y-3 mt-4">
                             <dt className="text-2xl md:text-4xl font-bold italic">Trojan</dt>
                             <dd className="text-sm md:text-base text-black">Engineering Intern</dd>
                         </dl>
                     </div>
                     <div className="overflow-hidden">
-                        <img src="/assets/img/member-3.jpg" className="w-full h-full object-cover rounded-lg" />
-                        <dl className="space-y-4 mt-4">
+                        <img src="/assets/img/member-3.JPG" className="w-full h-full object-cover rounded-lg" />
+                        <dl className="space-y-3 mt-4">
                             <dt className="text-2xl md:text-4xl font-bold italic">Femi</dt>
                             <dd className="text-sm md:text-base text-black">Product Designer</dd>
                         </dl>

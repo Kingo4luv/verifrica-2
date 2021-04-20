@@ -17,14 +17,14 @@ export default function Company() {
       <header className="w-full">
           <Nav theme="white" />
           <div>
-              <h1 className="text-left md:text-center px-4 text-2xl md:text-2xl lg:text-5xl font-bold leading-snug sm:leading-relaxed text-black mt-12 md:mt-32">
-                  Our mission is to unlock financial <br className="hidden sm:block" />
-                  freedom for everyone
+              <h1 className="text-2xl md:text-4xl lg:text-6xl text-left sm:text-center px-4 font-bold leading-snug sm:leading-relaxed text-black mt-12 md:mt-32">
+                  Our mission is to unlock <br className="block sm:hidden" /> financial <br className="hidden sm:block" />
+                  freedom for <br className="block sm:hidden" />everyone
               </h1>
               <p className="text-left md:text-center px-4 text-sm md:text-xl mt-6 leading-relaxed text-grey md:text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br className="hidden md:block"/> Vitae varius diam et, condimentum integer amet. Quis cras.</p>
           </div>
           <div className="w-full flex space-x-3 mt-12 md:mt-32">
-                <div className="w-1/12 md:w-1/6 h-auto md:h-96 bg-gray-200 transform -skew-y-15 relative top-2 md:top-16 overflow-hidden">
+                <div className="w-1/12 md:w-1/6 h-40 md:h-96 bg-gray-200 transform -skew-y-15 relative top-2 md:top-16 overflow-hidden">
                     <Image
                     src="/assets/img/skew-left.jpeg"
                     alt="team-1"
@@ -32,7 +32,7 @@ export default function Company() {
                     objectFit="cover"
                     />
                 </div>
-                <div className="w-8/12 md:w-4/6 h-auto md:h-96 bg-gray-200 relative -mt-1">
+                <div className="w-9/12 md:w-4/6 h-40 md:h-96 bg-gray-200 relative -mt-1">
                     <Image
                     src="/assets/img/skew-center.jpeg"
                     alt="team-2"
@@ -41,7 +41,7 @@ export default function Company() {
                     />
                     <img src="/assets/img/skew-center.jpeg" className="w-full h-full object-cover object-center" />
                 </div>
-                <div className="w-3/12 md:w-1/6 h-auto md:h-96 bg-gray-200 transform -skew-y-15 relative  overflow-hidden bottom-4 md:bottom-16 -mt-3 ">
+                <div className="w-2/12 md:w-1/6 h-40 md:h-96 bg-gray-200 transform -skew-y-15 relative  overflow-hidden bottom-4 md:bottom-16 ">
                     <Image
                     src="/assets/img/skew-right.jpg"
                     alt="team-3"
@@ -107,13 +107,7 @@ export default function Company() {
                 </p>
             </div>
             <div className="w-full md:w-2/5 lg:w-1/2 h-full mt-12 sm:mt-0 relative">
-                <Image
-                    src="/assets/img/team.jpg"
-                    alt="team"
-                    layout="fill"
-                    objectFit="cover"
-                    className="rounded "
-                    />
+                <img src="/assets/img/team.jpg" className="w-full h-full object-cover rounded-lg" />
             </div>
         </div>
       </section>
