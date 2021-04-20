@@ -7,7 +7,7 @@ import Slide from 'react-reveal/Slide'
 
 const ForDevelopersSection = () => {
     return(
-        <section className="py-12 md:py-40 flex flex-col md:flex-row bg-client-grey">
+        <section className="py-12 md:py-28 flex flex-col md:flex-row bg-client-grey">
         <div className="w-full md:w-1/2 flex justify-center items-center py-12 lg:py-32">
           <div className="w-full lg:w-5/5 flex flex-col justify-center items-center px-4">
            <div className = "space-y-12 sm:px-0 box-border" >

@@ -10,11 +10,11 @@ import Slide from 'react-reveal/Slide';
 
 const ServicesSection = () => {
     return (
-        <section className="features py-6 mb-20 sm:py-6 md:py-48 px-0 md:px-6 xl:px-48">
+        <section className="features py-6 mb-12 md:py-24 px-0 md:px-6 xl:px-48">
           <Slide bottom>
           <h4 className="text-lg md:text-2xl font-medium text-black leading-relaxed px-4" >Building the future of financial <br className="hidden md:block"/> services accross Africa</h4>
           </Slide>
-          <ul className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mt-12">
+          <ul className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-6 mt-12">
             <Slide bottom>
             <li className="service-box space-y-4 sm:hover:card-shadow px-4 py-4 sm:pt-12 sm:pb-20 rounded-lg">
               <img src={PersonalFinancesIcon} />

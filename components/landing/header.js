@@ -16,7 +16,7 @@ const icon = {
 }
 const HeaderComponent = () => {
     return(
-        <header className="bg-card-blue w-full overflow-hidden h-auto lg:h-screen">
+        <header className="bg-card-blue w-full overflow-hidden">
           <Nav />
           <div className="hero pt-8 lg:pt-16 flex flex-col justify-center items-center bg-center" style={{backgroundImage:`url(${HeroBackground})` }}>
             <Slide bottom>

@@ -112,20 +112,22 @@ const links = [
     },
     {
         name: 'Pricing',
-        hasDropdown: false
+        hasDropdown: false,
+        url: "/pricing"
     },
     {
         name: 'Company',
-        hasDropdown: false
+        hasDropdown: false,
+        url: "/company"
     },
 ]
 
-const NavLink = () => {
+const NavLink = ({theme}) => {
     return(
-        <ul className="lg:flex space-x-4 xl:space-x-12 text-white hidden">
+        <ul className={`lg:flex space-x-4 xl:space-x-12 ${theme === 'white' ? 'text-black' : 'text-white'} hidden`}>
             {links.map((link, index) => {
                 return(
-                    <LinkItem link={link} key={index} />
+                    <LinkItem link={link} key={index} theme={theme} />
                 )
             })}
         </ul>
