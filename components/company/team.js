@@ -86,7 +86,7 @@ class TeamSection extends Component{
                     </div>
                     <div className="overflow-hidden">
                         <Zoom>
-                        <img src="/assets/img/member-3.jpg" className="w-full h-full object-cover rounded-lg" />
+                        <img src="/assets/img/femi.jpg" className="w-full h-full object-cover rounded-lg" />
                         </Zoom>
                         <Slide bottom cascade>
                         <dl className="space-y-4 mt-4">
