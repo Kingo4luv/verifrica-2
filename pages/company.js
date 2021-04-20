@@ -3,6 +3,7 @@ import TeamSection from '../components/company/team';
 import Nav from '../components/landing/nav';
 import ClientSection from '../components/landing/ClientSection';
 import FooterSection from '../components/FooterSection';
+import Image from 'next/image'
 export default function Company() {
   return (
     <div className="Company">
@@ -24,14 +25,31 @@ export default function Company() {
           </div>
           <div className="w-full flex space-x-3 mt-12 md:mt-32">
                 <div className="w-1/12 md:w-1/6 h-auto md:h-96 bg-gray-200 transform -skew-y-15 relative top-2 md:top-16 overflow-hidden">
-                    <img src="/assets/img/skew-left.jpeg" className="w-full h-full object-cover object-center" />
+                    <Image
+                    src="/assets/img/skew-left.jpeg"
+                    alt="team-1"
+                    layout="fill"
+                    objectFit="cover"
+                    />
                 </div>
-                <div className="w-8/12 md:w-4/6 h-auto md:h-96 bg-gray-200 -mt-1">
+                <div className="w-8/12 md:w-4/6 h-auto md:h-96 bg-gray-200 relative -mt-1">
+                    <Image
+                    src="/assets/img/skew-center.jpeg"
+                    alt="team-2"
+                    layout="fill"
+                    objectFit="cover"
+                    />
                     <img src="/assets/img/skew-center.jpeg" className="w-full h-full object-cover object-center" />
                 </div>
-                <div className="w-3/12 md:w-1/6 h-auto md:h-96 bg-gray-200 transform -skew-y-15 relative  overflow-hidden bottom-4 md:bottom-16 -mt-2 ">
-                    <img src="/assets/img/skew-right.jpg" className="w-full h-full object-cover object-center" />
+                <div className="w-3/12 md:w-1/6 h-auto md:h-96 bg-gray-200 transform -skew-y-15 relative  overflow-hidden bottom-4 md:bottom-16 -mt-3 ">
+                    <Image
+                    src="/assets/img/skew-right.jpg"
+                    alt="team-3"
+                    layout="fill"
+                    objectFit="cover"
+                    />
                 </div>
+                
           </div>
       </header>
       <section className="flex flex-col md:flex-row justify-center items-center w-full mt-0 mb-0 md:mt-32 lg:mt-52">
@@ -88,8 +106,14 @@ export default function Company() {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus id sodales etiam id accumsan ipsum arcu imperdiet. Egestas congue sed est donec mi. Commodo nulla quam nisi venenatis tellus est arcu diam tortor. Morbi congue elit pellentesque consectetur condimentum volutpat morbi. Odio vitae bibendum eget id. Nunc, et, morbi ipsum, nisl ac eget. Velit eget vulputate viverra vulputate. Tempus, viverra nam pellentesque integer. Pellentesque libero, vitae vitae non vitae non montes, scelerisque. Quisque arcu aliquam massa netus porttit.
                 </p>
             </div>
-            <div className="w-full md:w-2/5 lg:w-1/2 h-full mt-12 sm:mt-0">
-                <img src="/assets/img/team.jpg" className="w-full h-full object-cover rounded" />
+            <div className="w-full md:w-2/5 lg:w-1/2 h-full mt-12 sm:mt-0 relative">
+                <Image
+                    src="/assets/img/team.jpg"
+                    alt="team"
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded "
+                    />
             </div>
         </div>
       </section>

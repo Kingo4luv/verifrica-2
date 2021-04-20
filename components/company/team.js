@@ -2,6 +2,7 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { Component } from 'react';
 import dynamic from "next/dynamic";
+import Image from 'next/image';
 const OwlCarousel = dynamic(import("react-owl-carousel"), {
     ssr: false,
 });
@@ -57,7 +58,7 @@ class TeamSection extends Component{
         <div className="w-full flex ">
             <div className="flex flex-nowrap space-x-7 mt-12 sm:mt-20 w-full pr-0 lg:pr-4 flex-none">
                <OwlCarousel className='owl-theme ' {...options}> 
-                    <div className="overflow-hidden">
+                    <div className="overflow-hidden relative">
                         <img src="/assets/img/member-1.jpg" className="w-full h-full object-cover rounded-lg" />
                         <dl className="space-y-4 mt-4">
                             <dt className="text-2xl md:text-4xl font-bold italic">Tobi</dt>
