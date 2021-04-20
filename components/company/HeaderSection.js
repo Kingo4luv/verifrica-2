@@ -8,7 +8,7 @@ const CompanyHeaderSection = () => {
           <Nav theme="white" />
           <div>
               <Slide bottom>
-              <h1 className="text-2xl md:text-4xl lg:text-5xl text-left sm:text-center px-4 font-bold leading-none lg:leading-snug text-black mt-12 md:mt-32">
+              <h1 className="text-2xl md:text-4xl lg:text-5xl text-left sm:text-center px-4 font-bold leading-tight lg:leading-snug text-black mt-12 md:mt-32">
                   Our mission is to unlock <br className="block sm:hidden" /> financial <br className="hidden sm:block" />
                   freedom for <br className="block sm:hidden" />everyone
               </h1>
