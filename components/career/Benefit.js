@@ -6,7 +6,7 @@ import LearningStipendIcon from '../../public/assets/svgs/learning-stipend.svg';
 import BenefitBgIcon from '../../public/assets/svgs/benefit-bg.svg';
 const CareerBenefitSection = () => {
     return(
-        <section className="mt-12 sm:mt-52 py-12 lg:py-32 w-full">
+        <section className="mt-32 sm:mt-52 py-12 lg:py-32 w-full">
           <div className="w-full md:w-5/6 mx-auto flex flex-col md:flex-row">
               
               <div className="w-full md:w-1/3 px-4 md:px-0 relative">
@@ -14,13 +14,13 @@ const CareerBenefitSection = () => {
                   <img src={BenefitBgIcon} className="absolute w-52 md:w-auto -top-12 lg:-top-32 z-0" /> 
                   </Slide>
                   <Slide bottom>
-                  <h4 className="text-xl lg:text-4xl font-medium leading-snug relative z-10">
+                  <h4 className="text-2xl lg:text-4xl font-medium leading-snug relative z-10">
                         Benefits of working <br className="hidden md:block" />at <br className="block md:hidden" />Verifrica
                    </h4>
                    </Slide>
               </div>
               <Slide bottom cascade>
-              <ul className="w-full md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-x-2 gap-y-6 mt-32 md:mt-0">
+              <ul className="w-full md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-x-2 gap-y-6 mt-24 md:mt-0">
             
                 <li className=" space-y-4 px-4 pb-8 md:pb-20 rounded-lg">
                 <img src={BenefitPackagesIcon} />

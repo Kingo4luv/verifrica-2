@@ -2,7 +2,7 @@ import Slide from 'react-reveal/Slide'
 const CareerPostionSection = () => {
     return(
         <section className="pb-12">
-        <div className="w-full md:w-5/6 mx-auto px-4">
+        <div className="w-full md:w-5/6 mx-auto px-4 mt-12 md:mt-0">
             <div className="flex flex-col lg:flex-row justify-between items-center space-y-12 lg:space-y-0">
                 <Slide bottom>
                 <h3 className="text-2xl md:text-3xl lg:text-5xl font-bold text-center md:text-left">Latest Positions </h3>
@@ -16,7 +16,7 @@ const CareerPostionSection = () => {
                         <button className="w-3/4 md:w-60 py-[0.5rem] md:py-2 border border-black rounded-[4px] text-base px-4 leading-tight flex relative items-center text-black font-light focus:outline-none">
                             <span>All Department</span>
                             <span className="absolute right-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                                 </svg>
                             </span>
@@ -28,7 +28,7 @@ const CareerPostionSection = () => {
                         <button className="w-full md:w-80 py-[0.6rem] md:py-2 border border-black rounded-[4px] px-4 leading-2 flex relative items-center text-grey text-sm font-light focus:outline-none ">
                             <span>Search roles...</span>
                             <span className="absolute right-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                                 </svg>
                             </span>

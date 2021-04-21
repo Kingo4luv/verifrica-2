@@ -2,7 +2,7 @@ import Zoom from 'react-reveal/Zoom'
 import Slide from 'react-reveal/Slide'
 const CareerTeamSection = () => {
     return(
-        <section className="pt-12 pb-32 md:py-32 bg-yellow px-4 mb-0 md:mb-32 relative">
+        <section className="pt-12 pb-32 md:py-32 bg-yellow px-4 mb-0 md:mb-32 mt-24 md:mt-0 relative">
         <div className="w-full md:w-5/6 mx-auto flex flex-col-reverse md:flex-row">
             <div className="w-full md:w-1/2 h-auto lg:h-104 mt-10 md:mt-0">
                 <Zoom>
