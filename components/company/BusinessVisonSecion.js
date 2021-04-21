@@ -2,7 +2,7 @@ import Slide from 'react-reveal/Slide';
 const BusinessVisionSection = () => {
     return(
         <>
-        <section className="flex flex-col md:flex-row justify-center items-center w-full mt-0 mb-0 md:mt-32 lg:mt-52">
+        <section className="flex flex-col md:flex-row justify-center items-center w-full mt-0 mb-0 md:mt-12">
              <div className="w-full md:w-1/2 space-y-4 pt-20 pb-20 lg:pt-40 lg:pb-64 px-4 md:pl-10 xl:pl-32">
                 <Slide bottom> 
                 <div className="h-12 sm:h-16 w-12 sm:w-16 bg-light-blue rounded-full flex justify-center items-center">

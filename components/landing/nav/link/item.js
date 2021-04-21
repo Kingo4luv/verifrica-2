@@ -3,12 +3,12 @@ import NavLinkDropdown from "./dropdown"
 
 const LinkItem = ({link, theme}) => {
     return(
-        <li className="nav-dropdown flex items-center cursor-pointer py-6">
+        <li className="nav-dropdown flex items-center cursor-pointer py-6 ">
             {link.url ? (<Link href={link.url}>
                 <a><span className="mr-2 text-sm lg:text-base">{link.name}</span></a>
             </Link>):(
                 <>
-                    <span className="mr-2 text-sm lg:text-base">{link.name}</span>
+                    <span className="mr-2 text-sm lg:text-base font-light">{link.name}</span>
                         {link.hasDropdown && 
                         (
                         <>

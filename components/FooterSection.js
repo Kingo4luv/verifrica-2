@@ -2,8 +2,8 @@ import Link from "next/link";
 import Slide from 'react-reveal/Slide';
 const FooterSection = () => {
     return(
-        <footer className="py-12 md:py-32 px-6 bg-footer-black">
-          <div className="text-white flex flex-col justify-start sm:justify-center itmes-start sm:items-center">
+        <footer className="py-6 px-6 bg-footer-black">
+          {/* <div className="text-white flex flex-col justify-start sm:justify-center itmes-start sm:items-center">
             <Slide bottom>
             <h2 className="text-left md:text-center text-2xl md:text-4xl font-bold leading-relaxed">
               Ready to use Verifrica?<br/>
@@ -20,8 +20,8 @@ const FooterSection = () => {
                   </Link></li>
                   </Slide>
               </ul>
-          </div>
-          <div className="flex flex-col sm:flex-row text-white pb-32 pt-24 md:pt-52">
+          </div> */}
+          <div className="flex flex-col sm:flex-row text-white pb-32 pt-12">
             <div className="w-full sm:w-2/6 md:w-2/7 lg:w-1/6 pl-0 lg:pl-4">
               <svg width="104" height="26" viewBox="0 0 104 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fillRule="evenodd" clipRule="evenodd" d="M5.78555 15.6569C5.47814 15.1152 5.30259 14.489 5.30259 13.8221C5.30259 11.7655 6.97223 10.0959 9.02876 10.0959H11.1801L8.00231 4.59421C7.37103 3.43268 6.14005 2.64355 4.72618 2.64355C2.66964 2.64355 1.00001 4.31319 1.00001 6.36973C1.00001 7.05389 1.18486 7.69531 1.50718 8.24668L5.78555 15.6569Z" stroke="white" strokeMiterlimit="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -94,12 +94,9 @@ const FooterSection = () => {
                 </Slide>
                 <Slide bottom cascade>
                 <ul className="text-sm font-light space-y-3 text-gray-400">
-                  <li>How it works</li>
-                  <li>Discover apps</li>
                   <li>Why Verifrica?</li>
-                  <li>Manage connections</li>
-                  <li>Help</li>
-                  <li>Trouble connecting?</li>
+                  <li>Help Desk</li>
+                  <li>What's new</li>
                 </ul>
                 </Slide>
               </div>

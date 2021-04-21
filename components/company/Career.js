@@ -22,8 +22,8 @@ const CareerSection = () => {
                 </Slide>
                 <Slide bottom>
                 <div className="mt-5 flex justify-center items-center w-full px-2 sm:px-0">
-                    <Link href="/" className="">
-                    <a className="w-full sm:w-auto px-0 sm:px-24 py-4 bg-blue rounded text-center text-sm font-medium text-white tracking-wide mt-6">See current opening</a>
+                    <Link href="/company/career" className="">
+                        <a className="w-full sm:w-auto px-0 sm:px-24 py-4 bg-blue rounded text-center text-sm font-medium text-white tracking-wide mt-6 z-10">See current opening</a>
                     </Link>
                 </div>
                 </Slide>
