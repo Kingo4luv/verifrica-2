@@ -33,7 +33,7 @@ class TeamSection extends Component{
                        items: 4,
                    },
                    1200: {
-                       items: 5,
+                       items: 4,
                    }
            },
            onInitialized: function () {

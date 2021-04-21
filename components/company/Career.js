@@ -6,8 +6,8 @@ const CareerSection = () => {
     return(
         <section className="flex w-full flex-col py-12 lg:py-32 my-4 px-4 lg:px-0">
          <div className="flex justify-between w-full">
-            <div className="w-full h-20 lg:h-32 lg:flex justify-center items-center hidden">
-                <div className="w-20 lg:w-32 h-full rounded-full">
+            <div className="w-full h-20 lg:h-40 lg:flex justify-center items-center hidden">
+                <div className="w-20 lg:w-40 h-full rounded-full">
                   <Zoom>  
                   <img src="/assets/img/team-top-left.png" className="w-full h-full object-cover object-center" />
                   </Zoom>
@@ -18,7 +18,7 @@ const CareerSection = () => {
                 <h2 className="text-2xl lg:text-4xl font-bold text-black text-center">Join Our Team</h2>
                 </Slide>
                 <Slide bottom>
-                <p className="text-center text-sm lg:text-xl text-black lg:text-grey">We have diverse backgrounds and skills, but we're all passionate about building a more efficient and inclusive financial infrastructure—together.</p>
+                <p className="text-center text-base lg:text-xl text-black lg:text-grey">We have diverse backgrounds and skills, but we're all passionate about building a more efficient and inclusive financial infrastructure—together.</p>
                 </Slide>
                 <Slide bottom>
                 <div className="mt-5 flex justify-center items-center w-full">
@@ -28,8 +28,8 @@ const CareerSection = () => {
                 </div>
                 </Slide>
             </div>
-            <div className="w-full h-20 lg:h-32 lg:flex justify-center items-center hidden">
-                <div className="w-20 lg:w-32 h-full rounded-full">
+            <div className="w-full h-20 lg:h-40 lg:flex justify-center items-center hidden">
+                <div className="w-20 lg:w-40 h-full rounded-full">
                   <Zoom>  
                   <img src="/assets/img/team-top-right.png" className="w-full h-full object-cover object-center" />
                   </Zoom>
@@ -57,8 +57,8 @@ const CareerSection = () => {
             </div>
          </div>
          <div className="lg:flex justify-between relative w-2/4 mx-auto hidden">
-                <div className="w-full h-20 lg:h-32 flex justify-center items-center">
-                    <div className="w-20 lg:w-32 h-full rounded-full">
+                <div className="w-full h-20 lg:h-40 flex justify-center items-center">
+                    <div className="w-20 lg:w-40 h-full rounded-full">
                         <Zoom >
                         <img src="/assets/img/team-bottom-left.png" className="w-full h-full object-cover object-center" />
                         </Zoom>
@@ -71,8 +71,8 @@ const CareerSection = () => {
                     </svg>
                 </div>
                 </Slide>
-                <div className="w-full h-20 lg:h-32 flex justify-center items-center">
-                    <div className="w-20 lg:w-32 h-full rounded-full">
+                <div className="w-full h-20 lg:h-40 flex justify-center items-center">
+                    <div className="w-20 lg:w-40 h-full rounded-full">
                         <Zoom>
                         <img src="/assets/img/team-bottom-right.png" className="w-full h-full object-cover object-center" />
                         </Zoom>
