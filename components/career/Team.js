@@ -29,7 +29,7 @@ const CareerTeamSection = () => {
         <div className="absolute left-0 w-full py-6 flex justify-center items-center px-4">
             <div className="w-full md:w-4/6 xl:w-2/6 bg-white py-6 md:py-12 px-4 lg:px-12 rounded text-center space-y-6 md:space-y-12 text-black" style={{boxShadow:"0px 0px 20px rgba(215, 215, 215, 0.25)"}}>
                 <Slide bottom>
-                <p className="text-base lg:text-xl">
+                <p className="text-base lg:text-xl font-bold md:font-normal">
                     “I am very proud to be a part of the Verifrica team, it is a very welcoming and positive atmosphere.”
                 </p>
                 </Slide>
