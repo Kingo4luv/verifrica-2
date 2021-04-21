@@ -19,7 +19,7 @@ const CompanyHeaderSection = () => {
           </div>
           <div className="w-full flex space-x-3 mt-12 md:mt-32 relative box-border">
                 <div className="w-1/12 md:w-1/6 h-40 md:h-96 relative ">
-                    <div className="w-full h-full bg-gray-200 transform -skew-y-15 absolute  top-2 sm:top-[0.8rem] md:top-8 lg:top-10 xl:top-[3.2rem] 2xlxl:top-[4.4rem] ">
+                    <div className="w-full h-full bg-gray-200 transform -skew-y-15 absolute  top-2 sm:top-[0.8rem] md:top-8 lg:top-10 xl:top-[3.2rem] 2xl:top-[4.4rem] ">
                     <Image
                         src="/assets/img/skew-left.jpeg"
                         alt="team-1"
