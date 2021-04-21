@@ -21,9 +21,9 @@ const CareerSection = () => {
                 <p className="text-center text-base lg:text-xl text-black lg:text-grey">We have diverse backgrounds and skills, but we're all passionate about building a more efficient and inclusive financial infrastructure—together.</p>
                 </Slide>
                 <Slide bottom>
-                <div className="mt-5 flex justify-center items-center w-full">
+                <div className="mt-5 flex justify-center items-center w-full px-2 sm:px-0">
                     <Link href="/" className="">
-                    <a className="px-24 py-4 bg-blue rounded text-center text-sm font-medium text-white tracking-wide mt-6">See current opening</a>
+                    <a className="w-full sm:w-auto px-0 sm:px-24 py-4 bg-blue rounded text-center text-sm font-medium text-white tracking-wide mt-6">See current opening</a>
                     </Link>
                 </div>
                 </Slide>

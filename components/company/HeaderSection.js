@@ -38,7 +38,7 @@ const CompanyHeaderSection = () => {
                     <img src="/assets/img/skew-center.jpeg" className="w-full h-full object-cover object-center" />
                 </div>
                 <div className="w-2/12 md:w-1/6 h-40 md:h-96 relative ">
-                    <div className="w-full h-full bg-gray-200 transform -skew-y-15 absolute bottom-[0.8rem] sm:bottom-6 md:bottom-8 lg:bottom-10 xl:bottom-12 2xl:bottom-[4.2rem] ">
+                    <div className="w-full h-full bg-gray-200 transform -skew-y-15 absolute bottom-[1rem] sm:bottom-6 md:bottom-8 lg:bottom-10 xl:bottom-12 2xl:bottom-[4.2rem] ">
                     <Image
                         src="/assets/img/skew-right.jpg"
                         alt="team-3"
