@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Nav from '../landing/nav';
+import Nav from '../nav';
 import Slide from 'react-reveal/Slide'
 
 const CompanyHeaderSection = () => {

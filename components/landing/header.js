@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import HeroBackground from '../../public/assets/svgs/hero-background.svg';
-import Nav from './nav';
+import Nav from '../nav';
 import { motion } from "framer-motion"
 import Slide from 'react-reveal/Slide'
 
