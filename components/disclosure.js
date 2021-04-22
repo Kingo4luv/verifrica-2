@@ -13,7 +13,7 @@ const Disclosure = ({item}) => {
         < div className = {
             `disclosure px-2 py-4 rounded ${isOpen ? item.color  : 'md:hover:bg-white' }`
         } >
-            <div type="button" className={`header focus:outline-none flex space-x-4 items-center w-full `} onClick={toggleIsOpen}>
+            <div className="flex space-x-4 items-center w-full" onClick={toggleIsOpen}>
                 <span className={`h-10 w-10 sm:h-12 sm:w-12 rounded ${isOpen ? 'bg-white' : item.color}`}></span>
                 <span className="text-black font-medium text-sm sm:text-base">{item.title}</span>
                 <span>
