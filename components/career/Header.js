@@ -40,7 +40,7 @@ const CareerHeaderSection = () => {
                 <div className="w-full md:w-2/4 lg:w-full mx-auto space-y-12 lg:space-y-5">
                     <div className="space-y-3 lg:space-y-6">
                         <Slide bottom>
-                        <h2 className="text-2xl lg:text-6xl font-bold text-black text-center">Career at Verifrica</h2>
+                        <h2 className="text-2xl lg:text-5xl font-bold text-black text-center">Career at Verifrica</h2>
                         </Slide>
                         <Slide bottom>
                             <p className="text-center text-sm lg:text-xl text-black">Help us build thefuture of financial services</p>
