@@ -13,7 +13,7 @@ const Disclosure = ({item}) => {
         < div className = {
             `disclosure px-2 py-4 rounded ${isOpen ? item.color  : 'md:hover:bg-white' }`
         } >
-            <button className={`header focus:outline-none flex space-x-4 items-center w-full `} onClick={toggleIsOpen}>
+            <div type="button" className={`header focus:outline-none flex space-x-4 items-center w-full `} onClick={toggleIsOpen}>
                 <span className={`h-10 w-10 sm:h-12 sm:w-12 rounded ${isOpen ? 'bg-white' : item.color}`}></span>
                 <span className="text-black font-medium text-sm sm:text-base">{item.title}</span>
                 <span>
@@ -21,7 +21,7 @@ const Disclosure = ({item}) => {
                     {isOpen ? (<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 15l7-7 7 7" />) : (<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />)}
                 </svg>
                 </span>
-            </button>
+            </div>
             <Transition
             show={isOpen}
             enter="transition duration-100 ease-out"
