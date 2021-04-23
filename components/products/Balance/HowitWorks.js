@@ -1,6 +1,4 @@
 import Disclosure from "../../disclosure"
-import Slide from "react-reveal/Slide";
-import Zoom from "react-reveal/Zoom";
 import CodeComponent from "../../code";
 const items = [{
         color: "bg-yellow",
