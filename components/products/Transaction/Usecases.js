@@ -7,7 +7,6 @@ const UseCases = () => {
     return (
         <section className="py-16  w-full">
           <div className="w-full md:w-5/6 mx-auto flex flex-col md:flex-row">
-              
               <div className="w-full md:w-1/3 px-4 md:px-0 relative space-y-2">
                   <Slide bottom>
                   <h4 className="text-2xl lg:text-4xl font-medium leading-snug relative z-10">

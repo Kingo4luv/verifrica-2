@@ -24,6 +24,15 @@
 .service-box:hover{
   box-shadow: 0px 0px 20px rgba(215, 215, 215, 0.25);
 }
+.scrolling-wrapper {
+  -webkit-overflow-scrolling: touch;
+
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
 
 @tailwind utilities;
 
