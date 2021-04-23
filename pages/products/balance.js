@@ -2,11 +2,9 @@ import Head from "next/head";
 import FooterSection from "../../components/FooterSection";
 import RealTimeIcon from '../../public/assets/svgs/real-time.svg'
 import OpenBankingIcon from '../../public/assets/svgs/open-banking.svg'
-import PreventSearchIcon from '../../public/assets/svgs/prevent-search.svg'
 import HeaderSection from "../../components/products/Balance/HeaderSection";
 import ProductFeatures from "../../components/products/Balance/ProductFeatures";
 import HowItWorks from "../../components/products/Balance/HowItWorks";
-import UseCases from "../../components/products/Authentication/Usecases";
 
 const items = [
     {
