@@ -4,7 +4,6 @@ import RealTimeIcon from '../../public/assets/svgs/real-time.svg'
 import OpenBankingIcon from '../../public/assets/svgs/open-banking.svg'
 import HeaderSection from "../../components/products/Balance/HeaderSection";
 import ProductFeatures from "../../components/products/Balance/ProductFeatures";
-import HowItWorks from "../../components/products/Balance/HowItWorks";
 import Disclosure from "../../components/disclosure";
 import CodeComponent from "../../components/code";
 
