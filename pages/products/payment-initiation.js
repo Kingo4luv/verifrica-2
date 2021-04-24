@@ -8,7 +8,6 @@ import FlexiblePaymentIcon from '../../public/assets/svgs/flexible-payment.svg'
 import VerifyPaymentIcon from '../../public/assets/svgs/verify-payment.svg'
 import HeaderSection from "../../components/products/Payment/HeaderSection";
 import ProductFeatures from "../../components/products/Assets/ProductFeatures";
-import HowItWorks from "../../components/products/Assets/HowItWorks";
 import UseCases from "../../components/products/Payment/Usecases";
 import InitiatePaymentSection from "../../components/InitiatePaymentSection";
 
@@ -58,7 +57,6 @@ const PaymentInitiation = () => {
       <HeaderSection />
       <ProductFeatures items={items}/>
       <InitiatePaymentSection />
-      <HowItWorks />
       <UseCases />
       <FooterSection />
     </div>
