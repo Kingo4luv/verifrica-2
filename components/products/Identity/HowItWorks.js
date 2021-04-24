@@ -1,7 +1,3 @@
-import Highlight, { defaultProps } from "prism-react-renderer";
-import theme from "prism-react-renderer/themes/dracula";
-import HomeCode from '../../../markdown/home.js';
-
 import Link from "next/link";
 import CodeComponent from "../../code.js";
 const HowItWorks = () => {
