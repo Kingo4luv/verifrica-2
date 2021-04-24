@@ -9,7 +9,6 @@ import VerifyPaymentIcon from '../../public/assets/svgs/verify-payment.svg'
 import HeaderSection from "../../components/products/Payment/HeaderSection";
 import ProductFeatures from "../../components/products/Assets/ProductFeatures";
 import HowItWorks from "../../components/products/Assets/HowItWorks";
-import BlueMobile from "../../components/products/Assets/BlueMobileSection";
 import UseCases from "../../components/products/Payment/Usecases";
 import InitiatePaymentSection from "../../components/InitiatePaymentSection";
 

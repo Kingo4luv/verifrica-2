@@ -31,7 +31,7 @@ const Balance = () => {
       </Head>
       <HeaderSection />
       <ProductFeatures items={items}/>
-      <HowItWorks />
+      {/* <HowItWorks /> */}
       <FooterSection />
     </div>
     )
