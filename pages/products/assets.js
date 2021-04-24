@@ -5,7 +5,6 @@ import PreventSearchIcon from '../../public/assets/svgs/prevent-search.svg'
 import OpenBankingIcon from '../../public/assets/svgs/open-banking.svg'
 import HeaderSection from "../../components/products/Assets/HeaderSection";
 import ProductFeatures from "../../components/products/Assets/ProductFeatures";
-import HowItWorks from "../../components/products/Assets/HowItWorks";
 import BlueMobile from "../../components/products/Assets/BlueMobileSection";
 
 const items = [
@@ -38,7 +37,6 @@ const Assets = () => {
       </Head>
       <HeaderSection />
       <ProductFeatures items={items}/>
-      <HowItWorks />
       <BlueMobile />
       <FooterSection />
     </div>
