@@ -33,7 +33,7 @@ const links = [
             {
                 name: 'Payment Initiations',
                 text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit ac vitae habitasse rutrum.',
-                url: "/products/payment-initiatons"
+                url: "/products/payment-initiation"
             },
         ]
     }, {

@@ -19,7 +19,7 @@ const items = [{
 const HowItWorks = () => {
     return(
         <section className="py-12 md:py-24 bg-client-grey mt-12">
-        <div className="w-full md:w-10/12 xl:w-4/5 flex flex-col md:flex-row mx-auto px-4 md:px-0">
+        <div className="w-full md:w-10/12 xl:w-4/5 flex flex-col md:flex-row mx-auto px-4 md:px-0 space-x-0 md:space-x-4">
           <div className="w-full md:w-1/2 space-y-5">
             <h5 className="text-grey text-sm sm:text-base">How it works</h5>
             <h3 className="text-2xl md:text-4xl font-bold leading-tight  md:leading-snug">
@@ -36,7 +36,7 @@ const HowItWorks = () => {
               })}
             </div>
           </div>
-          <div className="w-full md:w-1/2 py-2 justify-center items-center flex">
+          <div className="w-full md:w-1/2 py-2 justify-center items-center md:flex mt-12 md:mt-0">
              <CodeComponent />
           </div>
         </div>

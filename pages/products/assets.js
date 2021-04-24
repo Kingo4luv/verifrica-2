@@ -1,15 +1,22 @@
 import Head from "next/head";
 import FooterSection from "../../components/FooterSection";
-import RealTimeIcon from '../../public/assets/svgs/real-time.svg'
+import SnapshotIcon from '../../public/assets/svgs/snapshot.svg'
+import PreventSearchIcon from '../../public/assets/svgs/prevent-search.svg'
 import OpenBankingIcon from '../../public/assets/svgs/open-banking.svg'
-import HeaderSection from "../../components/products/Balance/HeaderSection";
-import ProductFeatures from "../../components/products/Balance/ProductFeatures";
-import HowItWorks from "../../components/products/Balance/HowItWorks";
+import HeaderSection from "../../components/products/Assets/HeaderSection";
+import ProductFeatures from "../../components/products/Assets/ProductFeatures";
+import HowItWorks from "../../components/products/Assets/HowItWorks";
+import BlueMobile from "../../components/products/Assets/BlueMobileSection";
 
 const items = [
     {
-        title: "Real-time data",
-        icon: RealTimeIcon,
+        title: "Snapshot of a user’s finances",
+        icon: SnapshotIcon,
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+    },
+    {
+        title: "Transaction Insights",
+        icon: PreventSearchIcon,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
     },
     {
@@ -19,11 +26,11 @@ const items = [
     },
 ]
 
-const Balance = () => {
+const Assets = () => {
     return(
     <div className="Balance">
       <Head>
-        <title>Verifrica | Products - Balance</title>
+        <title>Verifrica | Products - Assets</title>
         <link rel="icon" href="/favicon.ico" />
         <meta charSet="UTF-8"/>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -32,9 +39,10 @@ const Balance = () => {
       <HeaderSection />
       <ProductFeatures items={items}/>
       <HowItWorks />
+      <BlueMobile />
       <FooterSection />
     </div>
     )
 }
 
-export default Balance;
+export default Assets;

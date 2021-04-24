@@ -1,3 +1,7 @@
+import Highlight, { defaultProps } from "prism-react-renderer";
+import theme from "prism-react-renderer/themes/dracula";
+import HomeCode from '../../../markdown/home.js';
+
 import Link from "next/link";
 import CodeComponent from "../../code.js";
 const HowItWorks = () => {
@@ -14,7 +18,7 @@ const HowItWorks = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra enim viverra cras urna pretium. Nunc aliquet pretium, integer nulla nunc nisi viverra puneque, viverra vitae, in. 
                 </p>
             </div>
-            <div className="w-1/2 sm:w-auto">
+            <div className="w-full sm:w-auto">
                 <Link href="/" className="block">
                 <a className="px-0 sm:px-8 lg:px-16 py-3 md:py-4 rounded text-sm bg-blue font-medium text-white w-full block sm:inline text-center tracking-wide mt-6 border border-blue">View Api docs</a>
               </Link>
