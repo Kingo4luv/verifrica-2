@@ -14,7 +14,7 @@ const items = [{
     },
 
 ]
-const HowItWorks = () => {
+const HowItWork = () => {
     return(
         <section className="py-12 md:py-24 bg-client-grey mt-12">
         <div className="w-full md:w-10/12 xl:w-4/5 flex flex-col md:flex-row mx-auto px-4 md:px-0">
@@ -42,4 +42,4 @@ const HowItWorks = () => {
     )
 }
 
-export default HowItWorks;
+export default HowItWork;

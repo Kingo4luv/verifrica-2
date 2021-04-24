@@ -4,7 +4,7 @@ import RealTimeIcon from '../../public/assets/svgs/real-time.svg'
 import OpenBankingIcon from '../../public/assets/svgs/open-banking.svg'
 import HeaderSection from "../../components/products/Balance/HeaderSection";
 import ProductFeatures from "../../components/products/Balance/ProductFeatures";
-import HowItWorks from "../../components/products/Balance/HowItWorks";
+import HowItWork from "../../components/products/Balance/HowItWork";
 
 const items = [
     {
@@ -31,7 +31,7 @@ const Balance = () => {
       </Head>
       <HeaderSection />
       <ProductFeatures items={items}/>
-      {/* <HowItWorks /> */}
+      <HowItWork />
       <FooterSection />
     </div>
     )
