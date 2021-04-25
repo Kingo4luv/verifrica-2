@@ -21,6 +21,8 @@ const series = [{
 const InitiatePaymentSection = () => {
     const [currentItem, setCurrentItem] = useState(series[0]);
     const [currentItemIndex, setCurrentItemIndex] = useState(0);
+    const [touchStart, setTouchStart] = useState(0);
+    const [touchEnd, setTouchEnd] = useState(0);
 
     const moveDown = () => {
         if (currentItemIndex === series.length - 1) {
@@ -43,6 +45,22 @@ const InitiatePaymentSection = () => {
     const selectCurrentItem = (index) => {
         setCurrentItem(series[index])
          setCurrentItemIndex(index)
+    }
+
+    const handleTouchStart = (e) => {
+        setTouchStart(e.targetTouches[0].clientX);
+    }
+    const handleTouchMove = (e) => {
+        setTouchEnd(e.targetTouches[0].clientX);
+    }
+
+    const handleTouchEnd = () => {
+        if(touchStart - touchEnd > 150){
+            moveDown()
+        }
+        if(touchStart - touchEnd < -150){
+            moveUp()
+        }
     }
 
     return(
@@ -72,7 +90,7 @@ const InitiatePaymentSection = () => {
                         </button>
                     </div>
                 </div>
-                <div className="w-full lg:w-1/2 flex flex-col justify-center items-center">
+                <div className="w-full lg:w-1/2 flex flex-col justify-center items-center" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd} onTouchMove={handleTouchMove}>
                     <img src="/assets/img/mobile-1.png" className="w-4/5 sm:w-2/5 md:w-3/5 lg:w-10/12 xl:w-auto" alt="phone"/>
 
                     <div className="flex items-center space-x-3 mt-5 lg:hidden">
