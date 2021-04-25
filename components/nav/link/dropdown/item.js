@@ -10,10 +10,10 @@ const DropdownItem = ({item, totalItems}) => {
                         <img src={item.icon} className="w-8 h-8 " />
                     </div>
                     <div className="space-y-2">
-                        <span className="font-medium text-black ">
+                        <span className="font-medium text-black text-sm ">
                             {item.name}
                         </span>
-                        <p className="text-grey text-sm">
+                        <p className="text-grey text-xs">
                             {item.text}
                         </p>
                     </div>
