@@ -42,13 +42,41 @@ const FooterSection = () => {
                 </Slide>
                 <Slide bottom cascade>
                 <ul className="text-sm font-light space-y-3 text-gray-400">
-                  <li>Transaction</li>
-                  <li>Authentication</li>
-                  <li>Balance</li>
-                  <li>Identity</li>
-                  <li>Investments</li>
-                  <li>Assets</li>
-                  <li>Pricing</li>
+                  <li>
+                    <Link href="/products/transactions">
+                      <a>Transaction</a>
+                    </Link> 
+                  </li>
+                  <li>
+                    <Link href="/products/authentication">
+                      <a>Authentication</a>
+                    </Link> 
+                  </li>
+                  <li>
+                    <Link href="/products/balance">
+                      <a>Balance</a>
+                    </Link> 
+                  </li>
+                  <li>
+                    <Link href="/products/identity">
+                      <a>Identity</a>
+                    </Link> 
+                  </li>
+                  <li>
+                    <Link href="/products/investments">
+                      <a>Investments</a>
+                    </Link> 
+                  </li>
+                  <li>
+                    <Link href="/products/assets">
+                      <a>Assets</a>
+                    </Link> 
+                  </li>
+                  <li>
+                    <Link href="/products/pricing">
+                      <a>Pricing</a>
+                    </Link> 
+                  </li>
                 </ul>
                 </Slide>
               </div>
@@ -60,12 +88,36 @@ const FooterSection = () => {
                 </Slide>
                 <Slide bottom cascade>
                 <ul className="text-sm font-light space-y-3 text-gray-400">
-                  <li>Personal finances</li>
-                  <li>Consumer payments</li>
-                  <li>Lending</li>
-                  <li>Banking</li>
-                  <li>Wealth</li>
-                  <li>Business finances</li>
+                  <li>
+                    <Link href="/use-cases/personal-finances">
+                      <a>Personal finances</a>
+                    </Link> 
+                  </li>
+                  <li>
+                    <Link href="/use-cases/consumer-payments">
+                      <a>Consumer payments</a>
+                    </Link> 
+                  </li>
+                  <li>
+                    <Link href="/use-cases/lending">
+                      <a>Lending</a>
+                    </Link> 
+                  </li>
+                  <li>
+                    <Link href="/use-cases/banking">
+                      <a>Banking</a>
+                    </Link> 
+                  </li>
+                  <li>
+                    <Link href="/use-cases/wealth">
+                      <a>Wealth</a>
+                    </Link> 
+                  </li>
+                  <li>
+                    <Link href="/use-cases/business-finances">
+                      <a>Business finances</a>
+                    </Link> 
+                  </li>
                 </ul>
                 </Slide>
               </div>

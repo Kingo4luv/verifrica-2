@@ -2,22 +2,16 @@ import PersonalFinancesIcon from '../../../public/assets/svgs/personal-finances.
 import BankingIcon from '../../../public/assets/svgs/banking.svg'
 import LendingIcon from '../../../public/assets/svgs/lending.svg'
 import BusinessFinancesIcon from '../../../public/assets/svgs/business-finances.svg'
-import Slide from "react-reveal/Slide";
 const UseCases = () => {
     return (
         <section className="py-16  w-full">
           <div className="w-full md:w-5/6 mx-auto flex flex-col md:flex-row">
               <div className="w-full md:w-1/3 px-4 md:px-0 relative space-y-2">
-                  <Slide bottom>
                   <h4 className="text-2xl lg:text-4xl font-medium leading-snug relative z-10">
                         Use Cases
                    </h4>
-                   </Slide>
-                    <Slide bottom>
                    <p className="text-sm sm:text-base text-grey">Understand how our product works, <br className="hidden lg:block"/>and make the most of it.</p>
-                  </Slide>
               </div>
-              <Slide bottom cascade>
               <ul className="w-full md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-x-2 gap-y-6 mt-24 md:mt-0">
             
                 <li className=" space-y-4 px-4 pb-8 md:pb-20 rounded-lg">
@@ -60,7 +54,6 @@ const UseCases = () => {
                 </dl>
                 </li>
           </ul>
-          </Slide>
           </div>
       </section>
     )

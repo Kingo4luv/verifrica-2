@@ -5,8 +5,8 @@ import OpenBankingIcon from '../../public/assets/svgs/open-banking.svg'
 import PreventSearchIcon from '../../public/assets/svgs/prevent-search.svg'
 import HeaderSection from "../../components/products/Authentication/HeaderSection";
 import ProductFeatures from "../../components/products/Authentication/ProductFeatures";
-import HowItWorks from "../../components/products/Authentication/HowItWorks";
 import UseCases from "../../components/products/Authentication/Usecases";
+import HowItWorkSection from "../../components/products/HowItworkSection";
 
 const items = [
     {
@@ -38,7 +38,7 @@ const Authentication = () => {
       </Head>
       <HeaderSection />
       <ProductFeatures items={items} />
-      <HowItWorks />
+      <HowItWorkSection disclosure={true} hasCode={true} />
       <UseCases/>
       <FooterSection />
     </div>

@@ -1,10 +1,9 @@
 import Head from "next/head";
-
 import FooterSection from "../../components/FooterSection";
 import RingSection from "../../components/products/Transaction/RingSection";
-import HowItWorks from "../../components/products/HowitWorks";
 import UseCases from "../../components/products/Transaction/Usecases";
 import HeaderSection from "../../components/products/Transaction/HeaderSection";
+import HowItWorkSection from "../../components/products/HowItworkSection";
 
 
 const Transaction = () => {
@@ -19,7 +18,7 @@ const Transaction = () => {
       </Head>
       <HeaderSection />
       <RingSection />
-      <HowItWorks />
+      <HowItWorkSection hasDisclosure={true} hasCode={false} />
       <UseCases />
       <FooterSection />
     </div>

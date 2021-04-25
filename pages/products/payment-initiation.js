@@ -10,6 +10,7 @@ import HeaderSection from "../../components/products/Payment/HeaderSection";
 import ProductFeatures from "../../components/products/Assets/ProductFeatures";
 import UseCases from "../../components/products/Payment/Usecases";
 import InitiatePaymentSection from "../../components/InitiatePaymentSection";
+import HowItWorkSection from "../../components/products/HowItworkSection";
 
 const items = [
     {
@@ -57,6 +58,7 @@ const PaymentInitiation = () => {
       <HeaderSection />
       <ProductFeatures items={items}/>
       <InitiatePaymentSection />
+      <HowItWorkSection disclosure={false} hasCode={true} />
       <UseCases />
       <FooterSection />
     </div>

@@ -1,8 +1,7 @@
 import Head from "next/head";
-
 import FooterSection from "../../components/FooterSection";
+import HowItWorkSection from "../../components/products/HowItworkSection";
 import HeaderSection from "../../components/products/Identity/HeaderSection.js";
-import HowItWorks from "../../components/products/Identity/HowItWorks";
 import StarImageSection from "../../components/products/Identity/StarImageSection.js";
 
 
@@ -19,7 +18,7 @@ const Identity = () => {
       </Head>
       <HeaderSection />
       <StarImageSection />
-      <HowItWorks />
+      <HowItWorkSection disclosure={false} hasCode={true} />
       <FooterSection />
     </div>
     )

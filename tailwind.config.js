@@ -25,6 +25,7 @@ module.exports = {
         "card-blue": "#029CCF",
         "footer-black": "#191919",
         "toggle-green": "#AADE87",
+        "mobile-nav-blue": '#029CCF'
 
       },
       fontSize: {

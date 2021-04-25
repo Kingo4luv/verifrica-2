@@ -42,9 +42,7 @@ class TeamSection extends Component{
        }
     return(
         <section className="py-16 bg-yellow">
-          <Slide bottom>
             <h5 className="text-left md:text-center text-black text-lg md:text-2xl px-4 font-medium md:font-normal">Meet the Team</h5>
-          </Slide>  
           <div className="sm:flex justify-center items-center space-x-12 mt-12 hidden">
             <button className="focus:outline-none" onClick={() => this.carousel.prev()}>
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">

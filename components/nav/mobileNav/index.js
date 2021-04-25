@@ -67,20 +67,8 @@ const links = [
         ]
     }, {
         name: 'For Developers',
-        hasDropdown: true,
-        dropdownItems: [{
-                name: 'Quick start',
-                url: "/developers/quick-start"
-            },
-            {
-                name: 'API documentation',
-                url: "/developers/documentation"
-            },
-            {
-                name: 'Github',
-                url: "/developers/github"
-            },
-        ]
+        hasDropdown: false,
+        url: "/developers"
     },
     {
         name: 'Pricing',
@@ -131,7 +119,7 @@ const MobileNav = ({toggleMobileNav, theme}) => {
                 </div>
             </div>
             < ul className = {
-                `${theme === 'white' ? 'text-black' : 'text-white'} space-y-6 mt-4 font-light`
+                `${theme === 'white' ? 'text-black' : 'text-white'} mt-4 font-light`
             } >
                 {links.map((link, index) => {
                     return(

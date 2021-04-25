@@ -9,7 +9,7 @@ const MobileNavList = ({link, theme}) => {
         setIsOpen(!isOpen);
     }
     return (
-        <li onClick={toggleLink}>
+        <li className="py-3" onClick={toggleLink}>
           <div className="flex justify-between px-4">
             {link.url ? (<Link href={link.url}>
                 <a><span>{link.name}</span></a>

@@ -84,7 +84,6 @@ const InitiatePaymentSection = () => {
                                 onClick = {
                                     (() => selectCurrentItem(i))
                                 }
-                                key={item.title}
                                 />
                             )
                         })}
