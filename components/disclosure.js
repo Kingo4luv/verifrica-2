@@ -9,7 +9,6 @@ const Disclosure = ({item}) => {
         setIsOpen(!isOpen);
     }
     return(
-        <Slide bottom>
         < div className = {
             `disclosure px-2 py-4 rounded ${isOpen ? item.color  : 'md:hover:bg-white' }`
         } >
@@ -39,7 +38,6 @@ const Disclosure = ({item}) => {
                 </div>}
             </Transition>
         </div>
-        </Slide>
     )
 }
 

@@ -7,7 +7,7 @@ const HeaderSection = () => {
         <div className="w-full md:w-11/12 xl:w-5/6 py-12 md:py-32 mx-auto flex flex-col md:flex-row px-4 md:px-0">
           <div className="w-full md:w-1/2 space-y-0 sm:space-y-12">
             <div className="w-full space-y-4 md:space-y-6">
-              <h3 className="text-grey">Assets</h3>
+              <h3 className="text-grey">Payment Initiation</h3>
               <h1 className="text-2xl md:text-3xl lg:text-5xl text-black font-bold leading-snug pr-0 2xl:pr-40">
                   Instant bank payment within your app
                </h1>

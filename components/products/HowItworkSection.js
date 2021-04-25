@@ -47,7 +47,7 @@ const HowItWorkSection = ({hasCode, hasDisclosure}) => {
              {hasCode ? (
                <CodeComponent />
              ) : (
-                <img src="/assets/img/mobile-1.png" className="w-full md:w-4/5 lg:w-10/12 xl:w-auto" alt="phone"/>
+                <img src="/assets/img/mobile-1.png" className="w-4/5 lg:w-10/12 xl:w-auto" alt="phone"/>
              )}
           </div>
         </div>
