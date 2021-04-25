@@ -64,7 +64,7 @@ const InitiatePaymentSection = () => {
     }
 
     return(
-        <section className="bg-footer-black py-24 px-4 md:px-0">
+        <section className="bg-footer-black py-24 px-4 md:px-0" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd} onTouchMove={handleTouchMove}>
         <div className="w-full md:4/5 xl:w-10/12 mx-auto flex flex-col md:flex-row">
             <div className="w-full md:w-1/2 2xl:w-7/12 flex">
                 <div className="w-full lg:w-7/12 2xl:w-1/2 hidden lg:flex flex-col justify-center items-center">
@@ -90,7 +90,7 @@ const InitiatePaymentSection = () => {
                         </button>
                     </div>
                 </div>
-                <div className="w-full lg:w-1/2 flex flex-col justify-center items-center" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd} onTouchMove={handleTouchMove}>
+                <div className="w-full lg:w-1/2 flex flex-col justify-center items-center">
                     <img src="/assets/img/mobile-1.png" className="w-4/5 sm:w-2/5 md:w-3/5 lg:w-10/12 xl:w-auto" alt="phone"/>
 
                     <div className="flex items-center space-x-3 mt-5 lg:hidden">
