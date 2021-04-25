@@ -55,10 +55,10 @@ const InitiatePaymentSection = () => {
     }
 
     const handleTouchEnd = () => {
-        if(touchStart - touchEnd > 150){
+        if(touchStart - touchEnd > 50){
             moveDown()
         }
-        if(touchStart - touchEnd < -150){
+        if(touchStart - touchEnd < -50){
             moveUp()
         }
     }
