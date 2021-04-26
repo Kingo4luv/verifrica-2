@@ -29,7 +29,7 @@ const ContactSection = () => {
                                         type="text"
                                         autoComplete="off"
                                         required
-                                        className="appearance-none rounded-none relative bg-white block w-full px-3 py-3 md:py-4 border-l border-t border-b border-[#D1D1D1] placeholder-form-text text-form-text rounded-tl focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base"
+                                        className="appearance-none rounded-none relative bg-white block w-full px-3 py-3 md:py-4 border-l border-t border-b border-[#D1D1D1] placeholder-form-text-grey text-form-text-grey rounded-tl focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base"
                                         placeholder="First name"
                                     />
                                 </div>
@@ -43,7 +43,7 @@ const ContactSection = () => {
                                         type="text"
                                         autoComplete="off"
                                         required
-                                        className = "appearance-none rounded-none relative bg-white block w-full px-3 py-3 md:py-4 border border-[#D1D1D1] placeholder-form-text text-form-text rounded-tr focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base"
+                                        className = "appearance-none rounded-none relative bg-white block w-full px-3 py-3 md:py-4 border-r border-t border-b border-l-0 border-[#D1D1D1] placeholder-form-text-grey text-form-text-grey rounded-tr focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base"
                                         placeholder="Last name"
                                     />
                                 </div>
@@ -57,7 +57,7 @@ const ContactSection = () => {
                                     type="email"
                                     autoComplete="off"
                                     required
-                                    className="appearance-none rounded-none relative block w-full px-3 py-3 md:py-4 border border-[#D1D1D1] placeholder-form-text text-form-text focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base"
+                                    className="appearance-none rounded-none relative block w-full px-3 py-3 md:py-4 border border-[#D1D1D1] placeholder-form-text-grey text-form-text-grey focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base"
                                     placeholder="Email Address"
                                 />
                             </div>
@@ -70,7 +70,7 @@ const ContactSection = () => {
                                     type="company"
                                     autoComplete="off"
                                     required
-                                    className = "appearance-none rounded-none relative block w-full px-3 py-3 md:py-4 border border-[#D1D1D1] placeholder-form-text text-form-text focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base"
+                                    className = "appearance-none rounded-none relative block w-full px-3 py-3 md:py-4 border border-[#D1D1D1] placeholder-form-text-grey text-form-text-grey focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base"
                                     placeholder="Company"
                                 />
                             </div>
