@@ -68,10 +68,21 @@ module.exports = {
         124: "54rem",
         128: "60rem",
       },
+
+      fontSize: {
+        "head": ['3rem', '3.75rem'],
+        "headline-3": ['3rem', '4.375rem'],
+        "headline-6": ['1.25rem', '1.875rem'],
+        "head-text": ['1rem', '1.58rem'],
+        "subtitle-2": ['1rem', '1.5rem'],
+        "subtitle-3": ['0.875rem', '1.5rem']
+      }
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }

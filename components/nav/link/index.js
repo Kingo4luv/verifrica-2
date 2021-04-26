@@ -64,37 +64,37 @@ const links = [
                 name: 'Personal Finances',
                 icon: PersonalFinancesIcon,
                 text: 'Fostering saving, budgeting and managing your finances.',
-                url: "/use-case/personal-finances"
+                url: "/use-cases/personal-finances"
             },
             {
                 name: 'Consumer Payments',
                 icon: ConsumerPaymentsIcon,
                 text: 'A simple and seamless means to pay bills and send money with ease.',
-                url: "/use-case/consumers-payments"
+                url: "/use-cases/consumers-payments"
             },
             {
                 name: 'Lending',
                 icon: LendingIcon,
                 text: 'Aiding individuals and businesses access capital through an efficient process.',
-                url: "/use-case/lending"
+                url: "/use-cases/lending"
             },
             {
                 name: 'Banking',
                 icon: BankingIcon,
                 text: 'Providing individuals with good plans on expanding finances through investment.',
-                url: "/use-case/banking"
+                url: "/use-cases/banking"
             },
             {
                 name: 'Wealth',
                 icon: WealthIcon,
                 text: 'Providing users with a banking experience, fund your account and manage savings.  ',
-                url: "/use-case/wealth"
+                url: "/use-cases/wealth"
             },
             {
                 name: 'Business Finances',
                 icon: BusinessFinancesIcon,
                 text: 'Aiding businesses manage funds, make payment, analyze financial reports and send payroll.',
-                url: "/use-case/business-finances"
+                url: "/use-cases/business-finances"
             },
         ]
     },

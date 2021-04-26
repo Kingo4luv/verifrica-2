@@ -43,7 +43,7 @@ const HowItWorkSection = ({hasCode, hasDisclosure}) => {
             </div>
             )}
           </div>
-          <div className="w-full md:w-1/2 py-2 justify-center items-center flex mt-12 md:-0">
+          <div className="w-full md:w-1/2 py-2 justify-center items-center flex mt-12 md:mt-0">
              {hasCode ? (
                <CodeComponent />
              ) : (

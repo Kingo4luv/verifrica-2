@@ -1,4 +1,3 @@
-import Slide from 'react-reveal/Slide'
 import BenefitPackagesIcon from '../../public/assets/svgs/benefit-packages.svg';
 import EquityPackagesIcon from '../../public/assets/svgs/equity-packages.svg';
 import FlexibleVacationIcon from '../../public/assets/svgs/flexible-vacation.svg';

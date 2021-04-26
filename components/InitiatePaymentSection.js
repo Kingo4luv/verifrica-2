@@ -55,17 +55,17 @@ const InitiatePaymentSection = () => {
     }
 
     const handleTouchEnd = () => {
-        if(touchStart - touchEnd > 50){
+        if(touchStart - touchEnd > 150){
             moveDown()
         }
-        if(touchStart - touchEnd < -50){
+        if(touchStart - touchEnd < -150){
             moveUp()
         }
     }
 
     return(
-        <section className="bg-footer-black py-24 px-4 md:px-0" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd} onTouchMove={handleTouchMove}>
-        <div className="w-full md:4/5 xl:w-10/12 mx-auto flex flex-col md:flex-row">
+        <section className="bg-footer-black py-24 px-4 xl:px-0" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd} onTouchMove={handleTouchMove}>
+        <div className="w-full max-w-screen-2xl mx-auto flex flex-col md:flex-row">
             <div className="w-full md:w-1/2 2xl:w-7/12 flex">
                 <div className="w-full lg:w-7/12 2xl:w-1/2 hidden lg:flex flex-col justify-center items-center">
                     <div className="space-y-12 flex flex-col items-end">
@@ -102,6 +102,7 @@ const InitiatePaymentSection = () => {
                                 onClick = {
                                     (() => selectCurrentItem(i))
                                 }
+
                                 key={i}
                                 />
                             )
@@ -112,7 +113,7 @@ const InitiatePaymentSection = () => {
             <div className="w-full md:w-1/2 lg:w-5/12 2xl:w-5/12 flex justify-center items-center mt-12 md:mt-0">
                 <dl className="w-full sm:w-4/5 xl:w-10/12 2xl:w-3/5 text-white space-y-4 text-center md:text-left">
                     <dt className="font-bold text-2xl md:text-4xl">{currentItem.title}</dt>
-                    <dd className="text-gray-300 font-light text-sm sm:text-base px-4 md:px-0">
+                    <dd className="text-gray-300 font-light text-subtitle-3 sm:text-subtitle-2 px-4 md:px-0">
                         {currentItem.description}
                     </dd>
                 </dl>
