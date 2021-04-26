@@ -62,7 +62,6 @@ const InitiatePaymentSection = () => {
             moveUp()
         }
     }
-
     return(
         <section className="bg-footer-black py-24 px-4 xl:px-0" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd} onTouchMove={handleTouchMove}>
         <div className="w-full max-w-screen-2xl mx-auto flex flex-col md:flex-row">
