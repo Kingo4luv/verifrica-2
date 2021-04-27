@@ -1,8 +1,6 @@
 import Link from 'next/link';
-import Pulse from 'react-reveal/Pulse';
 const DropdownItem = ({item, totalItems}) => {
     return(
-        <Pulse>
         <li className={`py-6 flex`}>
             <Link className="" href={item.url}>
                 <a className="flex text-hair space-x-4 p-4 hover:bg-gray-50 rounded">
@@ -20,7 +18,6 @@ const DropdownItem = ({item, totalItems}) => {
                 </a>
              </Link>
         </li>
-        </Pulse>
     )
 }
 

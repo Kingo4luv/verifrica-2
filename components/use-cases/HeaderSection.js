@@ -5,7 +5,7 @@ const HeaderSection = ({heroContent:{title, description, image}}) => {
     return(
     <header className="w-full">
         <Nav theme="white" />
-        <div className="w-full flex flex-col md:flex-row mx-auto">
+        <div className="w-full flex flex-col md:flex-row mx-auto h-auto lg:h-screen">
             <div className="w-full md:w-1/2 flex justify-center items-center pt-4 pb-12 md:py-24 px-4">
                 <div className="w-full max-w-xl space-y-2 sm:space-y-5 md:space-y-12">
                     <div className="space-y-5">

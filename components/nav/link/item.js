@@ -7,7 +7,7 @@ const LinkItem = ({link, theme}) => {
     return(
         <li className={`nav-dropdown cursor-pointer py-4 px-2 xl:px-6 `}>
             < div className = {
-                ` flex items-center py-1 hover:border-b-4 font-light ${theme === 'white' ? 'border-card-blue' : 'border-yellow'} transition ease-in-out delay-75  ${ (!link.url && link.dropdownItems.map((item) => item.url).includes(router.pathname)) || link.url === router.pathname ? theme === 'white' ? 'border-b-4 border-card-blue':'border-b-4 border-yellow': ''}`
+                ` flex items-center py-1 hover:border-b-[3px] font-light ${theme === 'white' ? 'border-black' : 'border-yellow'} transition ease-in-out delay-75  ${ (!link.url && link.dropdownItems.map((item) => item.url).includes(router.pathname)) || link.url === router.pathname ? theme === 'white' ? 'border-b-[3px] border-black':'border-b-[3px] border-yellow': ''}`
                 } >
                 {link.url ? (<Link href={link.url}>
                 <a><span className="mr-2 text-sm lg:text-base">{link.name}</span></a>

@@ -117,7 +117,7 @@ const links = [
 
 const NavLink = ({theme}) => {
     return(
-        <ul className={`lg:flex ${theme === 'white' ? 'text-black' : 'text-white'} hidden`}>
+        <ul className={`lg:flex mt-2 ${theme === 'white' ? 'text-black' : 'text-white'} hidden`}>
             {links.map((link, index) => {
                 return(
                     <LinkItem link={link} key={index} theme={theme} />

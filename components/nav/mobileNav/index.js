@@ -50,7 +50,7 @@ const links = [
             },
             {
                 name: 'Lending',
-                url: "/use-case/lending"
+                url: "/use-cases/lending"
             },
             {
                 name: 'Banking',

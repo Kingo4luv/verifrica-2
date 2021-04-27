@@ -94,7 +94,7 @@ const FooterSection = () => {
                     </Link> 
                   </li>
                   <li>
-                    <Link href="/use-cases/consumer-payments">
+                    <Link href="/use-cases/consumers-payments">
                       <a>Consumer payments</a>
                     </Link> 
                   </li>
