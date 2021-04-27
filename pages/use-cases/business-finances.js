@@ -1,9 +1,9 @@
 import Head from "next/head";
 import ClientSection from '../../components/ClientSection';
-import DartIcon from '../../public/assets/svgs/dart.svg'
-import BalanceCheckIcon from '../../public/assets/svgs/balance-check.svg'
-import ChartIcon from '../../public/assets/svgs/chart.svg'
-import ManageDebtIcon from '../../public/assets/svgs/manage-debt.svg'
+import RocketIcon from '../../public/assets/svgs/rockets.svg'
+import InvoiceIcon from '../../public/assets/svgs/invoice.svg'
+import CoinIcon from '../../public/assets/svgs/coin.svg'
+import FolderIcon from '../../public/assets/svgs/folder.svg'
 import InitiatePaymentSection from '../../components/InitiatePaymentSection';
 import FooterSection from '../../components/FooterSection';
 import HeaderSection from "../../components/use-cases/HeaderSection";
@@ -13,43 +13,43 @@ import ContactSection from "../../components/use-cases/ContactSection";
 
 
 const items = [{
-        title: "Encourage users to save",
-        icon: DartIcon,
+        title: "Faster  payment enrollment",
+        icon: RocketIcon,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
     },
     {
-        title: "Enable in-app balance checks",
-        icon: BalanceCheckIcon,
+        title: "Smoother Invoicing",
+        icon: InvoiceIcon,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
     },
     {
-        title: "Understand’s a user’s investments",
-        icon: ChartIcon,
+        title: "Simplify expense management",
+        icon: CoinIcon,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
     },
     {
-        title: "Help people manage debt",
-        icon: ManageDebtIcon,
+        title: "Better Bookkeeping",
+        icon: FolderIcon,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
     }
 ]
 
 const heroContent = {
-    title: "Help users improve their financial health with categorized transactions",
+    title: "Make it easy for everyone to manage business finances",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra enim viverra cras urna pretium. Nunc aliquet pretium, integer nulla nunc nisi viverra purus. Orci, pretium ut nisl neque, viverra vitae, in.",
-    image: "/assets/img/personal-finances.jpg"
+    image: "/assets/img/business-finances.jpg"
 }
 
 const  problemSolution = {
-    problem: "Obtaining a comprehensive picture of users' financial health is often times difficult when they have accounts at multiple financial institutions.",
-    solution: "Verifrica consolidates financial data from multiple sources and categorizes transaction data with typically 24 months of history, making it easy to use and analyze."
+    problem: "From bookkeeping to payroll, business finance and accounting processes are complex experiences for employees and customers alike.",
+    solution: "Verifrica reduces administrative time by giving users an easier way to connect their financial accounts to your software or app."
 }
 
-const PersonalFinances = () => {
+const BusinessFinances = () => {
     return(
     <div className="Home">
       <Head>
-        <title>Verifrica | Use Cases - Personal Finances</title>
+        <title>Verifrica | Use Cases - Business Finances</title>
         <link rel="icon" href="/favicon.ico" />
         <meta charSet="UTF-8"/>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -66,4 +66,4 @@ const PersonalFinances = () => {
     )
 }
 
-export default PersonalFinances;
+export default BusinessFinances;

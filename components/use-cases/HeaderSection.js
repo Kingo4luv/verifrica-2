@@ -1,19 +1,19 @@
 import Link from "next/link";
 import Nav from "../nav"
 
-const HeaderSection = () => {
+const HeaderSection = ({heroContent:{title, description, image}}) => {
     return(
     <header className="w-full">
         <Nav theme="white" />
         <div className="w-full flex flex-col md:flex-row mx-auto">
             <div className="w-full md:w-1/2 flex justify-center items-center pt-4 pb-12 md:py-24 px-4">
-                <div className="w-full max-w-lg space-y-2 sm:space-y-5 md:space-y-12">
+                <div className="w-full max-w-xl space-y-2 sm:space-y-5 md:space-y-12">
                     <div className="space-y-5">
                         <h1 className="text-2xl md:text-4xl lg:text-head font-bold">
-                        Help users improve their financial health with categorized transactions
+                         {title}
                         </h1>
-                        <p className="text-black leading-relaxed text-sm sm:text-head-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra enim viverra cras urna pretium. Nunc aliquet pretium, integer nulla nunc nisi viverra purus. Orci, pretium ut nisl neque, viverra vitae, in. 
+                        <p className="text-black text-subtitle-3 sm:text-head-text">
+                           {description}
                         </p>
 
                     </div>
@@ -32,7 +32,7 @@ const HeaderSection = () => {
                     </div>
             </div>
             <div className="w-full md:w-1/2">
-                <img src="/assets/img/personal-finances.jpg" className="w-full h-96 md:h-full object-cover object-center"/>
+                <img src={image} className="w-full h-96 md:h-full object-cover object-center"/>
             </div>
         </div>
       </header>

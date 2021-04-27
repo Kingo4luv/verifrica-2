@@ -1,9 +1,8 @@
 import Head from "next/head";
 import ClientSection from '../../components/ClientSection';
-import DartIcon from '../../public/assets/svgs/dart.svg'
-import BalanceCheckIcon from '../../public/assets/svgs/balance-check.svg'
-import ChartIcon from '../../public/assets/svgs/chart.svg'
-import ManageDebtIcon from '../../public/assets/svgs/manage-debt.svg'
+import CloudIcon from '../../public/assets/svgs/cloud.svg'
+import GearIcon from '../../public/assets/svgs/gear.svg'
+import OverdraftIcon from '../../public/assets/svgs/overdraft.svg'
 import InitiatePaymentSection from '../../components/InitiatePaymentSection';
 import FooterSection from '../../components/FooterSection';
 import HeaderSection from "../../components/use-cases/HeaderSection";
@@ -13,43 +12,38 @@ import ContactSection from "../../components/use-cases/ContactSection";
 
 
 const items = [{
-        title: "Encourage users to save",
-        icon: DartIcon,
+        title: "Get account and routing numbers",
+        icon: CloudIcon,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
     },
     {
-        title: "Enable in-app balance checks",
-        icon: BalanceCheckIcon,
+        title: "Lower risk and reduce fraud",
+        icon: GearIcon,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
     },
     {
-        title: "Understand’s a user’s investments",
-        icon: ChartIcon,
+        title: "Reduce NSF fees  and overdrafts",
+        icon: OverdraftIcon,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
     },
-    {
-        title: "Help people manage debt",
-        icon: ManageDebtIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
-    }
 ]
 
 const heroContent = {
-    title: "Help users improve their financial health with categorized transactions",
+    title: "Make it easy for people to pay their friends, bills, or other businesses",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra enim viverra cras urna pretium. Nunc aliquet pretium, integer nulla nunc nisi viverra purus. Orci, pretium ut nisl neque, viverra vitae, in.",
-    image: "/assets/img/personal-finances.jpg"
+    image: "/assets/img/consumers-payments.jpg"
 }
 
 const  problemSolution = {
-    problem: "Obtaining a comprehensive picture of users' financial health is often times difficult when they have accounts at multiple financial institutions.",
-    solution: "Verifrica consolidates financial data from multiple sources and categorizes transaction data with typically 24 months of history, making it easy to use and analyze."
+    problem: "Receiving payments via direct bank transfer is significantly less expensive than using credit cards, but getting users signed in and authenticated is a cumbersome process.",
+    solution: "Verifrica makes it faster and easier to set up bank payments through a flow designed with the user experience and security in mind. Users enter their online credentials and Plaid instantly authenticates their account. Plus, in the US, Plaid works with any ACH processor (including Stripe and Dwolla) to simplify bank-to-bank payments."
 }
 
-const PersonalFinances = () => {
+const ConsumersPayment = () => {
     return(
     <div className="Home">
       <Head>
-        <title>Verifrica | Use Cases - Personal Finances</title>
+        <title>Verifrica | Use Cases - Consumer's Payment</title>
         <link rel="icon" href="/favicon.ico" />
         <meta charSet="UTF-8"/>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -66,4 +60,4 @@ const PersonalFinances = () => {
     )
 }
 
-export default PersonalFinances;
+export default ConsumersPayment;

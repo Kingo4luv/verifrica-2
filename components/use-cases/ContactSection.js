@@ -57,7 +57,7 @@ const ContactSection = () => {
                                     type="email"
                                     autoComplete="off"
                                     required
-                                    className="appearance-none rounded-none relative block w-full px-3 py-4 border border-[#D1D1D1] placeholder-form-text-grey text-form-text-grey focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base"
+                                    className = "appearance-none rounded-none relative block w-full px-3 py-4 border border-[#D1D1D1] placeholder-form-text-grey text-form-text-grey focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base"
                                     placeholder="Email Address"
                                 />
                             </div>
@@ -70,14 +70,14 @@ const ContactSection = () => {
                                     type="company"
                                     autoComplete="off"
                                     required
-                                    className = "appearance-none rounded-none relative block w-full px-3 py-4 border border-[#D1D1D1] placeholder-form-text-grey text-form-text-grey focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base"
+                                    className = "appearance-none rounded-none relative block w-full px-3 py-3 md:py-4 border border-[#D1D1D1] placeholder-form-text-grey text-form-text-grey focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base"
                                     placeholder="Company"
                                 />
                             </div>
                             <button type="button" className="text-left relative w-full px-3 py-4 border border-[#D1D1D1] text-form-text-grey focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base">
                                 What are you building?
                                 <span className="absolute right-4 top-4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                                     </svg>
                                 </span>
@@ -85,7 +85,7 @@ const ContactSection = () => {
                             <button type="button" className="text-left relative w-full px-3 py-4 border-r border-l border-[#D1D1D1] text-form-text-grey focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base">
                                What role are you in ?
                                 <span className="absolute right-4 top-4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                                     </svg>
                                 </span>
@@ -93,7 +93,7 @@ const ContactSection = () => {
                             <button type="button" className="text-left relative w-full px-3 py-4 border border-[#D1D1D1] text-form-text-grey rounded-b focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base">
                                 Where are you located
                                 <span className="absolute right-4 top-4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                                     </svg>
                                 </span>

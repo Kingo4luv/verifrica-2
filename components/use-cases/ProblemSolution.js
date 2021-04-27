@@ -1,8 +1,8 @@
-const ProblemSolutionSection = () =>{
+const ProblemSolutionSection = ({problemSolution:{problem, solution}}) =>{
     return(
         <section className="flex flex-col md:flex-row">
-          <div className="w-full md:w-1/2 flex flex-col justify-center items-center py-12 md:py-40 px-4">
-              <div className="w-full max-w-lg space-y-6 md:space-y-12">
+          <div className="w-full md:w-1/2 flex flex-col justify-center items-center py-12 md:py-40 px-4 md:px-0">
+              <div className="w-full max-w-lg space-y-6 md:space-y-12 px-0 md:px-4 xl:px-0">
                   <div className="h-12 sm:h-16 w-12 sm:w-16 bg-yellow rounded-full flex justify-center items-center">
                     <svg className="h-5 sm:h-8 w-5 sm:w-8" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M16.5182 25.9199H14.9726C13.8842 25.9199 12.9996 26.8045 12.9996 27.893V30.0272C12.9996 31.1157 13.8842 32.0003 14.9726 32.0003H16.5182C17.6067 32.0003 18.4913 31.1157 18.4913 30.0272V27.893C18.4913 26.8013 17.6067 25.9199 16.5182 25.9199Z" fill="#292929"/>
@@ -11,7 +11,7 @@ const ProblemSolutionSection = () =>{
                   </div>
                     <h4 className="text-black text-2xl sm:text-2xl lg:text-4xl font-bold">The Problem</h4>
                     <p className="text-subtitle-3 sm:text-subtitle-2 lg:text-headline-6 text-grey">
-                        Obtaining a comprehensive picture of users' financial health is often times difficult when they have accounts at multiple financial institutions.
+                        {problem}
                     </p>
                </div>
           </div>
@@ -29,7 +29,7 @@ const ProblemSolutionSection = () =>{
                   </div>
                     <h4 className="text-black text-2xl sm:text-2xl lg:text-4xl font-bold">The Solution</h4>
                     <p className="text-subtitle-3 sm:text-subtitle-2 lg:text-headline-6 text-black">
-                        Verifrica consolidates financial data from multiple sources and categorizes transaction data with typically 24 months of history, making it easy to use and analyze.
+                        {solution}
                     </p>
                </div>
           </div>
