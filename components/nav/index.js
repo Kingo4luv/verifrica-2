@@ -10,7 +10,7 @@ const Nav = ({theme}) => {
     }
     return(
       <>
-        <nav className={`flex justify-between px-4 lg:px-12 items-center h-16 ${theme === 'white' ? 'bg-white' : 'bg-card-blue'}`}>
+        <nav className={`flex justify-between px-4 lg:px-12 items-center h-16 lg:h-20 ${theme === 'white' ? 'bg-white' : 'bg-card-blue'}`}>
               <Link href="/">
                 <a><div className="logo">
                 {theme == 'white' ? (<svg width="120" height="28" viewBox="0 0 120 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,7 +38,7 @@ const Nav = ({theme}) => {
               </div></a>
               </Link>
               <NavLink theme={theme} />
-              <div className="block lg:hidden mt-3" onClick={toggleMobileNav}>
+              <div className="block lg:hidden" onClick={toggleMobileNav}>
                   <svg xmlns="http://www.w3.org/2000/svg" className={`h-6 w-6 ${theme === 'white' ? 'text-black' : 'text-white'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                   </svg>
