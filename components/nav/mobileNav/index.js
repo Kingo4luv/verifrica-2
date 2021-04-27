@@ -42,11 +42,11 @@ const links = [
         dropdownItems: [{
                 name: 'Personal Finances',
                 text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit ac vitae habitasse rutrum.',
-                url: "/use-case/personal-finances"
+                url: "/use-cases/personal-finances"
             },
             {
                 name: 'Consumer Payments',
-                url: "/use-case/consumers-payments"
+                url: "/use-cases/consumers-payments"
             },
             {
                 name: 'Lending',
@@ -54,15 +54,15 @@ const links = [
             },
             {
                 name: 'Banking',
-                url: "/use-case/banking"
+                url: "/use-cases/banking"
             },
             {
                 name: 'Wealth',
-                url: "/use-case/wealth"
+                url: "/use-cases/wealth"
             },
             {
                 name: 'Business Finances',
-                url: "/use-case/business-finances"
+                url: "/use-cases/business-finances"
             },
         ]
     }, {
