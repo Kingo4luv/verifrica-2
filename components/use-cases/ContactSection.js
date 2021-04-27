@@ -29,7 +29,7 @@ const ContactSection = () => {
                                         type="text"
                                         autoComplete="off"
                                         required
-                                        className="appearance-none rounded-none relative bg-white block w-full px-3 py-3 md:py-4 border-l border-t border-b border-[#D1D1D1] placeholder-form-text-grey text-form-text-grey rounded-tl focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base"
+                                        className="appearance-none rounded-none relative bg-white block w-full px-3 py-4 border-l border-t border-b border-[#D1D1D1] placeholder-form-text-grey text-form-text-grey rounded-tl focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base"
                                         placeholder="First name"
                                     />
                                 </div>
@@ -43,7 +43,7 @@ const ContactSection = () => {
                                         type="text"
                                         autoComplete="off"
                                         required
-                                        className = "appearance-none rounded-none relative bg-white block w-full px-3 py-3 md:py-4 border-r border-t border-b border-l-0 border-[#D1D1D1] placeholder-form-text-grey text-form-text-grey rounded-tr focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base"
+                                        className = "appearance-none rounded-none relative bg-white block w-full px-3 py-4 border-r border-t border-b border-l-0 border-[#D1D1D1] placeholder-form-text-grey text-form-text-grey rounded-tr focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base"
                                         placeholder="Last name"
                                     />
                                 </div>
@@ -57,7 +57,7 @@ const ContactSection = () => {
                                     type="email"
                                     autoComplete="off"
                                     required
-                                    className="appearance-none rounded-none relative block w-full px-3 py-3 md:py-4 border border-[#D1D1D1] placeholder-form-text-grey text-form-text-grey focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base"
+                                    className="appearance-none rounded-none relative block w-full px-3 py-4 border border-[#D1D1D1] placeholder-form-text-grey text-form-text-grey focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base"
                                     placeholder="Email Address"
                                 />
                             </div>
@@ -70,29 +70,29 @@ const ContactSection = () => {
                                     type="company"
                                     autoComplete="off"
                                     required
-                                    className = "appearance-none rounded-none relative block w-full px-3 py-3 md:py-4 border border-[#D1D1D1] placeholder-form-text-grey text-form-text-grey focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base"
+                                    className = "appearance-none rounded-none relative block w-full px-3 py-4 border border-[#D1D1D1] placeholder-form-text-grey text-form-text-grey focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base"
                                     placeholder="Company"
                                 />
                             </div>
-                            <button type="button" className="text-left relative w-full px-3 py-3 md:py-4 border border-[#D1D1D1] text-form-text-grey focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base">
+                            <button type="button" className="text-left relative w-full px-3 py-4 border border-[#D1D1D1] text-form-text-grey focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base">
                                 What are you building?
-                                <span className="absolute right-4 top-3">
+                                <span className="absolute right-4 top-4">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                                     </svg>
                                 </span>
                             </button>
-                            <button type="button" className="text-left relative w-full px-3 py-3 md:py-4 border-r border-l border-[#D1D1D1] text-form-text-grey focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base">
+                            <button type="button" className="text-left relative w-full px-3 py-4 border-r border-l border-[#D1D1D1] text-form-text-grey focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base">
                                What role are you in ?
-                                <span className="absolute right-4 top-3">
+                                <span className="absolute right-4 top-4">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                                     </svg>
                                 </span>
                             </button>
-                            <button type="button" className="text-left relative w-full px-3 py-3 md:py-4 border border-[#D1D1D1] text-form-text-grey rounded-b focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base">
+                            <button type="button" className="text-left relative w-full px-3 py-4 border border-[#D1D1D1] text-form-text-grey rounded-b focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base">
                                 Where are you located
-                                <span className="absolute right-4 top-3">
+                                <span className="absolute right-4 top-4">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                                     </svg>
@@ -102,7 +102,7 @@ const ContactSection = () => {
                         <div>
                             <button
                             type="submit"
-                            className="group relative w-full flex justify-center py-3 md:py-4 px-4 border border-transparent text-sm font-medium rounded text-white bg-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                            className="group relative w-full flex justify-center py-4 px-4 border border-transparent text-sm font-medium rounded text-white bg-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                             >
                              Contact Us
                             </button>
