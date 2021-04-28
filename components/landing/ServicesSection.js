@@ -22,7 +22,7 @@ const ServicesSection = () => {
                 <dt className="text-base md:text-lg text-black font-bold">Personal Finances</dt>
                 <dd className="text-xs sm:text-sm text-grey">Fostering saving, budgeting and managing your finances. </dd>
               </dl>
-              <Link href="/">
+              <Link href="/use-cases/business-finances">
                 <a className="flex text-sm font-medium text-black md:text-grey space-x-2 items-center">
                   <span>
                     Learn more
@@ -43,7 +43,7 @@ const ServicesSection = () => {
                 <dt className="text-base md:text-lg text-black font-bold">Consumer Payments</dt>
                 <dd className="text-xs sm:text-sm text-grey">A simple and seamless means to pay bills and send money with ease.</dd>
               </dl>
-              <Link href="/">
+              <Link href="/use-cases/consumers-payments">
                 <a className="flex text-sm text-black md:text-grey font-medium space-x-2 items-center">
                   <span>
                     Learn more
@@ -64,7 +64,7 @@ const ServicesSection = () => {
                 <dt className="text-base md:text-lg text-black font-bold">Lending</dt>
                 <dd className="text-xs sm:text-sm text-grey">Aiding individuals and businesses access capital through an efficient process.</dd>
               </dl>
-              <Link href="/">
+              <Link href="/use-cases/lending">
                 <a className="flex text-sm text-black md:text-grey font-medium space-x-2 items-center">
                   <span>
                     Learn more
@@ -85,7 +85,7 @@ const ServicesSection = () => {
                 <dt className="text-base md:text-lg text-black font-bold">Wealth</dt>
                 <dd className="text-xs sm:text-sm text-grey">Providing individuals with good plans on expanding finances through investment.</dd>
               </dl>
-              <Link href="/">
+              <Link href="/use-cases/wealth">
                 <a className="flex text-sm text-black md:text-grey font-medium space-x-2 items-center">
                   <span>
                     Learn more
@@ -106,7 +106,7 @@ const ServicesSection = () => {
                 <dt className="text-base md:text-lg text-black font-bold">Banking</dt>
                 <dd className="text-xs sm:text-sm text-grey">Providing users with a banking experience, fund your account and manage savings. </dd>
               </dl>
-              <Link href="/">
+              <Link href="/use-cases/banking">
                 <a className="flex text-sm text-black md:text-grey font-medium space-x-2 items-center">
                   <span>
                     Learn more
@@ -127,7 +127,7 @@ const ServicesSection = () => {
                 <dt className="text-base md:text-lg text-black font-bold">Business Finances</dt>
                 <dd className="text-xs sm:text-sm text-grey">Aiding businesses manage funds, make payment, analyze financial reports and send payroll..</dd>
               </dl>
-              <Link href="/">
+              <Link href="use-cases/business-finances">
                 <a className="flex text-sm text-black md:text-grey font-medium space-x-2 items-center">
                   <span>
                     Learn more

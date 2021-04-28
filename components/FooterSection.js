@@ -73,7 +73,7 @@ const FooterSection = () => {
                     </Link> 
                   </li>
                   <li>
-                    <Link href="/products/pricing">
+                    <Link href="/pricing">
                       <a>Pricing</a>
                     </Link> 
                   </li>
@@ -132,7 +132,11 @@ const FooterSection = () => {
                   <li>Company</li>
                   <li>Career</li>
                   <li>Blog</li>
-                  <li>Contact</li>
+                  <li>
+                    <Link href="/contact-us">
+                      <a>Contact</a>
+                    </Link> 
+                  </li>
                   <li>Security</li>
                   <li>Legal & Privacy</li>
                 </ul>

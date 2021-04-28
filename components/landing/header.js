@@ -40,7 +40,7 @@ const HeaderComponent = () => {
                   <li className="w-full sm:w-auto"><button className="w-full sm:w-auto border border-white px-16 py-3 lg:py-4 rounded text-sm font-medium bg-card-blue">Try Demo</button></li>
                   </Slide>
                   <Slide bottom>
-                  <li> <Link href="/">
+                  <li> <Link href="/contact-us">
                     <a className="underline font-medium">Contact Us</a>
                   </Link></li>
                   </Slide>

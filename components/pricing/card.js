@@ -20,7 +20,7 @@ const PricingCard = ({list}) => {
                     <p className="text-sm font-light pr-6 md:pr-24">{list.description}</p>
                 </div>
                 <div className="w-full">
-                    <LinkButton text={list.btnText} color="primary" />
+                    <LinkButton text={list.btnText} color="primary" url="/" />
                 </div>
 
                 <button className="md:hidden text-sm font-bold flex items-center space-x-1 focus:outline-none" onClick={toggleOpenDetails}>
