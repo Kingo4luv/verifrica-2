@@ -9,7 +9,7 @@ const CodeComponent = () => {
                 <span className="w-3 h-3 bg-green-500 rounded-full"></span>
                 <span className="w-3 h-3 bg-red-500 rounded-full"></span>
             </div>
-            <div className="scrolling-wrapper overflow-auto h-96 md:h-100 rounded-b-lg">
+            <div className="scrolling-wrapper overflow-auto h-96 lg:h-100 rounded-b-lg">
             <Highlight {...defaultProps} theme={theme} code={HomeCode} language="jsx">
                 {({ className, style, tokens, getLineProps, getTokenProps }) => (
                 <pre className={className} style={style}>

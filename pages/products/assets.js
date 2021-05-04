@@ -4,8 +4,9 @@ import SnapshotIcon from '../../public/assets/svgs/snapshot.svg'
 import PreventSearchIcon from '../../public/assets/svgs/prevent-search.svg'
 import OpenBankingIcon from '../../public/assets/svgs/open-banking.svg'
 import HeaderSection from "../../components/products/Assets/HeaderSection";
-import ProductFeatures from "../../components/products/Assets/ProductFeatures";
+import ProductFeatures from "../../components/products/ProductFeatures";
 import BlueMobile from "../../components/products/Assets/BlueMobileSection";
+import HowItWorkSection from "../../components/products/HowItworkSection";
 
 
 const items = [
@@ -38,6 +39,7 @@ const Assets = () => {
       </Head>
       <HeaderSection />
       <ProductFeatures items={items}/>
+      <HowItWorkSection hasDisclosure={true} hasCode={true} />
       <BlueMobile />
       <FooterSection />
     </div>

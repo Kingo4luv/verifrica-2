@@ -11,8 +11,7 @@ import Zoom from "react-reveal/Zoom";
 const RingSection = () => {
     return(
         <section className="pb-32 w-full overflow-hidden">
-        <div className="w-full lg:w-3/5 mx-auto relative flex justify-center items-center mt-8 sm:mt-0">
-            
+        <div className="w-full max-w-screen-xl mx-auto relative flex justify-center items-center mt-8 sm:mt-0">
             <div className="w-100 h-100 md:w-128 md:h-128 border-dashed border border-form-text-grey rounded-full flex justify-center items-center flex-none relative">
                 <div className="absolute inset-0 w-full h-full">
                 <Rotate>
@@ -63,13 +62,13 @@ const RingSection = () => {
             </div>
             <Zoom cascade>
             <div className="absolute top-[75%] left-0 w-full flex justify-center items-center px-4 sm:px-20 lg:px-0">
-              <div className="w-full lg:w-4/5 xl:w-2/4 py-16 sm:py-24 rounded bg-light-shade-blue px-4 md:px-12 relative">
-                <div className="absolute left-[33%]  sm:left-[40%] -top-16">
+              <div className="w-full max-w-xl py-16 sm:py-24 rounded bg-light-shade-blue px-4 md:px-12 relative border">
+                <div className="absolute left-[34%]  sm:left-[38%] -top-16">
                    <Rotate>
                    <img src={VerificaBlueIcon} alt="Verifrica blue" className="w-28 sm:w-36 h-28 sm:h-36 object-cover"/>
                    </Rotate>
                 </div>
-                <p className="text-black text-sm sm:text-lg lg:text-2xl font-bold text-center">
+                <p className="text-black text-sm sm:text-lg lg:text-xl text-center">
                   Directly access your customers' financial data. Your customers will never need to upload PDF transaction reports or manually enter their information again.
                 </p>
               </div>

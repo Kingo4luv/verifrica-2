@@ -20,7 +20,7 @@ const HeaderComponent = () => {
           <Nav />
           <div className="hero pt-8 lg:pt-16 flex flex-col justify-center items-center bg-center" style={{backgroundImage:`url(${HeroBackground})` }}>
             <Slide bottom>
-              <h1 className="text-center text-2xl md:text-4xl lg:text-6xl font-bold leading-normal text-white mt-12">
+              <h1 className="text-center text-2xl md:text-4xl lg:text-main-head font-bold leading-normal text-white mt-12">
                 Build the future of financial <br/>services across <span className="relative">
                   Africa
                     <span className="absolute -bottom-4 md:-bottom-2 -right-3 md:right-9">
@@ -46,7 +46,7 @@ const HeaderComponent = () => {
                   </Slide>
               </ul>
               <Slide bottom>
-              <p className="mt-12 text-sm text-white font-light text-center px-4 sm:px-24">Verifrica helps you access a broad range of high-quality <br className="hidden md:block"/> financial data from banks across Africa through a single API. </p>
+              <p className="mt-12 text-subtitle-3 text-white font-light text-center px-4 max-w-3xl">Verifrica is a payment platform that helps individuals and businesses access a broad range of high-quality financial data from banks across Africa aiding users to make and receive payments with ease. </p>
               </Slide>
               <Slide bottom>
               <div className="mt-12 md:mt-24">

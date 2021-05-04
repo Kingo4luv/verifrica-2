@@ -7,10 +7,14 @@ import FightFraudIcon from '../../public/assets/svgs/fight-fraud.svg'
 import FlexiblePaymentIcon from '../../public/assets/svgs/flexible-payment.svg'
 import VerifyPaymentIcon from '../../public/assets/svgs/verify-payment.svg'
 import HeaderSection from "../../components/products/Payment/HeaderSection";
-import ProductFeatures from "../../components/products/Assets/ProductFeatures";
-import UseCases from "../../components/products/Payment/Usecases";
+import ProductFeatures from "../../components/products/ProductFeatures";
+import UseCases from "../../components/products/Usecases";
 import InitiatePaymentSection from "../../components/InitiatePaymentSection";
 import HowItWorkSection from "../../components/products/HowItworkSection";
+import PersonalFinancesIcon from '../../public/assets/svgs/personal-finances.svg'
+import BankingIcon from '../../public/assets/svgs/banking.svg'
+import LendingIcon from '../../public/assets/svgs/lending.svg'
+import BusinessFinancesIcon from '../../public/assets/svgs/business-finances.svg'
 
 const items = [
     {
@@ -45,6 +49,32 @@ const items = [
     },
 ]
 
+const usecases = {
+    subtitle: "Understand how our product works, and make the most of it.",
+    items: [{
+            title: "Personal Finances",
+            icon: PersonalFinancesIcon,
+            description: 'Fostering saving, budgeting and managing your finances.',
+        },
+        {
+            title: "Banking",
+            icon: BankingIcon,
+            description: 'Providing users with a banking experience, fund your account and manage savings.',
+        },
+        {
+            title: "Lending",
+            icon: LendingIcon,
+            description: 'Aiding individuals and businesses access capital through an efficient process.',
+        },
+
+        {
+            title: "Business Finances",
+            icon: BusinessFinancesIcon,
+            description: 'Aiding businesses manage funds, make payment, analyze financial reports and send payroll.',
+        },
+    ]
+}
+
 const PaymentInitiation = () => {
     return(
     <div className="Balance">
@@ -59,7 +89,7 @@ const PaymentInitiation = () => {
       <ProductFeatures items={items}/>
       <InitiatePaymentSection />
       <HowItWorkSection disclosure={false} hasCode={true} />
-      <UseCases />
+      <UseCases usecases={usecases} />
       <FooterSection />
     </div>
     )

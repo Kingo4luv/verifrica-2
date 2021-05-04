@@ -3,7 +3,7 @@ const DropdownItem = ({item, totalItems}) => {
     return(
         <li className={`py-6 flex`}>
             <Link className="" href={item.url}>
-                <a className="flex text-hair space-x-4 p-4 hover:bg-gray-50 rounded">
+                <a className="flex text-hair space-x-4 py-4 px-2 hover:bg-gray-50 rounded">
                     <div className="flex-none">
                         <img src={item.icon} className="w-8 h-8 " />
                     </div>

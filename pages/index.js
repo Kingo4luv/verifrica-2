@@ -8,7 +8,6 @@ import ExperienceSection from '../components/landing/ExperienceSection';
 import ForDevelopersSection from '../components/landing/ForDevelopersSection';
 import FooterSection from '../components/FooterSection';
 
-
 export default function Home() {
   return (
     <div className="Home">

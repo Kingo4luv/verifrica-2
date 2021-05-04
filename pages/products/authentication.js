@@ -4,9 +4,10 @@ import ConfirmDataIcon from '../../public/assets/svgs/confirm-data.svg'
 import OpenBankingIcon from '../../public/assets/svgs/open-banking.svg'
 import PreventSearchIcon from '../../public/assets/svgs/prevent-search.svg'
 import HeaderSection from "../../components/products/Authentication/HeaderSection";
-import ProductFeatures from "../../components/products/Authentication/ProductFeatures";
-import UseCases from "../../components/products/Authentication/Usecases";
+import ProductFeatures from "../../components/products/ProductFeatures";
 import HowItWorkSection from "../../components/products/HowItworkSection";
+import UseCases from "../../components/products/Usecases";
+import BankingIcon from '../../public/assets/svgs/banking.svg'
 
 const items = [
     {
@@ -26,6 +27,17 @@ const items = [
     },
 ]
 
+const usecases = {
+    subtitle: "Understand how our product works, and make the most of it.",
+    items: [
+        {
+            title: "Banking",
+            icon: BankingIcon,
+            description: 'Providing users with a banking experience, fund your account and manage savings.',
+        },
+    ]
+}
+
 const Authentication = () => {
     return(
     <div className="Home">
@@ -39,7 +51,7 @@ const Authentication = () => {
       <HeaderSection />
       <ProductFeatures items={items} />
       <HowItWorkSection disclosure={true} hasCode={true} />
-      <UseCases/>
+      <UseCases usecases={usecases}/>
       <FooterSection />
     </div>
     )

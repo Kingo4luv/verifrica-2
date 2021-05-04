@@ -1,7 +1,7 @@
 const ContactSection = () => {
     return(
         <section className="w-full px-4 xl:px-0">
-          <div className="w-full max-w-screen-2xl flex flex-col md:flex-row mx-auto py-12 md:py-52 space-y-8 md:space-y-0">
+          <div className="w-full max-w-screen-xl flex flex-col md:flex-row mx-auto py-12 md:py-52 space-y-8 md:space-y-0">
               <div className="w-full md:w-1/2 flex justify-center items-center">
                   <div className="w-full max-w-xl space-y-2 sm:space-y-5 md:space-y-12">
                     <div className="space-y-5">

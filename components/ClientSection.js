@@ -6,36 +6,38 @@ import CowrywiseIcon from '../public/assets/svgs/cowrywise.svg';
 import Slide from 'react-reveal/Slide';
 const ClientSection = () => {
     return(
-        <section className="clients w-full py-16 md:py-24 bg-client-grey space-y-12 md:space-y-20 flex flex-col items-center justify-center px-4">
-          <Slide bottom>
-          <h2 className="text-xl md:text-2xl font-bold text-black">Bringing solutions to 100+ banks and Fintechs</h2>
-          </Slide>
-          <div className="grid grid-cols-3 md:grid-cols-5 gap-12 md:gap-24">
+        <section className="clients w-full py-16 md:py-24 bg-client-grey px-4">
+          <div className="flex flex-col items-center justify-center lg:max-w-screen-lg xl:max-w-screen-xl mx-auto space-y-12 md:space-y-20">
             <Slide bottom>
-            <div className="client-item">
-              <img src={CowrywiseIcon}/>
-            </div>
+            <h2 className="text-xl md:text-2xl font-bold text-black">Bringing solutions to 100+ banks and Fintechs</h2>
             </Slide>
-            <Slide bottom>
-            <div className="client-item">
-              <img src={PiggyvestIcon}/>
+            <div className="grid grid-cols-3 sm:grid-cols-5 gap-12 md:gap-24 lg:gap-40">
+              <Slide bottom>
+              <div className="client-item">
+                <img src={CowrywiseIcon}/>
+              </div>
+              </Slide>
+              <Slide bottom>
+              <div className="client-item">
+                <img src={PiggyvestIcon}/>
+              </div>
+              </Slide>
+              <Slide bottom>
+              <div className="client-item">
+                <img src={PaypalIcon} className="-mt-3 sm:-mt-6"/>
+              </div>
+              </Slide>
+              <Slide bottom>
+              <div className="client-item">
+                <img src={AbnAmbroIcon} className="-mt-3 sm:-mt-6"/>
+              </div>
+              </Slide>
+              <Slide bottom>
+              <div className="client-item">
+                <img src={dominosIcon}/>
+              </div>
+              </Slide>
             </div>
-            </Slide>
-            <Slide bottom>
-            <div className="client-item">
-              <img src={PaypalIcon} className="-mt-3 sm:-mt-6"/>
-            </div>
-            </Slide>
-            <Slide bottom>
-            <div className="client-item">
-              <img src={AbnAmbroIcon} className="-mt-3 sm:-mt-6"/>
-            </div>
-            </Slide>
-            <Slide bottom>
-            <div className="client-item">
-              <img src={dominosIcon}/>
-            </div>
-            </Slide>
           </div>
         </section>
     )

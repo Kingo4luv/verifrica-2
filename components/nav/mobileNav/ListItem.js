@@ -37,7 +37,7 @@ const MobileNavList = ({link, theme}) => {
             {link.hasDropdown && (
             <Slide top cascade>    
             < ul className = {
-                `w-full space-y-5 text-hair px-4 py-4 text-sm font-light ${theme === 'white' ? 'bg-client-grey' : 'bg-white border-l border-card-blue'}`
+                `w-full space-y-5 text-hair px-4 py-4 text-sm font-light ${theme === 'white' || theme === "dark" ? 'bg-client-grey' : 'bg-white border-l border-card-blue'}`
             } >
                 {link.dropdownItems.map((item, index) => {
                     return(
