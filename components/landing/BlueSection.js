@@ -6,7 +6,7 @@ import LinkButton from "../button/LinkButton";
 const BlueSection = () => {
     return (
         <section className="py-16 bg-yellow ">
-          <div className="flex flex-col-reverse md:flex-row box-border mx-auto lg:max-w-screen-lg xl:max-w-screen-xl">
+          <div className="flex flex-col-reverse md:flex-row box-border mx-auto max-w-screen-lg">
             <div className="w-full lg:w-1/2 mt-12 md:mt-0 flex justify-center items-center">
                 <Zoom>
                 <img src="/assets/img/mobile.png" className="w-4/5 h-auto"/>
@@ -19,7 +19,7 @@ const BlueSection = () => {
                       <dt className="text-2xl md:text-headline-5 lg:text-headline-4 font-bold text-hair leading-normal">Connect to financial bank accounts in seconds</dt>
                       </Slide>
                       <Slide bottom>
-                      <dd className="font-light text-subtitle-3 lg:text-subtitle-2 text-hair">
+                      <dd className="font-light text-subtitle-3 lg:text-subtitle-2 text-hair max-w-lg">
                         Verifrica prioritizes the interest of our users, with a flexibility that allows you connect with your financial institution securing <br className="hidden lg:block" /> services, and sharing data across various banking channels.
                       </dd>
                       </Slide>

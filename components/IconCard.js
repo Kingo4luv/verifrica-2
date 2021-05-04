@@ -2,11 +2,11 @@ import Link from "next/link";
 
 const IconCard = ({item : {icon, title, description, url}}) => {
     return(
-        <li className="service-box space-y-4 sm:hover:card-shadow px-2 lg:px-6 py-4 sm:pt-12 lg:pb-20 rounded-lg" >
+        <li className="service-box space-y-4 sm:hover:card-shadow px-4 py-4 sm:py-12 rounded-lg" >
               <img src={icon} />
               <dl className="space-y-3">
                 <dt className="text-base text-black font-bold">{title}</dt>
-                <dd className="text-subtitle-3 text-grey font-light max-w-none md:max-w-sm"> {description}</dd>
+                <dd className="text-subtitle-3 text-grey font-light max-w-md"> {description}</dd>
               </dl>
               {url && <Link href={url}>
                 <a className="flex text-sm text-black md:text-grey font-medium space-x-2 items-center">

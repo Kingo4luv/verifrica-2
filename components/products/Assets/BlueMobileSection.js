@@ -3,14 +3,14 @@ import Link from "next/link";
 const BlueMobile = () => {
     return(
         <section className="py-12 md:py-24 bg-light-shade-blue">
-        <div className="w-full max-w-screen-xl flex flex-col md:flex-row mx-auto px-4">
+        <div className="w-full max-w-screen-lg flex flex-col md:flex-row mx-auto px-4 space-x-4">
           <div className="w-full md:w-1/2 flex flex-col justify-center items-center ">
               <div className = "w-full space-y-12">
                 <div className="space-y-5">
-                    <h3 className="text-2xl md:text-4xl font-bold leading-tight  md:leading-snug">
-                    Introducing the future of <br className="hidden lg:block"/> financial payment in Africa
+                    <h3 className="text-2xl md:text-headline-5 lg:text-headline-4 font-bold">
+                    Introducing the future of financial payment in Africa
                     </h3>
-                    <p className="text-sm sm:text-base pr-0 sm:pr-4 xl:pr-60">
+                    <p className="text-subtitle-3 lg:text-subtitle-2 max-w-md">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra enim viverra cras urna pretium. Nunc aliquet pretium, integer nulla nunc nisi viverra puneque, viverra vitae, in. 
                     </p>
                 </div>

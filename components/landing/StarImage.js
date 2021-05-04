@@ -6,7 +6,7 @@ import LinkButton from "../button/LinkButton";
 const StarImage = () => {
     return (
         <section className="py-20 sm:py-32">
-          <div className="flex flex-col md:flex-row px-4 mx-auto lg:max-w-screen-lg xl:max-w-screen-xl">
+          <div className="flex flex-col md:flex-row px-4 mx-auto max-w-screen-lg">
             <div className="w-full lg:w-1/2 flex flex-col justify-center box-border">
                 <div className="space-y-12 w-full md:max-w-md xl:max-w-lg">
                   <dl className="text-black space-y-8">
@@ -14,7 +14,7 @@ const StarImage = () => {
                     <dt className="text-2xl md:text-headline-5 lg:text-headline-4 font-bold leading-normal max-w-sm">Secure, easy and reliable to use</dt>
                     </Slide>
                     <Slide bottom>
-                    <dd className="font-light text-subtitle-3 lg:text-subtitle-2 text-grey">
+                    <dd className="font-light text-subtitle-3 lg:text-subtitle-2 text-grey max-w-md">
                       We are aware of the importance of your information. Verifrica provides a secure, easy, and reliable to use platform where you can securely and reliably retrieve balance, past transactions, personal identity, etc. 
                     </dd>
                     </Slide>
@@ -27,7 +27,7 @@ const StarImage = () => {
                 </div>
             </div>
             <div className="w-full lg:w-1/2 mt-24 md:mt-0 flex justify-start items-center">
-                <div className="space-y-12 md:space-y-24 xl:space-y-32 w-full">
+                <div className="space-y-12 md:space-y-24 w-full">
                   <div className="w-full h-20 lg:h-32 flex justify-center items-center">
                     <div className="w-20 lg:w-32 h-full rounded-full flex justify-center items-center">
                       <Slide bottom>

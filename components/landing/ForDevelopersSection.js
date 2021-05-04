@@ -9,7 +9,7 @@ import Slide from 'react-reveal/Slide'
 const ForDevelopersSection = () => {
     return(
         <section className="py-12 lg:py-28 bg-client-grey">
-          <div className="flex flex-col sm:flex-row mx-auto lg:max-w-screen-lg xl:max-w-screen-xl">
+          <div className="flex flex-col sm:flex-row mx-auto max-w-screen-lg">
             <div className="w-full sm:w-1/2 flex justify-center items-center py-12 lg:py-32">
               <div className="w-full flex flex-col justify-center px-4">
                 <div className = "space-y-12 sm:px-0 box-border md:max-w-md xl:max-w-lg" >
@@ -18,7 +18,7 @@ const ForDevelopersSection = () => {
                       <dt className="text-2xl md:text-headline-5 lg:text-headline-4 font-bold leading-normal">For developers, by developers</dt>
                       </Slide>
                       <Slide bottom>
-                      <dd className="font-light text-subtitle-3 sm:text-subtitle-2 text-grey">
+                      <dd className="font-light text-subtitle-3 sm:text-subtitle-2 text-grey max-w-md">
                         Verifrica provides developers with access to tools, documentation, and resources on how to access data and financial accounts across Africa 's various banking channels, through our easy and reliable APIs. 
                       </dd>
                       </Slide>

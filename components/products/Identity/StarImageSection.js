@@ -19,7 +19,7 @@ const items = [{
 const StarImageSection = () => {
     return(
       <section className="py-6 lg:py-24 w-full">
-        <div className="max-w-screen-xl mx-auto">
+        <div className="max-w-screen-lg mx-auto">
             <div className="w-full h-96 sm:h-100 lg:h-116 max-w-3xl mx-auto px-4">
               <div className="w-full h-full flex flex-col justify-between">
                 <div className="w-full h-20 lg:h-36 flex justify-center items-center">

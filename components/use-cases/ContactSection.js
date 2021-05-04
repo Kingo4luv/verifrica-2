@@ -1,14 +1,14 @@
 const ContactSection = () => {
     return(
         <section className="w-full px-4 xl:px-0">
-          <div className="w-full max-w-screen-xl flex flex-col md:flex-row mx-auto py-12 md:py-52 space-y-8 md:space-y-0">
+          <div className="w-full max-w-screen-lg flex flex-col md:flex-row mx-auto py-12 md:py-52 space-y-8 md:space-y-0">
               <div className="w-full md:w-1/2 flex justify-center items-center">
                   <div className="w-full max-w-xl space-y-2 sm:space-y-5 md:space-y-12">
                     <div className="space-y-5">
                         <h1 className="text-xl md:text-4xl xl:text-headline-3 font-bold">
                          Questions about how Verifrica can fit into your business ?
                         </h1>
-                        <p className="text-black text-sm sm:text-head-text">
+                        <p className="text-black text-sm sm:text-head-text max-w-lg">
                             Our Sales team can help you find the right solution. Fill out the form and we’ll get in touch shortly.
                         </p>
                     </div>
