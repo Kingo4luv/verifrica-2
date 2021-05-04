@@ -10,7 +10,7 @@ const HeaderSection = () => {
             <div className="w-full md:w-1/2 space-y-6 sm:space-y-12">
               <div className="w-full space-y-4 md:space-y-6">
                 <h3 className="text-black">Identity</h3>
-                <h1 className="text-2xl md:text-headline-5 lg:text-headline-4 text-black font-bold ">
+                <h1 className="text-2xl md:text-headline-5 lg:text-headline-4 text-black font-bold max-w-lg">
                     Confirming user's identity to avoid risk of fraud. 
                 </h1>
                 <p className="text-black text-subtitle-3 lg:text-head-text max-w-lg">

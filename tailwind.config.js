@@ -70,14 +70,14 @@ module.exports = {
       },
 
       fontSize: {
-        "main-head": ['3.75rem', '4rem'],
+        "main-head": ['3.75rem', '4.7rem'],
         "head": ['3rem', '3.75rem'],
         "headline-3": ['3rem', '4.375rem'],
-        "headline-4": ['2.35rem', '3rem'],
+        "headline-4": ['2.13rem', '3.18rem'],
         "headline-5": ['2rem', '2.37rem'],
         "headline-6": ['1.25rem', '1.875rem'],
-        "head-text": ['1rem', '1.58rem'],
-        "subtitle-2": ['1rem', '1.5rem'],
+        "head-text": ['1rem', '1.68rem'],
+        "subtitle-2": ['1rem', '1.625rem'],
         "subtitle-3": ['0.875rem', '1.5rem']
       },
     },

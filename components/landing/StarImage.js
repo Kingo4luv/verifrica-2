@@ -14,7 +14,7 @@ const StarImage = () => {
                     <dt className="text-2xl md:text-headline-5 lg:text-headline-4 font-bold leading-normal max-w-sm">Secure, easy and reliable to use</dt>
                     </Slide>
                     <Slide bottom>
-                    <dd className="font-light text-subtitle-3 sm:text-subtitle-2 text-grey">
+                    <dd className="font-light text-subtitle-3 lg:text-subtitle-2 text-grey">
                       We are aware of the importance of your information. Verifrica provides a secure, easy, and reliable to use platform where you can securely and reliably retrieve balance, past transactions, personal identity, etc. 
                     </dd>
                     </Slide>
@@ -31,14 +31,14 @@ const StarImage = () => {
                   <div className="w-full h-20 lg:h-32 flex justify-center items-center">
                     <div className="w-20 lg:w-32 h-full rounded-full flex justify-center items-center">
                       <Slide bottom>
-                      <img src="/assets/img/top-boy.png" className="w-full h-full object-cover object-center" />
+                      <img src="/assets/img/circle-top.png" className="w-full h-full object-cover object-center rounded-full" />
                       </Slide>
                     </div>
                   </div>
                   <div className="w-full h-20 lg:h-32 flex items-center justify-between">
                     <div className="w-20 lg:w-32 h-full rounded-full flex items-center justify-center">
                       <Slide right>
-                      <img src="/assets/img/left-girl.png" className="w-full h-full object-cover object-center" />
+                      <img src="/assets/img/circle-left.png" className="w-full h-full object-cover object-center rounded-full" />
                       </Slide>
                     </div>
                     <Rotate>
@@ -58,14 +58,14 @@ const StarImage = () => {
                     </Rotate>
                     <div className="w-20 lg:w-32 h-full rounded-full">
                       <Slide left>
-                      <img src="/assets/img/right-boy.png" className="w-full h-full object-cover object-center" />
+                      <img src="/assets/img/circle-right.png" className="w-full h-full object-cover object-center rounded-full" />
                       </Slide>
                     </div>
                   </div>
                   <div className="w-full h-20 lg:h-32 flex justify-center items-center">
                     <div className="w-20 lg:w-32 h-full rounded-full">
                       <Slide top>
-                      <img src="/assets/img/bottom-girl.png" className="w-full h-full object-cover object-center" />
+                      <img src="/assets/img/circle-bottom.png" className="w-full h-full object-cover object-center rounded-full" />
                       </Slide>
                     </div>
                   </div>

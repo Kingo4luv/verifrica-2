@@ -8,10 +8,10 @@ const ExperienceSection = () => {
           <div className="flex flex-col sm:flex-row mx-auto lg:max-w-screen-lg xl:max-w-screen-xl">
             <div className="w-full sm:w-1/2 flex justify-center items-center py-12 lg:py-32 px-4">
               <div className="w-full flex flex-col justify-center">
-                <div className="space-y-12 sm:px-0 box-border md:max-w-md xl:max-w-lg">
+                <div className="space-y-12 sm:px-0 box-border md:max-w-md lg:max-w-lg">
                   <dl className="text-black space-y-8">
                     <Slide bottom>
-                    <dt className="text-2xl md:text-headline-5 lg:text-headline-4 font-bold leading-normal">Beautiful user experience for customers</dt>
+                    <dt className="text-2xl md:text-headline-5 lg:text-headline-4 font-bold leading-normal max-w-md">Beautiful user experience for customers</dt>
                     </Slide>
                     <Slide bottom>
                     <dd className="font-light text-subtitle-3 sm:text-subtitle-2 text-hair">

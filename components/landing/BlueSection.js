@@ -19,7 +19,7 @@ const BlueSection = () => {
                       <dt className="text-2xl md:text-headline-5 lg:text-headline-4 font-bold text-hair leading-normal">Connect to financial bank accounts in seconds</dt>
                       </Slide>
                       <Slide bottom>
-                      <dd className="font-light text-sm md:text-base text-hair">
+                      <dd className="font-light text-subtitle-3 lg:text-subtitle-2 text-hair">
                         Verifrica prioritizes the interest of our users, with a flexibility that allows you connect with your financial institution securing <br className="hidden lg:block" /> services, and sharing data across various banking channels.
                       </dd>
                       </Slide>

@@ -77,7 +77,7 @@ const InitiatePaymentSection = () => {
                         <ul className="text-gray-500 text-right space-y-6">
                             {series.map((item, i) => {
                                return(
-                                    <li className={`text-2xl font-bold hover:text-gray-300 ${currentItem.title === item.title ? "text-white": ""}`} key={i}>{item.title}</li>
+                                    <li className={`text-xl font-bold hover:text-gray-300 ${currentItem.title === item.title ? "text-white": ""}`} key={i}>{item.title}</li>
                                )
                             })}
                         </ul>
@@ -113,7 +113,7 @@ const InitiatePaymentSection = () => {
             <div className="w-full md:w-1/2 flex justify-center items-center mt-12 md:mt-0">
                 <dl className="w-full max-w-sm text-white space-y-4 text-center md:text-left">
                     <dt className="font-bold text-2xl md:text-3xl">{currentItem.title}</dt>
-                    <dd className="text-gray-300 font-light text-subtitle-3 sm:text-subtitle-2 px-4 md:px-0">
+                    <dd className="text-gray-300 font-light text-subtitle-3 lg:text-subtitle-2 px-4 md:px-0">
                         {currentItem.description}
                     </dd>
                 </dl>

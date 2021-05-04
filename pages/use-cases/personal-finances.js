@@ -15,22 +15,22 @@ import ContactSection from "../../components/use-cases/ContactSection";
 const items = [{
         title: "Encourage users to save",
         icon: DartIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio ac felis in libero. Nisl.'
     },
     {
         title: "Enable in-app balance checks",
         icon: BalanceCheckIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio ac felis in libero. Nisl.'
     },
     {
         title: "Understand’s a user’s investments",
         icon: ChartIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio ac felis in libero. Nisl.'
     },
     {
         title: "Help people manage debt",
         icon: ManageDebtIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio ac felis in libero. Nisl.'
     }
 ]
 

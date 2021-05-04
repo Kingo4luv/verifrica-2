@@ -53,7 +53,7 @@ const ServicesSection = () => {
             <Slide bottom>
             <h4 className="text-lg md:text-2xl font-medium text-black leading-relaxed px-4 md:px-0" >Building the future of financial services accross Africa</h4>
             </Slide>
-            <ul className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6 xl:gap-x-6 mt-12">
+            <ul className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-16 mt-12">
               {items.map((item, i) => {
                 return(
                   <IconCard item={item} key={i} />

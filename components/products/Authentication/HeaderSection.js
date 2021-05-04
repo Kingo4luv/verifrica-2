@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import LinkButton from '../../button/LinkButton';
 import Nav from '../../nav';
 const HeaderSection = () => {
@@ -11,7 +10,7 @@ const HeaderSection = () => {
               <div className="w-full space-y-4 md:space-y-6">
                 <h3 className="text-black">Authentication</h3>
                 <h1 className="text-2xl md:text-headline-5 lg:text-headline-4 text-black font-bold">
-                    Seamlessly setup direct debits and payouts
+                    Seamlessly setup enabling users retrieve and verify information.
                 </h1>
                 <p className="text-black text-subtitle-3 lg:text-head-text max-w-lg">
                   Providing a seamless way to initiate debits and payouts, Verifrica Authentication product enables users retrieve account information. Verifrica Authentication also provides verification of users information to minimize the risk of incorrect account information.

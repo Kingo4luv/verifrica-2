@@ -10,8 +10,8 @@ const HeaderSection = () => {
           <div className="w-full md:w-1/2 space-y-6 sm:space-y-12">
             <div className="w-full space-y-4 md:space-y-6 max-w-xl">
               <h3 className="text-black">Transactions</h3>
-              <h1 className="text-2xl md:text-headline-5 lg:text-headline-4 text-black font-bold leading-snug">Retrieve details of previous bank transactions</h1>
-              <p className="text-grey text-subtitle-3 lg:text-head-text max-w-lg">
+              <h1 className="text-2xl md:text-headline-5 lg:text-headline-4 text-black font-bold max-w-lg">Retrieve details of previous bank transactions</h1>
+              <p className="text-black text-subtitle-3 lg:text-head-text max-w-lg">
                 Gain access to every transaction data carried out. Verifrica provides a secure, easy, and reliable to use platform where you can securely and reliably retrieve balance, past transactions, personal identity, expenses, financial reports, and more. 
               </p>
             </div>

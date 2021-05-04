@@ -15,7 +15,7 @@ const UseCases = ({usecases}) => {
                    <p className="text-sm sm:text-base text-grey">{usecases.subtitle}</p>
               </div>
               <div className="w-full">
-                <ul className="w-full grid grid-cols-1 md:grid-cols-2 gap-x-2 gap-y-6 mt-12 md:mt-0">
+                <ul className="w-full grid grid-cols-1 md:grid-cols-2 gap-x-32 gap-y-6 mt-12 md:mt-0">
                   {usecases.items.map((item, i) => {
                     return(
                       <IconCard item={item} key={i} />
