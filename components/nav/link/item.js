@@ -7,13 +7,13 @@ const LinkItem = ({link, theme}) => {
     return(
         <li className={`nav-dropdown cursor-pointer py-4 px-2 xl:px-4 `}>
             < div className = {
-                ` flex items-center py-1  font-light`
+                ` flex items-center font-light`
                 } >
                 {link.url ? (<Link href={link.url}>
-                <a><span className={`mr-2 text-sm hover:border-b-[3px] py-1 ${theme === 'white' || theme === "dark" ? 'border-black' : 'border-yellow'} transition ease-in-out delay-75 ${ (!link.url && link.dropdownItems.map((item) => item.url).includes(router.pathname)) || link.url === router.pathname ? theme === 'white' || theme === "dark" ? 'border-b-[3px] border-black font-medium':'border-b-[3px] border-yellow font-medium': 'font-light'}`}>{link.name}</span></a>
+                <a><span className={`mr-2 text-sm hover:border-b-[3px] pb-1 ${theme === 'white' || theme === "dark" ? 'border-black' : 'border-yellow'} transition ease-in-out delay-75 ${ (!link.url && link.dropdownItems.map((item) => item.url).includes(router.pathname)) || link.url === router.pathname ? theme === 'white' || theme === "dark" ? 'border-b-[3px] border-black font-medium':'border-b-[3px] border-yellow font-medium': 'font-light'}`}>{link.name}</span></a>
             </Link>):(
                 <>
-                    <span className= {`mr-2 text-sm hover:border-b-[3px] py-1 ${theme === 'white' || theme === "dark" ? 'border-black' : 'border-yellow'} transition ease-in-out delay-75 ${ (!link.url && link.dropdownItems.map((item) => item.url).includes(router.pathname)) || link.url === router.pathname ? theme === 'white' || theme === "dark" ? 'border-b-[3px] border-black font-medium':'border-b-[3px] border-yellow font-medium': 'font-light'}`
+                    <span className= {`mr-2 text-sm hover:border-b-[3px] pb-1 ${theme === 'white' || theme === "dark" ? 'border-black' : 'border-yellow'} transition ease-in-out delay-75 ${ (!link.url && link.dropdownItems.map((item) => item.url).includes(router.pathname)) || link.url === router.pathname ? theme === 'white' || theme === "dark" ? 'border-b-[3px] border-black font-medium':'border-b-[3px] border-yellow font-medium': 'font-light'}`
                     }> {
                         link.name
                     } </span>
