@@ -1,8 +1,8 @@
 import Slide from 'react-reveal/Slide'
 const CareerPostionSection = () => {
     return(
-        <section className="pb-12">
-        <div className="w-full md:w-5/6 mx-auto px-4 mt-12 md:mt-0">
+        <section id="positions" className="pb-12">
+        <div className="w-full max-w-screen-xl mx-auto px-4 mt-12 md:mt-0">
             <div className="flex flex-col lg:flex-row justify-between items-center space-y-12 lg:space-y-0">
                 <Slide bottom>
                 <h3 className="text-2xl md:text-3xl lg:text-5xl font-bold text-center md:text-left">Latest Positions </h3>

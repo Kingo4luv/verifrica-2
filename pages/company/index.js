@@ -6,6 +6,19 @@ import CompanyHeaderSection from '../../components/company/HeaderSection';
 import BusinessVisionSection from '../../components/company/BusinessVisonSecion';
 import Culture from '../../components/company/Culture';
 import CareerSection from '../../components/company/Career';
+import WhiteBlueSection from '../../components/WhiteBlueSection';
+
+const whiteBlue = {
+  white: {
+    title: "Our Vision",
+    details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum risus arcu quis lectus."
+  },
+  blue: {
+      title: "Our Business",
+      details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et donec vel consectetur eros, ultricies. Donec adipiscing morbi lacus leo nibh."
+  }
+}
+
 export default function Company() {
   return (
     <div className="Company">
@@ -17,7 +30,7 @@ export default function Company() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <CompanyHeaderSection/>
-      <BusinessVisionSection/>
+      <WhiteBlueSection  whiteBlue={whiteBlue}/>
       <Culture/>
       <TeamSection />
       <ClientSection />

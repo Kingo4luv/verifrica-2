@@ -6,16 +6,15 @@ const CompanyHeaderSection = () => {
     return(
         <header className="w-full">
           <Nav theme="white" />
-          <div>
-              <h1 className="text-2xl md:text-4xl lg:text-5xl text-left sm:text-center px-4 font-bold leading-tight lg:leading-snug text-black mt-12 md:mt-32">
-                  Our mission is to unlock <br className="block sm:hidden" /> financial <br className="hidden sm:block" />
-                  freedom for <br className="block sm:hidden" />everyone
+          <div className="max-w-4xl mx-auto">
+              <h1 className="text-2xl md:text-4xl lg:text-5xl text-left sm:text-center px-4 font-bold leading-tight lg:leading-snug text-black mt-6 md:mt-32">
+                  Our mission is to unlock financial freedom for everyone
               </h1>
-              <p className="text-left md:text-center px-4 text-sm md:text-xl mt-6 md:mt-12 leading-relaxed text-grey md:text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br className="hidden md:block"/> Vitae varius diam et, condimentum integer amet. Quis cras.</p>
+              <p className="text-left md:text-center px-4 text-sm md:text-xl mt-6 md:mt-12 leading-relaxed text-grey md:text-black max-w-2xl lg:text-center mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae varius diam et, condimentum integer amet. Quis cras.</p>
           </div>
-          <div className="w-full flex justify-center items-center mt-12 md:mt-24 relative box-border">
-              <div>
-                  <svg width="701" height="285" viewBox="0 0 701 285" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div className="w-full flex justify-center items-center mt-12 md:mt-24 relative box-border px-4">
+              <div className="w-full lg:w-1/2">
+                <svg className="w-full h-full" viewBox="0 0 701 285" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M87.6439 59.0746C69.5899 79.2996 80.1669 123.8 116.885 120.226C153.604 116.652 176.553 87.7296 174.949 67.1196C173.345 46.5096 105.01 39.6196 87.6439 59.0746Z" fill="#CAF5FC"/>
                 <path d="M61.995 270.874C61.995 270.874 31.899 123.569 265.496 131.81C499.093 140.051 672.392 270.598 672.392 270.598L61.995 270.874Z" fill="#AEE4FF"/>
                 <path d="M10.1909 270.873C10.1909 270.873 -11.9411 122.283 173.985 163.024C359.911 203.765 450.026 71.0182 578.468 99.0062C706.91 126.994 700.445 270.586 700.445 270.586L10.1909 270.873Z" fill="#CAF5FC"/>

@@ -1,6 +1,5 @@
 import Zoom from 'react-reveal/Zoom'
 import Slide from 'react-reveal/Slide'
-import Link from 'next/link';
 import Nav from '../nav';
 const CareerHeaderSection = () => {
     return(
@@ -70,9 +69,7 @@ const CareerHeaderSection = () => {
                         </div>
                     </div>
                     <div className="mt-5 flex justify-center items-center w-full px-6 sm:px-0">
-                        <Link href="/company/career" className="">
-                            <a className="w-full sm:w-auto px-0 sm:px-24 py-4 bg-hair rounded text-center text-sm font-medium text-white tracking-wide mt-6 z-10">View open positions</a>
-                        </Link>
+                        <a href="#positions" className="w-full sm:w-auto px-0 sm:px-24 py-4 bg-hair rounded text-center text-sm font-medium text-white tracking-wide mt-6">View open positions</a>
                     </div>
                     </Slide>
                 </div>
