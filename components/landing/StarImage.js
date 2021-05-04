@@ -6,7 +6,7 @@ import LinkButton from "../button/LinkButton";
 const StarImage = () => {
     return (
         <section className="py-20 sm:py-32">
-          <div className="flex flex-col md:flex-row px-4 mx-auto max-w-screen-lg">
+          <div className="flex flex-col md:flex-row px-4 mx-auto max-w-[1100px]">
             <div className="w-full lg:w-1/2 flex flex-col justify-center box-border">
                 <div className="space-y-12 w-full md:max-w-md xl:max-w-lg">
                   <dl className="text-black space-y-8">

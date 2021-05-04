@@ -5,7 +5,7 @@ import LinkButton from "../button/LinkButton";
 const ExperienceSection = () => {
     return(
         <section className="mt-6 lg:mt-16 bg-light-blue">
-          <div className="flex flex-col sm:flex-row mx-auto max-w-screen-lg">
+          <div className="flex flex-col sm:flex-row mx-auto max-w-[1100px]">
             <div className="w-full sm:w-1/2 flex justify-center items-center py-12 lg:py-32 px-4">
               <div className="w-full flex flex-col justify-center">
                 <div className="space-y-12 sm:px-0 box-border md:max-w-md lg:max-w-lg">

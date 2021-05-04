@@ -18,7 +18,7 @@ const items = [{
 const HowItWorkSection = ({hasCode, hasDisclosure}) => {
     return(
         <section className="py-12 md:py-24 bg-client-grey mt-12">
-        <div className="w-full max-w-screen-lg flex flex-col md:flex-row mx-auto px-4 space-x-0 md:space-x-4">
+        <div className="w-full max-w-[1100px] flex flex-col md:flex-row mx-auto px-4 space-x-0 md:space-x-4">
           <div className={`w-full md:w-1/2 ${hasDisclosure ? 'space-y-5' : 'space-y-10'}`}>
             <div className="space-y-5 max-w-lg">
                 <h5 className="text-black text-sm sm:text-base">How it works</h5>

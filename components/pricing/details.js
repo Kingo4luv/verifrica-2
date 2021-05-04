@@ -1,7 +1,7 @@
 const PricingDetails = () => {
     return(
         <section className="pricing details w-full">
-        <div className="max-w-screen-lg mx-auto py-12 space-y-12 px-4">
+        <div className="max-w-[1100px] mx-auto py-12 space-y-12 px-4">
             <h2 className="font-bold text-xl md:text-3xl text-black text-center">Pricing Details</h2>
             <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
                 <div className="flex flex-col justify-center items-center w-full bg-blue h-32 md:h-40 rounded">

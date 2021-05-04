@@ -3,16 +3,16 @@ import Slide from 'react-reveal/Slide'
 const CareerTeamSection = () => {
     return(
         <section className="pt-12 pb-32 md:py-32 bg-yellow px-4 mb-0 md:mb-32 mt-24 md:mt-0 relative">
-        <div className="w-full max-w-screen-xl mx-auto flex flex-col-reverse md:flex-row">
+        <div className="w-full max-w-[1100px] mx-auto flex flex-col-reverse md:flex-row">
             <div className="w-full md:w-1/2 h-auto lg:h-104 mt-10 md:mt-0">
-                <img src="/assets/img/team.jpg" className="rounded h-full w-full object-cover" />
+                <img src="/assets/img/skew-center.jpeg" className="rounded h-full w-full object-cover" />
             </div>
             <div className="w-full md:w-1/2 flex justify-center items-center">
                 <div className="w-full md:w-4/5 space-y-3 md:space-y-6">
                     <h2 className="text-2xl lg:text-5xl font-bold leading-snug">
                         We’re growing,  <br className="hidden md:block" /> fast. <br className="block md:hidden" /> Join us!
                     </h2>
-                    <p className="text-sm lg:text-xl">
+                    <p className="text-subtitle-3 lg:text-subtitle-1">
                         Across our offices, teams at Verifrica come together with a shared purpose.We believe everyone
                         deserves to work in a welcoming, respectful, and empathetic culture, and we work hard to
                         make sure everyone at Verifrica has the support they need to thrive.

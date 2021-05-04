@@ -49,7 +49,7 @@ const items = [
 const ServicesSection = () => {
     return (
         <section className="features py-6 mb-12 lg:py-24 px-2 md:px-6 ">
-          <div className="mx-auto max-w-screen-lg">
+          <div className="mx-auto max-w-[1100px]">
             <Slide bottom>
             <h4 className="text-lg md:text-2xl font-medium text-black leading-relaxed px-4 md:px-0" >Building the future of financial services accross Africa</h4>
             </Slide>

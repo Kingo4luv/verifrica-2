@@ -3,7 +3,7 @@ import Link from "next/link";
 const BlueMobile = () => {
     return(
         <section className="py-12 md:py-24 bg-light-shade-blue">
-        <div className="w-full max-w-screen-lg flex flex-col md:flex-row mx-auto px-4 space-x-4">
+        <div className="w-full max-w-[1100px] flex flex-col md:flex-row mx-auto px-4 space-x-4">
           <div className="w-full md:w-1/2 flex flex-col justify-center items-center ">
               <div className = "w-full space-y-12">
                 <div className="space-y-5">

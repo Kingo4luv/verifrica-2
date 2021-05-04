@@ -77,6 +77,7 @@ module.exports = {
         "headline-5": ['2rem', '2.37rem'],
         "headline-6": ['1.25rem', '1.875rem'],
         "head-text": ['1rem', '1.68rem'],
+        "subtitle-1": ['1.25rem', '2.1rem'],
         "subtitle-2": ['1rem', '1.625rem'],
         "subtitle-3": ['0.875rem', '1.5rem']
       },

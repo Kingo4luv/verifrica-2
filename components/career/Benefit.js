@@ -30,10 +30,10 @@ const items = [{
 const CareerBenefitSection = () => {
     return(
         <section className="mt-32 sm:mt-52 py-12 lg:py-32 w-full">
-          <div className="w-full max-w-screen-xl mx-auto flex flex-col md:flex-row px-2 space-x-0 lg:space-x-4">
+          <div className="w-full max-w-[1100px] mx-auto flex flex-col md:flex-row px-2 space-x-0 lg:space-x-4">
               <div className="w-full md:w-2/5 lg:w-3/5 px-4 relative">
-                  <img src={BenefitBgIcon} className="absolute w-3/5 lg:w-auto -top-12 lg:-top-32 z-0" /> 
-                  <h4 className="text-2xl lg:text-4xl font-medium leading-snug relative z-10 max-w-sm">
+                  <img src={BenefitBgIcon} className="absolute w-3/5 lg:w-auto -top-12 lg:-top-32 right-20 z-0" /> 
+                  <h4 className="text-2xl font-medium relative z-10 max-w-sm">
                         Benefits of working <br className="hidden lg:block"/> at Verifrica
                    </h4>
               </div>

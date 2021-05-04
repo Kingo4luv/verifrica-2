@@ -6,7 +6,7 @@ const HeaderSection = () => {
         <header className="w-full">
         <Nav theme="dark" />
         <div className = "w-full bg-[#B6FAAB] px-0 lg:px-4">
-          <div className="w-full max-w-screen-xl py-12 md:py-32 lg:py-40 mx-auto flex flex-col md:flex-row px-4">
+          <div className="w-full max-w-[1100px] py-12 md:py-32 lg:py-40 mx-auto flex flex-col md:flex-row px-4">
             <div className="w-full md:w-1/2 space-y-6 sm:space-y-12">
               <div className="w-full space-y-4 md:space-y-6 max-w-lg">
                 <h3 className="text-black">Balance</h3>

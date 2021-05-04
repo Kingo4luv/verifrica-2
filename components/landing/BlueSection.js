@@ -6,7 +6,7 @@ import LinkButton from "../button/LinkButton";
 const BlueSection = () => {
     return (
         <section className="py-16 bg-yellow ">
-          <div className="flex flex-col-reverse md:flex-row box-border mx-auto max-w-screen-lg">
+          < div className = "flex flex-col-reverse md:flex-row box-border mx-auto max-w-[1100px]" >
             <div className="w-full lg:w-1/2 mt-12 md:mt-0 flex justify-center items-center">
                 <Zoom>
                 <img src="/assets/img/mobile.png" className="w-4/5 h-auto"/>

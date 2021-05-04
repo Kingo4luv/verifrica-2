@@ -21,7 +21,7 @@ const FooterSection = () => {
                   </Slide>
               </ul>
           </div> */}
-          <div className="lg:max-w-screen-lg xl:max-w-screen-xl mx-auto">
+          <div className="max-w-screen-xl mx-auto">
             <div className="flex flex-col sm:flex-row text-white pb-32 pt-12">
               <div className="w-full sm:w-2/6 md:w-2/7 lg:w-1/6 pl-0 lg:pl-4">
                 <svg width="104" height="26" viewBox="0 0 104 26" fill="none" xmlns="http://www.w3.org/2000/svg">

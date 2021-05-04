@@ -11,7 +11,7 @@ import Zoom from "react-reveal/Zoom";
 const RingSection = () => {
     return(
         <section className="pb-32 w-full overflow-hidden">
-        <div className="w-full max-w-screen-xl mx-auto relative flex justify-center items-center mt-8 sm:mt-0">
+        <div className="w-full max-w-[1100px] mx-auto relative flex justify-center items-center mt-8 sm:mt-0">
             <div className="w-100 h-100 md:w-128 md:h-128 border-dashed border border-form-text-grey rounded-full flex justify-center items-center flex-none relative">
                 <div className="absolute inset-0 w-full h-full">
                 <Rotate>

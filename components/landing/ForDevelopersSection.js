@@ -9,7 +9,7 @@ import Slide from 'react-reveal/Slide'
 const ForDevelopersSection = () => {
     return(
         <section className="py-12 lg:py-28 bg-client-grey">
-          <div className="flex flex-col sm:flex-row mx-auto max-w-screen-lg">
+          <div className="flex flex-col sm:flex-row mx-auto max-w-[1100px]">
             <div className="w-full sm:w-1/2 flex justify-center items-center py-12 lg:py-32">
               <div className="w-full flex flex-col justify-center px-4">
                 <div className = "space-y-12 sm:px-0 box-border md:max-w-md xl:max-w-lg" >
