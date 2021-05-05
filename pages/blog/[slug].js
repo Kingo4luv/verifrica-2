@@ -46,31 +46,6 @@ const PostDetails = () => {
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Head>
         <Nav theme="black" />
-        <div className="fixed top-1/4 right-5 lg:right-32 py-2 flex flex-col items-center space-y-4 z-10">
-            <FacebookShareButton
-            url={'https://github.com/next-share'}
-            quote={'next-share is a social share buttons for your next React apps.'}
-            hashtag={'#nextshare'}
-            >
-            <FacebookIcon size={40} round />
-            </FacebookShareButton>
-            <TwitterShareButton
-            url={'https://github.com/next-share'}
-            title={'next-share is a social share buttons for your next React apps.'}
-            >
-            <TwitterIcon size={40} round />
-            </TwitterShareButton>
-            <LinkedinShareButton url={'https://github.com/next-share'}>
-             <LinkedinIcon size={40} round />
-            </LinkedinShareButton>
-            <WhatsappShareButton
-                url={'https://github.com/next-share'}
-                title={'next-share is a social share buttons for your next React apps.'}
-                separator=":: "
-                >
-                <WhatsappIcon size={40} round />
-            </WhatsappShareButton>
-        </div>
         <section className="header mt-4 lg:mt-12 max-w-[1100px] mx-auto py-12 px-4 flex flex-col-reverse md:flex-row">
             <div className="w-full md:w-1/2 py-4 lg:py-12">
                 <div className="space-x-6">
@@ -120,6 +95,31 @@ const PostDetails = () => {
               </ul>
             </section>
         <FooterSection />
+        <div className="fixed top-1/4 right-5 lg:right-32 py-2 flex flex-col items-center space-y-4 z-[1]">
+            <FacebookShareButton
+            url={'https://github.com/next-share'}
+            quote={'next-share is a social share buttons for your next React apps.'}
+            hashtag={'#nextshare'}
+            >
+            <FacebookIcon size={40} round />
+            </FacebookShareButton>
+            <TwitterShareButton
+            url={'https://github.com/next-share'}
+            title={'next-share is a social share buttons for your next React apps.'}
+            >
+            <TwitterIcon size={40} round />
+            </TwitterShareButton>
+            <LinkedinShareButton url={'https://github.com/next-share'}>
+             <LinkedinIcon size={40} round />
+            </LinkedinShareButton>
+            <WhatsappShareButton
+                url={'https://github.com/next-share'}
+                title={'next-share is a social share buttons for your next React apps.'}
+                separator=":: "
+                >
+                <WhatsappIcon size={40} round />
+            </WhatsappShareButton>
+        </div>
     </div>
     )
 }
