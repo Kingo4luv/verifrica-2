@@ -150,8 +150,16 @@ const FooterSection = () => {
                         <a>Contact</a>
                       </Link> 
                     </li>
-                    <li>Security</li>
-                    <li>Legal & Privacy</li>
+                    <li>
+                      <Link href="/security">
+                        <a>Security</a>
+                      </Link> 
+                    </li>
+                    <li>
+                      <Link href="/privacy">
+                        <a>Legal & Privacy</a>
+                      </Link> 
+                    </li>
                   </ul>
                   </Slide>
                 </div>
@@ -163,7 +171,11 @@ const FooterSection = () => {
                   </Slide>
                   <Slide bottom cascade>
                   <ul className="text-sm font-light space-y-3 text-gray-400">
-                    <li>Why Verifrica?</li>
+                    <li>
+                      <Link href="/why-verifrica">
+                        <a>Why Verifrica?</a>
+                      </Link> 
+                    </li>
                     <li>Help Desk</li>
                     <li>What's new</li>
                   </ul>

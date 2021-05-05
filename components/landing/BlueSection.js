@@ -3,9 +3,9 @@ import Zoom from 'react-reveal/Zoom';
 import Slide from 'react-reveal/Slide';
 import LinkButton from "../button/LinkButton";
 
-const BlueSection = () => {
+const BlueSection = ({video}) => {
     return (
-        <section className="py-16 bg-yellow ">
+        <section className={`${video ? 'pt-44 md:pt-72 lg:pt-96 pb-20' : 'py-16'} bg-yellow `}>
           < div className = "flex flex-col-reverse md:flex-row box-border mx-auto max-w-[1100px]" >
             <div className="w-full lg:w-1/2 mt-12 md:mt-0 flex justify-center items-center">
                 <Zoom>
