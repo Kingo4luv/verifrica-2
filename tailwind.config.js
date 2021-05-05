@@ -25,7 +25,10 @@ module.exports = {
         "card-blue": "#029CCF",
         "footer-black": "#191919",
         "toggle-green": "#AADE87",
-        "mobile-nav-blue": '#029CCF'
+        "mobile-nav-blue": '#029CCF',
+        research: "#0ACE5C",
+        customer: "#2460FB",
+        inside: "#F59019"
 
       },
       fontSize: {

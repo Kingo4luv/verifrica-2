@@ -83,12 +83,12 @@ const links = [
 const MobileNav = ({toggleMobileNav, theme}) => {
     return(
         < div className = {
-            `w-full min-h-screen max-h-sceeen h-screen fixed inset-0 z-50 block lg:hidden ${theme === 'white' || theme === "dark" ? 'bg-white' :'bg-card-blue'}`
+            `w-full min-h-screen max-h-sceeen h-screen fixed inset-0 z-50 block lg:hidden ${theme === 'white' || theme === "dark" || theme === 'black' ? 'bg-white' :'bg-card-blue'}`
         } >
-            <div className={`flex justify-between px-4 lg:px-12 items-center h-16 ${theme === 'white' || theme === "dark" ? 'bg-white' :'bg-card-blue'}`}>
+            <div className={`flex justify-between px-4 lg:px-12 items-center h-16 ${theme === 'white' || theme === "dark" || theme === 'black' ? 'bg-white' :'bg-card-blue'}`}>
                 <Link href="/">
                 <a><div className="logo">
-                {theme == 'white' || theme === "dark" ? (<svg width="120" height="28" viewBox="0 0 120 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                {theme == 'white' || theme === "dark" || theme === 'black' ? (<svg width="120" height="28" viewBox="0 0 120 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" clipRule="evenodd" d="M18.4377 25.6843L33.2331 0.0605528V0.0390625C32.454 1.19184 31.1348 1.95039 29.6399 1.95039H4.61888C2.22709 1.95039 0.285149 3.89233 0.285149 6.28426C0.285149 7.08002 0.500034 7.82592 0.875023 8.46719L10.8169 25.6843C11.5511 27.0351 12.9828 27.953 14.6273 27.953C16.2716 27.953 17.7035 27.0351 18.4377 25.6843Z" fill="#007499"/>
                   <path fillRule="evenodd" clipRule="evenodd" d="M5.85093 17.0864C5.4934 16.4564 5.28923 15.728 5.28923 14.9524C5.28923 12.5606 7.23111 10.6187 9.62298 10.6187H12.1251L8.42915 4.21989C7.69494 2.86896 6.26324 1.95117 4.61882 1.95117C2.22695 1.95117 0.285073 3.89305 0.285073 6.28492C0.285073 7.08065 0.500071 7.82665 0.87494 8.46793L5.85093 17.0864Z" fill="#007499"/>
                   <path fillRule="evenodd" clipRule="evenodd" d="M15.8224 17.021L12.1251 10.6172H9.61684C7.22497 10.6172 5.28922 12.5591 5.28922 14.9509C5.28922 15.7498 5.50579 16.4983 5.88343 17.1413L10.8168 25.6835C10.4831 25.0694 10.2935 24.3659 10.2935 23.6184C10.2935 21.2266 12.2354 19.2847 14.6273 19.2847H19.6315C17.9871 19.2847 16.5554 18.3669 15.8211 17.016L15.8224 17.021Z" fill="#00ACE6"/>
@@ -115,13 +115,13 @@ const MobileNav = ({toggleMobileNav, theme}) => {
               </div></a>
               </Link>
                 <div className="block lg:hidden" onClick={toggleMobileNav}>
-                    <svg xmlns="http://www.w3.org/2000/svg" className={`h-6 w-6 ${theme === 'white' || theme === "dark" ? 'text-black' : 'text-white'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className={`h-6 w-6 ${theme === 'white' || theme === "dark" || theme === 'black' ? 'text-black' : 'text-white'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </div>
             </div>
             < ul className = {
-                `${theme === 'white' || theme === "dark" ? 'text-black' : 'text-white'} mt-4 font-light`
+                `${theme === 'white' || theme === "dark" || theme === 'black' ? 'text-black' : 'text-white'} mt-4 font-light`
             } >
                 {links.map((link, index) => {
                     return(
@@ -132,13 +132,13 @@ const MobileNav = ({toggleMobileNav, theme}) => {
                 <ul className="flex flex-col items-center w-full space-y-3 px-4 mt-16">
                 <li className="w-full">
                     < button className = {
-                        `w-full bg-transparent  px-4 py-3 leading-loose tracking-wider rounded font-medium text-sm focus:outline-none ${theme === 'white' || theme === "dark" ? 'border border-black text-black' : 'border border-white text-white'}`
+                        `w-full bg-transparent  px-4 py-3 leading-loose tracking-wider rounded font-medium text-sm focus:outline-none ${theme === 'white' || theme === "dark" || theme === 'black' ? 'border border-black text-black' : 'border border-white text-white'}`
                     } >
                     Login
                     </button>
                 </li>
                 <li className="w-full">
-                    <button className={`w-full px-4 py-3 leading-loose tracking-wider rounded font-medium text-sm focus:outline-none ${theme === 'white' || theme === "dark" ? 'bg-blue text-white' : 'bg-yellow text-hair'}`}>
+                    <button className={`w-full px-4 py-3 leading-loose tracking-wider rounded font-medium text-sm focus:outline-none ${theme === 'white' || theme === "dark" || theme === 'black' ? 'bg-blue text-white' : 'bg-yellow text-hair'}`}>
                     Try demo
                     </button>
                 </li>

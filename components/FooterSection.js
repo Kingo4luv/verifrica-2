@@ -130,9 +130,21 @@ const FooterSection = () => {
                   </Slide>
                   <Slide bottom cascade>
                   <ul className="text-sm font-light space-y-3 text-gray-400">
-                    <li>Company</li>
-                    <li>Career</li>
-                    <li>Blog</li>
+                    <li>
+                      <Link href="/company">
+                        <a>Company</a>
+                      </Link> 
+                    </li>
+                    <li>
+                      <Link href="/company/career">
+                        <a>Career</a>
+                      </Link> 
+                    </li>
+                    <li>
+                      <Link href="/blog">
+                        <a>Blog</a>
+                      </Link> 
+                    </li>
                     <li>
                       <Link href="/contact-us">
                         <a>Contact</a>
