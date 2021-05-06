@@ -176,7 +176,11 @@ const FooterSection = () => {
                         <a>Why Verifrica?</a>
                       </Link> 
                     </li>
-                    <li>Help Desk</li>
+                    <li>
+                      <Link href="/help-desk">
+                        <a>Help Desk?</a>
+                      </Link> 
+                    </li>
                     <li>What's new</li>
                   </ul>
                   </Slide>

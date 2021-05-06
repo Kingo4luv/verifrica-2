@@ -20,7 +20,7 @@ export default function Home() {
       <Nav theme="white" />
       <section className="w-full py-4 lg:py-24 mb-12">
         <div className="max-w-5xl mx-auto flex flex-col justify-center items-center">
-            <h1 className="text-center text-2xl md:text-4xl lg:text-headline-3 font-bold leading-normal text-black mt-12">
+            <h1 className="text-center text-2xl md:text-4xl lg:text-headline-3 font-bold leading-normal text-black mt-12 px-2">
                 The future of financial services in Africa
            </h1>
             <p className="mt-6 lg:mt-12 text-subtitle-3 lg:text-subtitle-1 text-grey text-center px-4 max-w-3xl">Verifrica is a payment platform that helps individuals and businesses access a broad range of high-quality financial data from banks across Africa aiding users to make and receive payments with ease. </p>

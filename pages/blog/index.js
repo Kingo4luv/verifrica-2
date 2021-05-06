@@ -1,8 +1,6 @@
 import Head from 'next/head';
 import FooterSection from '../../components/FooterSection';
 import Nav from '../../components/nav';
-import LinkButton from '../../components/button/LinkButton';
-import BlogCard from '../../components/blog/card';
 import { BlogHero } from '../../components/blog/Hero';
 import { BlogPost } from '../../components/blog/Post';
 
