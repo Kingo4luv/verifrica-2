@@ -31,7 +31,7 @@ export function CollectionsContent(){
                         </div>
                     </div>
                 </div>
-                <div className="body space-y-4 max-w-4xl">
+                <div className="body max-w-4xl">
                     <CollectionsCard />
                     <CollectionsCard />
                     <CollectionsCard />

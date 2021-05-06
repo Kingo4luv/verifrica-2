@@ -4,7 +4,7 @@ export function CollectionsCard(){
     return(
         <Link href={`/help-desk/collections/${"Getting started with Verifrica".split(" ").join("-")}`}>
             <a>
-                <div className="py-6 space-y-4 w-full bg-white shadow-box-shadow rounded-md px-4 md:px-6">
+                <div className="py-6 space-y-4 w-full bg-white shadow-box-shadow rounded-md px-4 md:px-6 mb-4">
                     <h3 className="font-bold text-sm lg:text-base text-black">Getting started with Verifrica</h3>
                     <p className="text-grey text-subtitle-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum, imperdiet faucibus viverra congue maecenas. Pulvinar cras nibh feugiat nunc velit donec. Egestas libero commodo pharetra bibendum nam vel.</p>
                     <div className="flex space-x-3 items-center text-black">
