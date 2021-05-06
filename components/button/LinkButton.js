@@ -9,7 +9,7 @@ const theme = {
 const LinkButton = ({text, url, color, textColor}) => {
     return(
         <Link href={url} className="">
-            <a className={`py-3 lg:py-4 rounded text-sm font-medium w-full block text-center tracking-wide ${textColor ? 'text-hair': ''} ${theme[color]}`}>{text}</a>
+            <a className={`py-[13px] lg:py-4 rounded text-sm font-medium w-full block text-center tracking-wide ${textColor ? 'text-hair': ''} ${theme[color]}`}>{text}</a>
         </Link>
     )
 }
