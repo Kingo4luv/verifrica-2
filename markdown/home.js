@@ -1,27 +1,73 @@
 
-const HomeCode = `<section className="py-16 flex flex-col lg:flex-row bg-client-grey">
-    <div className="w-full lg:w-1/2 flex justify-center items-center py-12 lg:py-32 px-4 lg:px-0">
-        <div className="w-full lg:w-3/5 flex flex-col justify-center items-center">
-            <div className="space-y-12 px-0 md:px-4 sm:px-0 box-border">
-                <dl className="text-black space-y-8">
-                <dt className="text-2xl md:text-4xl font-bold leading-tight">For developers, by <br/> developers</dt>
-                <dd className="font-light pr-12  text-xs md:text-base text-grey">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam morbi etiam dolor ac bibendum cras congue sed vitae. Malesuada mollis.
-                </dd>
-                </dl>
-                <div>
-                <Link href="/" className="block">
-                    <a className="px-16 py-4 rounded text-sm font-medium text-black tracking-wide mt-6 border border-black">Read our API documentation</a>
-                </Link>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div className="border w-1/2">
-        <div className="w-3/4 h-4/5 border">
-        <HomeMarkdown />
-        </div>
-    </div>
-</section>`
+const HomeCode = `http code 200
+{
+ "accounts": [{Object}],
+ "transactions": [{
+    "account_id": "vokyE5Rn6vHKqDLRXEn5fne7LwbKPLIXGK98d",
+    "amount": 2307.21,
+    "iso_currency_code": "GBP",
+    "unofficial_currency_code": null,
+    "category": [
+      "Shops",
+      "Computers and Electronics"
+    ],
+    "category_id": "19013000",
+    "date": "2017-01-03",
+    "authorized_date": "2017-01-27",
+    "location": {
+     "address": "null",
+     "city": "null",
+     "region": "null",
+     "postal_code": "null",
+     "country": "null",
+     "lat": null,
+     "lon": null,
+     "store_number": "1235"
+    },
+    "name": "Apple Store",
+    "payment_meta": Object,
+    "payment_channel": "in store",
+    "pending": false,
+    "pending_transaction_id": null,
+    "account_owner": null,
+    "transaction_id": "lPNjeW1nR6CDn5okmGQ6hEpMo4lLNoSrzqDje",
+    "transaction_code": null,
+    "transaction_type": "place"
+   }, {
+    "account_id": "XA96y1wW3xS7wKyEdbRzFkpZov6x1ohxMXwep",
+    "amount": 78.5,
+    "iso_currency_code": "GBP",
+    "unofficial_currency_code": null,
+    "category": [
+      "Food and Drink",
+      "Restaurants"
+    ],
+    "category_id": "13005000",
+    "date": "2017-01-29",
+    "authorized_date": "2017-01-28",
+    "location": {
+      "address": "null",
+      "city": "null",
+      "region": "null",
+      "postal_code": "null",
+      "country": "null",
+      "lat": null,
+      "lon": null,
+      "store_number": "null"
+    },
+    "name": "Pret A Manger",
+    "payment_meta": Object,
+    "payment_channel": "in store",
+    "pending": false,
+    "pending_transaction_id": null,
+    "account_owner": null,
+    "transaction_id": "4WPD9vV5A1cogJwyQ5kVFB3vPEmpXPS3qvjXQ",
+    "transaction_code": null,
+    "transaction_type": "place"
+  }],
+  "item": {Object},
+  "total_transactions": Number,
+  "request_id": "45QSn"
+}`
 
 export default HomeCode;
