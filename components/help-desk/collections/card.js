@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 export function CollectionsCard(){
     return(
         <Link href={`/help-desk/collections/${"Getting started with Verifrica".split(" ").join("-")}`}>

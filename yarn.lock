@@ -282,6 +282,11 @@
   resolved "https://registry.yarnpkg.com/@headlessui/react/-/react-1.0.0.tgz#661b50ebfd25041abb45d8eedd85e7559056bcaf"
   integrity sha512-mjqRJrgkbcHQBfAHnqH0yRxO/y/22jYrdltpE7WkurafREKZ+pj5bPBwYHMt935Sdz/n16yRcVmsSCqDFHee9A==
 
+"@heroicons/react@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@heroicons/react/-/react-1.0.1.tgz#66d25f6441920bd5c2146ea27fd33995885452dd"
+  integrity sha512-uikw2gKCmqnvjVxitecWfFLMOKyL9BTFcU4VM3hHj9OMwpkCr5Ke+MRMyY2/aQVmsYs4VTq7NCFX05MYwAHi3g==
+
 "@mdx-js/loader@^0.15.0":
   version "0.15.7"
   resolved "https://registry.yarnpkg.com/@mdx-js/loader/-/loader-0.15.7.tgz#dd184301607579b3aa5021dc50e2ae2a04e478dc"
@@ -1256,6 +1261,11 @@ elliptic@^6.5.3:
     inherits "^2.0.4"
     minimalistic-assert "^1.0.1"
     minimalistic-crypto-utils "^1.0.1"
+
+emailjs-com@^2.6.4:
+  version "2.6.4"
+  resolved "https://registry.yarnpkg.com/emailjs-com/-/emailjs-com-2.6.4.tgz#c3bac8f7ee58d536ab34923e73013ad39f299f46"
+  integrity sha512-4G8rxq+1mbL4rGntMa9tqNJ4N9BhuCl8lFJASDHxZVXeC82ivwL6qw+Zu48cAWHpNK2/F3vScaAZk8zoTAfiAA==
 
 emojis-list@^2.0.0:
   version "2.1.0"

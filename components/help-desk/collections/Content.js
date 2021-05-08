@@ -12,7 +12,7 @@ export function CollectionsContent(){
              </Link>
              <span>
                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-black mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                 </svg>
              </span>
              <span className="text-grey">Getting started with Verifrica</span>
@@ -31,7 +31,7 @@ export function CollectionsContent(){
                         </div>
                     </div>
                 </div>
-                <div className="body max-w-4xl">
+                <div className="body space-y-4 max-w-4xl">
                     <CollectionsCard />
                     <CollectionsCard />
                     <CollectionsCard />
