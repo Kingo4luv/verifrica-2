@@ -54,11 +54,11 @@ export default function ComingSoon(){
                     </a>
                 </Link>
             </div>
-            <div className="space-y-3 lg:space-y-5 max-w-sm lg:max-w-5xl">
+            <div className="space-y-5 max-w-sm lg:max-w-5xl">
                 <h1 className="text-2xl md:text-4xl lg:text-head font-bold">
                     Easy access to connecting financial accounts across Africa to an app
                 </h1>
-                <p className="max-w-sm lg:max-w-xl text-subtitle-3 sm:text-[16px] sm:leading-[28.8px] font-light">Verifrica is a payment platform that provides access to a broad range of individuals and businesses' financial accounts for financial data across various banks in Africa with ease.</p>
+                <p className="max-w-sm lg:max-w-xl text-[15px] lg:text-[16px] leading-[28.8px] font-light">Verifrica is a payment platform that provides access to a broad range of individuals and businesses' financial accounts for financial data across various banks in Africa with ease.</p>
             </div>
             <div className="flex flex-col lg:flex-row space-x-0 lg:space-x-5 space-y-4 lg:space-y-0">
                 <button onClick={toggleEarlyAccess} className="w-full md:w-1/2 lg:w-auto text-sm focus:outline-none rounded py-[13px] sm:py-4 px-4 lg:px-8 bg-blue hover:bg-[#0798c4]">Request access</button>
