@@ -37,7 +37,7 @@ export default function ComingSoon(){
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <header className="container max-w-[1100px] flex flex-col justify-between h-full sm:h-auto mx-auto pt-12 pb-0 lg:py-32 text-white px-4 overflow-hidden">
-        <div className="max-w-2xl space-y-6 lg:space-y-12">
+        <div className="max-w-2xl space-y-12">
             <div>
                 <Link href="/">
                     <a>
