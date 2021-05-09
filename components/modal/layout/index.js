@@ -12,7 +12,7 @@ export default function ModalLayout(props){
         leaveFrom="transform scale-100 opacity-100"
         leaveTo="transform scale-95 opacity-0"
         >
-          <div className="max-w-6xl py-10 bg-white rounded shadow-lg relative space-y-6 lg:space-y-12 px-4 lg:px-12">
+          <div className="max-w-6xl py-6 lg:py-10 bg-white rounded shadow-lg relative space-y-6 lg:space-y-12 px-4 lg:px-12">
               {props.type !== "confirm" && <div className="modal-head flex justify-center">
                   <button className="absolute top-4 right-4 focus:outline-none" onClick={props.toggle}>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 md:h-7 md:w-7 text-grey" fill="none" viewBox="0 0 24 24" stroke="currentColor">

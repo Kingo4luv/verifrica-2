@@ -106,7 +106,7 @@ export default function EarlyAccessModal({toggle, isOpen, toggleContact, toggleS
                         </button>
                     </div>
 
-                    <p className="text-black mt-4 text-sm text-center">Looking to contact sales? <span onClick={toggleContact} className="font-medium cursor-pointer">Contact Sales</span></p>
+                    <p className="text-black mt-2 lg:mt-4 text-sm text-center">Looking to contact sales? <span onClick={toggleContact} className="font-medium cursor-pointer">Contact Sales</span></p>
                 </form>
             </div>
         </ModalLayout>
