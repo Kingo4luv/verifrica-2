@@ -28,7 +28,7 @@ export default function ComingSoon(){
     }
 
     return(
-    <div className="Home w-full lg:min-h-screen lg:max-h-screen h-screen md:h-auto lg:h-screen bg-hair overflow-hidden flex flex-col justify-between">
+    <div className="Home w-full lg:min-h-screen lg:max-h-screen h-auto md:h-auto lg:h-screen bg-hair overflow-hidden flex flex-col justify-between">
       <Head>
         <title>Verifrica | Home</title>
         <link rel="icon" href="/favicon.ico" />
@@ -36,7 +36,7 @@ export default function ComingSoon(){
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <header className="container max-w-[1100px] flex flex-col justify-between h-full sm:h-auto mx-auto pt-12 pb-0 lg:py-32 text-white px-4 overflow-hidden">
+      <header className="container max-w-[1100px] flex flex-col justify-between h-full sm:h-auto mx-auto pt-6 pb-0 lg:py-32 text-white px-4 overflow-hidden">
         <div className="max-w-2xl space-y-12">
             <div>
                 <Link href="/">
