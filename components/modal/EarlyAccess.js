@@ -77,7 +77,7 @@ export default function EarlyAccessModal({toggle, isOpen, toggleContact, toggleS
         <ModalLayout toggle={toggle} isOpen={isOpen}>
             <div className="modal-body space-y-9">
                 <h3 className="text-[20px] leading-snug font-black text-center">Get early access</h3>
-                <form className="space-y-12 w-full" action="#" method="POST">
+                <form className="space-y-12 w-full" onSubmit={onSubmit}>
                     <div className="rounded-md shadow-sm">
                         {errors.general !== "" && <div className="bg-red-100 rounded w-full py-3 text-sm text-red-500 my-4 px-4">{errors.general}</div>}
                         <div className="flex w-full">

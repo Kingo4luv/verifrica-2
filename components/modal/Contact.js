@@ -97,7 +97,7 @@ export default function ContactUsModal({toggle, isOpen, toggleEarlyAccess, toggl
 
     return(
         <ModalLayout toggle={toggle} isOpen={isOpen}>
-            <div className="modal-body space-y-9">
+            <div className="modal-body space-y-5 md:space-y-9">
                 <div className="max-w-sm mx-auto">
                     <p className="text-center font-light text-subtitle-3 text-black ">Our Sales team can help you find the right solution. Fill out the form and we’ll get in touch shortly.</p>
                 </div>
@@ -127,6 +127,7 @@ export default function ContactUsModal({toggle, isOpen, toggleEarlyAccess, toggl
                     <div>
                         <button
                         type="submit"
+                        onClick={sendEmail}
                         className="group relative w-full flex justify-center py-4 px-4 border border-transparent text-sm font-medium rounded text-white bg-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:opacity-50"
                         disabled={loading}
                         >
