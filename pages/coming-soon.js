@@ -28,7 +28,7 @@ export default function ComingSoon(){
     }
 
     return(
-    <div className="Home w-full min-h-screen max-h-screen h-screen bg-hair overflow-hidden flex flex-col justify-between">
+    <div className="Home w-full lg:min-h-screen lg:max-h-screen h-screen md:h-auto lg:h-screen bg-hair overflow-hidden flex flex-col justify-between">
       <Head>
         <title>Verifrica | Home</title>
         <link rel="icon" href="/favicon.ico" />
@@ -73,7 +73,7 @@ export default function ComingSoon(){
       <footer className="w-full bg-[#191919] py-12 text-white hidden md:block px-4">
            <div className="mx-auto max-w-[1100px] flex justify-end">
                <div className="flex items-center space-x-12">
-                   <p className="text-sm text-gray-200 font-light mt-4 sm:mt-0">© Reef financial solutions</p>
+                   <p className="text-sm text-gray-200 font-light mt-4 sm:mt-0 capitalize">© Reef financial solutions</p>
                     <ul className="flex space-x-5">
                     <li>
                         <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
