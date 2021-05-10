@@ -65,8 +65,8 @@ export default function ComingSoon(){
                 <button onClick={toggleContact} className="w-full md:w-1/2 lg:w-auto text-sm focus:outline-none rounded py-[13px] sm:py-4 px-4 lg:px-8 bg-[#1F1F1F] hover:bg-[#1d1c1c]">Contact sales</button>
             </div>
         </div>
-        <img src="/assets/img/mobile-coming.png" className="absolute top-0 right-0 w-5/12 lg:w-3/12 hidden md:block"/>
-        <div className="w-full justify-center items-center flex mt-6">
+        <img src="/assets/img/mobile-coming.png" className="absolute top-0 right-0 w-[40%] lg:w-[23%] hidden md:block"/>
+        <div className="w-full justify-center items-center flex mt-6 px-4">
             <img src="/assets/img/mobile-small.png" className="block md:hidden"/>
         </div>
       </header>
