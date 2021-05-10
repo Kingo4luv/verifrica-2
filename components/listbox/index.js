@@ -1,9 +1,14 @@
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 import { CheckIcon, ChevronDownIcon } from "@heroicons/react/outline";
 
-export default function ListButton({last, items, title, toggleSuccess}) {
+export default function ListButton({last, items, title, input, listChanged}) {
   const [selected, setSelected] = useState("");
+
+  useEffect(() => {
+    let data = {input, selected: selected.name }
+    listChanged(data);
+  }, [selected])
 
   return (
     <div className="w-full">

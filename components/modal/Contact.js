@@ -35,7 +35,9 @@ export default function ContactUsModal({toggle, isOpen, toggleEarlyAccess, toggl
          lastName: "",
          email: "",
          company: "",
-         phone: ""
+         phone: "",
+         role:"",
+         product: "",
      });
     const [errors, setErrors] = useState({
          firstName: "",
@@ -45,7 +47,7 @@ export default function ContactUsModal({toggle, isOpen, toggleEarlyAccess, toggl
          phone:"",
          general: "",
      });
-    const {firstName, lastName, email, company, phone} = formData;
+    const {firstName, lastName, email, company, phone, product, role} = formData;
 
     const handleChange = (e) => {
         clearErrors();
@@ -53,12 +55,16 @@ export default function ContactUsModal({toggle, isOpen, toggleEarlyAccess, toggl
         
     }
     const clearErrors = () =>{
-        console.log("hi");
         setErrors({...errors, firstName: "", lastName:"", company:"", email:"",phone:"", general:""});
     }
 
     const resetForm = () =>{
         setformData({...formData, firstName: "", lastName:"", company:"", email:"", phone:""});
+    }
+
+    const listChanged = (data) => {
+        // console.log(data)
+        setformData({...formData, [data.input] : data.selected})
     }
 
 
@@ -81,7 +87,7 @@ export default function ContactUsModal({toggle, isOpen, toggleEarlyAccess, toggl
             return setErrors({...errors, phone: "Phone number is required with minimum of 11 characters"})
         }
         setLoading(true);
-        emailjs.sendForm(process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID, process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID, e.target, process.env.NEXT_PUBLIC_EMAIL_USER_ID)
+        emailjs.send(process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID, process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID, formData, process.env.NEXT_PUBLIC_EMAIL_USER_ID)
             .then((result) => {
                 // console.log(result.text);
                 if(result.text === "OK"){
@@ -121,8 +127,8 @@ export default function ContactUsModal({toggle, isOpen, toggleEarlyAccess, toggl
                         <div className="relative">
                              <TextInput first={false} second={false}  error={errors.phone} last={false} onChange={handleChange} value={phone} id="phone" name="phone" type="text" required={true} placeholder="Phone Number" />
                         </div>
-                        <Listbox last={false} items={products.items} title={products.title} name="product" />
-                        <Listbox last={true} items={roles.items} title={roles.title} role="role" />
+                        <Listbox last={false} items={products.items} title={products.title} input={"product"} listChanged={listChanged}/>
+                        <Listbox last={true} items={roles.items} title={roles.title} input={"role"} listChanged={listChanged}/>
                     </div>
                     <div>
                         <button
