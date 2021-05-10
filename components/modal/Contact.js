@@ -133,7 +133,7 @@ export default function ContactUsModal({toggle, isOpen, toggleEarlyAccess, toggl
                         {loading ? "Please wait ...":"Contact us"}
                         </button>
                     </div>
-                    <p className="text-black mt-2 lg:mt-4 text-sm text-center">Looking to request access? <span onClick={toggleEarlyAccess} className="font-medium cursor-pointer">Request Access</span></p>
+                    <p className="text-black mt-4 text-sm text-center">Looking to request access? <span onClick={toggleEarlyAccess} className="font-medium cursor-pointer">Request Access</span></p>
                 </form>
             </div>
         </ModalLayout>

@@ -37,7 +37,7 @@ export default function ComingSoon(){
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <header className="container max-w-[1100px] flex flex-col justify-between h-full sm:h-auto mx-auto pt-12 pb-0 lg:py-32 text-white px-4 overflow-hidden">
-        <div className="max-w-2xl space-y-6 lg:space-y-12">
+        <div className="max-w-2xl space-y-12">
             <div>
                 <Link href="/">
                     <a>
@@ -65,7 +65,7 @@ export default function ComingSoon(){
                 <button onClick={toggleContact} className="w-full md:w-1/2 lg:w-auto text-sm focus:outline-none rounded py-[13px] sm:py-4 px-4 lg:px-8 bg-[#1F1F1F] hover:bg-[#1d1c1c]">Contact sales</button>
             </div>
         </div>
-        <img src="/assets/img/mobile-coming.png" className="absolute top-0 right-0 hidden md:block"/>
+        <img src="/assets/img/mobile-coming.png" className="absolute top-0 right-0 w-5/12 lg:w-3/12 hidden md:block"/>
         <div className="w-full justify-center items-center flex mt-6">
             <img src="/assets/img/mobile-small.png" className="block md:hidden"/>
         </div>
