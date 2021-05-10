@@ -11,7 +11,7 @@ export default function ListButton({last, items, title, toggleSuccess}) {
         {({ open }) => (
           <>
             <div className="relative">
-              <Listbox.Button className={`${last ? 'rounded-b':'rounded-none'} appearance-none text-left relative block w-full px-3 py-[14px] sm:py-4 border-b border-l border-r border-t-0 border-[#D1D1D1] placeholder-form-text-grey text-form-text-grey focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base`}>
+              <Listbox.Button className={`${last ? open ? 'rounded-none':'rounded-b':'rounded-none'} appearance-none text-left relative block w-full px-3 py-[14px] sm:py-4 border-b border-l border-r border-t-0 border-[#D1D1D1] placeholder-form-text-grey text-form-text-grey focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base`}>
                 <span className={`block truncate ${selected === "" ?"":"text-black"}`}>{selected === "" ? title : selected.name}</span>
                 <span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
                   <ChevronDownIcon
@@ -49,7 +49,7 @@ export default function ListButton({last, items, title, toggleSuccess}) {
                           <span
                             className={`${
                               selected ? "font-normal text-black" : "font-normal"
-                            } block truncate`}
+                            } block truncate text-sm md:text-base`}
                           >
                             {item.name}
                           </span>
