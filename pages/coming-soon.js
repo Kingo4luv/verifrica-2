@@ -66,7 +66,7 @@ export default function ComingSoon(){
             </div>
         </div>
         <img src="/assets/img/mobile-coming.png" className="absolute top-0 right-0 w-[40%] lg:w-[25%] hidden md:block"/>
-        <div className="w-full justify-center items-center flex mt-6 px-8">
+        <div className="w-full justify-center items-center flex mt-12 px-8">
             <img src="/assets/img/mobile-small.png" className="block md:hidden"/>
         </div>
       </header>
