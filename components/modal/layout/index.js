@@ -14,7 +14,7 @@ export default function ModalLayout(props){
         >
           <div className="max-w-6xl py-10 bg-white rounded shadow-lg relative space-y-6 lg:space-y-12 px-4 lg:px-12">
               {props.type !== "confirm" && <div className="modal-head flex justify-center">
-                  <button className="absolute top-4 right-4 focus:outline-none" onClick={props.toggle}>
+                  <button className="absolute top-6 sm:top-4 right-4 focus:outline-none" onClick={props.toggle}>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 md:h-7 md:w-7 text-grey" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
