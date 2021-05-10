@@ -3,7 +3,7 @@ import { Transition } from "@headlessui/react";
 export default function ModalLayout(props){
     return(
         <Transition
-        className="w-full h-screen max-h-screen min-h-screen fixed bg-hair bg-opacity-50 flex justify-center items-center px-4"
+        className="w-full h-screen max-h-screen min-h-screen fixed bg-hair bg-opacity-50 flex justify-center items-center px-4 py-4"
         show={props.isOpen}
         enter="transition duration-100 ease-out"
         enterFrom="transform scale-95 opacity-0"
