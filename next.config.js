@@ -25,6 +25,9 @@ module.exports = withPlugins(
                 }));
             return config;
         },
+        images: {
+            domains: ['res.cloudinary.com'],
+        }
     }
 
 );

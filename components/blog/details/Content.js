@@ -1,12 +1,11 @@
-export function PostContent(){
+import ReactMarkdown from "react-markdown";
+export function PostContent({post}){
     return(
-        <section className="mx-auto my-6 lg:my-12 pb-6 max-w-[1100px] text-black px-4 text-base lg:text-[18px] leading-[30.24px] space-y-3 border-b">
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, nullam facilisi condimentum magnis dapibus rutrum volutpat interdum, vivamus est venenatis libero tincidunt pellentesque. Tellus iaculis nulla habitasse netus lectus sociis maecenas tempus, risus molestie eros justo nostra faucibus.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit eget suspendisse ut dui porta ultrices, penatibus cubilia suscipit neque conubia. Eros semper conubia bibendum posuere mattis porta torquent per curabitur consequat ornare imperdiet, nisi tristique luctus fringilla enim rutrum nascetur est sollicitudin urna. Hac augue vehicula magnis fusce dis, purus eget varius quis, natoque felis mus dignissim. Dapibus risus at elementum ultrices viverra, laoreet facilisis tempus ligula tortor, morbi cum aliquet interdum. Platea posuere molestie ut semper lobortis, justo habitasse nisl pellentesque, ultricies ridiculus risus hendrerit.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, nullam facilisi condimentum magnis dapibus rutrum volutpat interdum, vivamus est venenatis libero tincidunt pellentesque. Tellus iaculis nulla habitasse netus lectus sociis maecenas tempus, risus molestie eros justo nostra faucibus.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit eget suspendisse ut dui porta ultrices, penatibus cubilia suscipit neque conubia. Eros semper conubia bibendum posuere mattis porta torquent per curabitur consequat ornare imperdiet, nisi tristique luctus fringilla enim rutrum nascetur est sollicitudin urna. Hac augue vehicula magnis fusce dis, purus eget varius quis, natoque felis mus dignissim. Dapibus risus at elementum ultrices viverra, laoreet facilisis tempus ligula tortor, morbi cum aliquet interdum. Platea posuere molestie ut semper lobortis, justo habitasse nisl pellentesque, ultricies ridiculus risus hendrerit.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, nullam facilisi condimentum magnis dapibus rutrum volutpat interdum, vivamus est venenatis libero tincidunt pellentesque. Tellus iaculis nulla habitasse netus lectus sociis maecenas tempus, risus molestie eros justo nostra faucibus.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit eget suspendisse ut dui porta ultrices, penatibus cubilia suscipit neque conubia. Eros semper conubia bibendum posuere mattis porta torquent per curabitur consequat ornare imperdiet, nisi tristique luctus fringilla enim rutrum nascetur est sollicitudin urna. Hac augue vehicula magnis fusce dis, purus eget varius quis, natoque felis mus dignissim. Dapibus risus at elementum ultrices viverra, laoreet facilisis tempus ligula tortor, morbi cum aliquet interdum. Platea posuere molestie ut semper lobortis, justo habitasse nisl pellentesque, ultricies ridiculus risus hendrerit.</p>
+        <section className="mx-auto my-6 lg:my-12 max-w-[1100px]"
+        >
+        <div className="prose-lg border-b max-w-none pb-4 text-black px-4 text-base lg:text-[18px] leading-[30.24px]">
+            <ReactMarkdown children={post.body}/>
+        </div>
         </section>
     )
 }

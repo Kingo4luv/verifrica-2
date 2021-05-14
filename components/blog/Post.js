@@ -1,7 +1,7 @@
 import LinkButton from "../button/LinkButton"
 import BlogCard from "./card"
 
-export function BlogPost({posts}){
+export function BlogPost({posts, tags}){
     return(
         <section className="content mt-4 lg:mt-12 max-w-[1100px] mx-auto py-12 lg:py-32 px-4">
           <div className="flex justify-between items-center">
@@ -13,10 +13,11 @@ export function BlogPost({posts}){
           <div className="mt-6 lg:mt-12">
               <ul className="flex text-sm md:text-base space-x-4 md:space-x-12 text-black flex-nowrap overflow-x-auto whitespace-nowrap scrolling-wrapper">
                   <li className="border-b-[2px] border-blue">All</li>
-                  <li>Research & Testing</li>
-                  <li>Design & Product</li>
-                  <li>Customer stories</li>
-                  <li>Inside Verifrica</li>
+                  {tags.map((tag) => {
+                      return(
+                          <li className="cursor-pointer" key={tag.name}>{tag.name}</li>
+                      )
+                  })}
               </ul>
           </div>
           <div className="mt-6 lg:mt-12">

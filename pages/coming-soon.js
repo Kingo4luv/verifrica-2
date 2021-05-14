@@ -1,4 +1,4 @@
-import Head from "next/head";
+import { NextSeo } from 'next-seo';
 import Link from "next/link";
 import { useState } from "react";
 import ContactUsModal from "../components/modal/Contact";
@@ -29,13 +29,30 @@ export default function ComingSoon(){
 
     return(
     <div className="Home w-full lg:min-h-screen lg:max-h-screen h-auto md:h-auto lg:h-screen bg-hair overflow-hidden flex flex-col justify-between">
-      <Head>
-        <title>Verifrica | Home</title>
-        <link rel="icon" href="/favicon.ico" />
-        <meta charSet="UTF-8"/>
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Head>
+      <NextSeo
+      title="Verifrica - | Coming soon"
+      description="Verifrica provides a seamless and convenient way of connecting people's financial accounts to an app with easy and secure access"
+      canonical="https://www.verifrica.com"
+      openGraph={{
+        url: 'https://www.verifrica.com',
+        title: 'Verifrica - | Coming soon',
+        description: "Verifrica provides a seamless and convenient way of connecting people's financial accounts to an app with easy and secure access",
+        images: [
+          {
+            url: 'https://res.cloudinary.com/dd9p2qxpz/image/upload/v1620725691/verifrica/verifrica.svg',
+            width: 800,
+            height: 600,
+            alt: 'Verifrica logo',
+          },
+        ],
+        site_name: 'Verifrica',
+      }}
+      twitter={{
+        handle: '@verifricahq',
+        site: '@verifricahq',
+        cardType: 'summary_large_image',
+      }}
+    />
       <header className="container max-w-[1100px] flex flex-col justify-between h-full sm:h-auto mx-auto pt-6 pb-0 lg:py-32 text-white px-4 overflow-hidden">
         <div className="max-w-2xl space-y-12">
             <div>
@@ -55,10 +72,10 @@ export default function ComingSoon(){
                 </Link>
             </div>
             <div className="space-y-5 max-w-sm lg:max-w-5xl">
-                <h1 className="text-2xl md:text-4xl lg:text-head font-bold">
-                    Easy access to connecting financial accounts across Africa to an app
+                <h1 className="text-2xl md:text-4xl lg:text-head font-bold tracking-[-0.009em]">
+                    Connect financial accounts to apps you love in seconds.
                 </h1>
-                <p className="max-w-sm lg:max-w-xl text-[15px] lg:text-[16px] leading-[28.8px] font-light">Verifrica is a payment platform that provides access to a broad range of individuals and businesses' financial accounts for financial data across various banks in Africa with ease.</p>
+                <p className="max-w-sm lg:max-w-xl text-[15px] lg:text-[16px] leading-[28.8px] font-light">Verifrica is a platform that provides access to a broad range of individuals and businesses' financial accounts for financial data across various banks in Africa with ease.</p>
             </div>
             <div className="flex flex-col lg:flex-row space-x-0 lg:space-x-5 space-y-4 lg:space-y-0">
                 <button onClick={toggleEarlyAccess} className="w-full md:w-1/2 lg:w-auto text-sm focus:outline-none rounded py-[13px] sm:py-4 px-4 lg:px-8 bg-blue hover:bg-[#0798c4]">Request access</button>

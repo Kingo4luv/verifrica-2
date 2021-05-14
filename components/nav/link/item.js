@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 const LinkItem = ({link, theme}) => {
     const router = useRouter();
     return(
-        <li className={`nav-dropdown cursor-pointer py-4 px-2 xl:px-4 `}>
+        <li className={`nav-dropdown cursor-pointer py-6 px-2 xl:px-4 `}>
             < div className = {
                 ` flex items-center font-light`
                 } >

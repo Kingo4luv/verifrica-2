@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import FooterSection from '../../components/FooterSection';
 import Nav from '../../components/nav';
+import { fetchAPI } from "../../libs/api";
 
 import Share from '../../components/blog/details/share';
 import BlogCard from '../../components/blog/card';
@@ -8,37 +9,8 @@ import { HeaderSection } from '../../components/blog/details/Header';
 import { PostContent } from '../../components/blog/details/Content';
 import { RelatedPost } from '../../components/blog/details/Related';
 
-const posts = [
-    {
-        id: 1,
-        title: "Lorem ipsum dolor sit amet,  adipiscing elit. Sed pellentesque phasellus phasellus magna. Et eget et",
-        image: "/assets/img/blog-1.png",
-        tag:{
-            name: "Design",
-            color: "#00ACE6"
-        }
-    },
-    {
-        id: 2,
-        title: "Lorem ipsum dolor sit amet,  adipiscing elit. Sed pellentesque phasellus phasellus magna. Et eget et",
-        image: "/assets/img/blog-2.png",
-        tag:{
-            name: "Research & Testing",
-            color: "#0ACE5C"
-        }
-    },
-    {
-        id: 3,
-        title: "Lorem ipsum dolor sit amet,  adipiscing elit. Sed pellentesque phasellus phasellus magna. Et eget et",
-        image: "/assets/img/blog-3.png",
-        tag:{
-            name: "Customer Stories",
-            color: "#2460FB"
-        }
-    },
-]
 
-const PostDetails = () => {
+const PostDetails = ({posts, post}) => {
     return(
      <div className="Blog">
         <Head>
@@ -50,12 +22,35 @@ const PostDetails = () => {
         </Head>
         <Nav theme="black" />
         <Share />
-        <HeaderSection />
-        <PostContent />
+        <HeaderSection post={post} />
+        <PostContent post={post} />
         <RelatedPost posts={posts} />
         <FooterSection />
     </div>
     )
+}
+
+export async function getStaticPaths() {
+    const posts = await fetchAPI(`/posts`);
+
+    return {
+        paths: posts.map((post) => ({
+            params: {
+                slug: post.slug,
+            },
+        })),
+        fallback: false,
+    };
+}
+
+export async function getStaticProps({ params }) {
+  const posts = await fetchAPI(`/posts?slug=${params.slug}`)
+  const relatedPost = await fetchAPI(`/posts`);
+
+  return {
+    props: { post: posts[0], posts: relatedPost },
+    revalidate: 1,
+  };
 }
 
 export default PostDetails;

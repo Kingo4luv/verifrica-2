@@ -34,9 +34,22 @@
 }
 
 
+
 @tailwind utilities;
 
 @layer base {
+
+  .markdown {
+    @apply text-lg leading-relaxed;
+  }
+
+  .markdown p,
+  .markdown ul,
+  .markdown ol,
+  .markdown blockquote {
+    @apply my-6;
+  }
+
   @font-face {
     font-family: "Plus Jakarta Sans";
     src: url("/font/PlusJakartaText-Light.otf");

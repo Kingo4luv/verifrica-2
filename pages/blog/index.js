@@ -3,93 +3,9 @@ import FooterSection from '../../components/FooterSection';
 import Nav from '../../components/nav';
 import { BlogHero } from '../../components/blog/Hero';
 import { BlogPost } from '../../components/blog/Post';
+import { fetchAPI } from "../../libs/api";
 
-
-const posts = [
-    {
-        id: 1,
-        title: "Lorem ipsum dolor sit amet,  adipiscing elit. Sed pellentesque phasellus phasellus magna. Et eget et",
-        image: "/assets/img/blog-1.png",
-        tag:{
-            name: "Design",
-            color: "#00ACE6"
-        }
-    },
-    {
-        id: 2,
-        title: "Lorem ipsum dolor sit amet,  adipiscing elit. Sed pellentesque phasellus phasellus magna. Et eget et",
-        image: "/assets/img/blog-2.png",
-        tag:{
-            name: "Research & Testing",
-            color: "#0ACE5C"
-        }
-    },
-    {
-        id: 3,
-        title: "Lorem ipsum dolor sit amet,  adipiscing elit. Sed pellentesque phasellus phasellus magna. Et eget et",
-        image: "/assets/img/blog-3.png",
-        tag:{
-            name: "Customer Stories",
-            color: "#2460FB"
-        }
-    },
-    {
-        id: 4,
-        title: "Lorem ipsum dolor sit amet,  adipiscing elit. Sed pellentesque phasellus phasellus magna. Et eget et",
-        image: "/assets/img/blog-4.png",
-        tag:{
-            name: "Inside Verifrica",
-            color: "#F59019"
-        }
-    },
-    {
-        id: 5,
-        title: "Lorem ipsum dolor sit amet,  adipiscing elit. Sed pellentesque phasellus phasellus magna. Et eget et",
-        image: "/assets/img/blog-5.png",
-        tag:{
-            name: "Design",
-            color: "#00ACE6"
-        }
-    },
-    {
-        id: 6,
-        title: "Lorem ipsum dolor sit amet,  adipiscing elit. Sed pellentesque phasellus phasellus magna. Et eget et",
-        image: "/assets/img/blog-6.png",
-        tag:{
-            name: "Design",
-            color: "#00ACE6"
-        }
-    },
-    {
-        id: 7,
-        title: "Lorem ipsum dolor sit amet,  adipiscing elit. Sed pellentesque phasellus phasellus magna. Et eget et",
-        image: "/assets/img/blog-7.png",
-        tag:{
-            name: "Design",
-            color: "#00ACE6"
-        }
-    },
-    {
-        id: 8,
-        title: "Lorem ipsum dolor sit amet,  adipiscing elit. Sed pellentesque phasellus phasellus magna. Et eget et",
-        image: "/assets/img/blog-8.png",
-        tag:{
-            name: "Design",
-            color: "#00ACE6"
-        }
-    },
-    {
-        id: 9,
-        title: "Lorem ipsum dolor sit amet,  adipiscing elit. Sed pellentesque phasellus phasellus magna. Et eget et",
-        image: "/assets/img/blog-9.png",
-        tag:{
-            name: "Design",
-            color: "#00ACE6"
-        }
-    },
-]
-
-export default function Blog() {
+export default function Blog({tags, posts}) {
   return (
     <div className="Blog">
       <Head>
@@ -101,8 +17,23 @@ export default function Blog() {
       </Head>
       <Nav theme="black" />
       <BlogHero />
-      <BlogPost posts={posts}/>
+      <BlogPost posts={posts} tags={tags}/>
       <FooterSection />
     </div>
   )
 }
+
+
+export async function getStaticProps() {
+  // Run API calls in parallel
+  const [posts, tags] = await Promise.all([
+    fetchAPI("/posts"),
+    fetchAPI("/tags"),
+  ]);
+
+  return {
+    props: { posts, tags },
+    revalidate: 1,
+  };
+}
+
