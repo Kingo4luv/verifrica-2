@@ -7,7 +7,6 @@ import FooterSection from '../components/FooterSection';
 import Nav from '../components/nav';
 import Link from 'next/link';
 
-
 export default function Home() {
   return (
     <div className="Why">

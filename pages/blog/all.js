@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import FooterSection from '../../components/FooterSection';
 import Nav from '../../components/nav';
-import LinkButton from '../../components/button/LinkButton';
 import BlogCard from '../../components/blog/card';
+import { fetchAPI } from '../../libs/api';
 
 const posts = [{
         id: 1,
@@ -87,7 +87,7 @@ const posts = [{
     },
 ]
 
-const AllPost = () => {
+const AllPost = ({posts}) => {
     return(
         <div className="Blog">
             <Head>
@@ -100,7 +100,7 @@ const AllPost = () => {
             <Nav theme="black" />
             <section className="content mt-4 lg:mt-12 max-w-[1100px] mx-auto py-12 lg:py-32 px-4 space-y-12 lg:space-y-32">
                 <div className="flex justify-between items-center">
-                    <h3 className="text-2xl lg:text-[34px] text-black">50 Stories</h3>
+                    <h3 className="text-2xl lg:text-[34px] text-black">{posts.length} Stories</h3>
                 </div>
                 <div className="content-post">
                     <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 lg:gap-10">
@@ -120,4 +120,19 @@ const AllPost = () => {
     )
 }
 
+
+
 export default AllPost
+
+
+export async function getStaticProps() {
+  // Run API calls in parallel
+  const [posts, tags] = await Promise.all([
+    fetchAPI("/posts"),
+  ]);
+
+  return {
+    props: { posts },
+    revalidate: 1,
+  };
+}
