@@ -18,52 +18,68 @@ import ContactSection from "../../components/use-cases/ContactSection";
 
 
 const items = [{
-        title: "Verify  borrower’s assets digitally",
+        title: "Digitally verify borrower's asset",
         icon: VerifyAssetIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: `Account balances, uncategorized and categorized transactions, and account identity information are all provided in Assets' consolidated report.`
     },
     {
-        title: "Verify borrower’s idetities",
+        title: "Verify the identity of borrowers",
         icon: IdentityIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: `Verify users' identity to what the bank has on hand, such as their name, phone number, address, and email address, in order to reduce fraud using Identity.`
     },
     {
-        title: "Check balance in real time",
+        title: "Check balance in real-time",
         icon: RealTimeIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: `Users' balances are quickly checked to see if they have enough money to make payment or transfer.`
     },
     {
         title: "Instantly authenticate accounts",
         icon: AuthenticationIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: `Retrieve user's account and routing details, which can be used to make payments and debit withdrawals smoothly and with ease.`
     },
     {
         title: "Check final obligations",
         icon: TaxIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: 'Liabilities product provides users with real-time knowledge about their financial obligations, such as loans and card debit.'
     },
     {
         title: "Switch direct deposits",
         icon: BankingIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: 'Users can adjust the destination of their direct deposits more easily and quickly with Deposit Switch.'
     },
     {
         title: "Verify income and employment",
         icon: SuitcaseIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: 'Income enables people to easily check their earnings and work in the way that suits them best'
     },
 ]
-
 const heroContent = {
-    title: "A faster, more secure way for borrowers to access capital",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra enim viverra cras urna pretium. Nunc aliquet pretium, integer nulla nunc nisi viverra purus. Orci, pretium ut nisl neque, viverra vitae, in.",
+    title: "Borrowers would be able to access capital in a quicker and more secure manner",
+    description: "Verifrica provides a seamless, fast, and secure means of using financial data to safely grant credit and loans with confidence.",
     image: "/assets/img/lending.jpg"
 }
 
 const  problemSolution = {
-    problem: "Receiving payments via direct bank transfer is significantly less expensive than using credit cards, but getting users signed in and authenticated is a cumbersome process.",
-    solution: "Verifrica makes it faster and easier to set up bank payments through a flow designed with the user experience and security in mind. Users enter their online credentials and Plaid instantly authenticates their account. Plus, in the US, Plaid works with any ACH processor (including Stripe and Dwolla) to simplify bank-to-bank payments."
+    problem: "Lenders need a complete picture of their borrower's financial data but gathering income data, account balances, and asset history are tedious for both the borrower and the lender. Furthermore, connecting borrowers' bank accounts to obtain capital and repay loans is a time-consuming operation.",
+    solution: "Verifrica offers borrowers an easy, seamless loan process and gives lenders access to bank data so they can make informed loan decisions with confidence."
 }
+
+const series = [{
+        title: "Integrate with Verifrica",
+        description: "Our front-end module can be integrated into your app or digital service with only a few lines of code. Your users will be able to log in using the Verifrica token.",
+        image: '/assets/img/initiate-payment.svg'
+    },
+    {
+        title: "Customize for conversion",
+        description: "Personalize the module to match your brand or user expectations, including the order in which financial institutions appear. Select their bank, locate accounts, and enter bank username and password to connect to their account.",
+        image: '/assets/svgs/conversion.svg'
+    },
+    {
+        title: "Get user-permissioned bank data",
+        description: "Our front-end module can be integrated into your app or digital service with only a few lines of code. Your users will be able to log in using the Verifrica token.",
+        image: '/assets/svgs/conversion.svg'
+    },
+]
 
 const Lending = () => {
     return(
@@ -79,7 +95,7 @@ const Lending = () => {
       <ClientSection />
       <ProblemSolutionSection problemSolution={problemSolution} />
       <ProductFeatureSection items={items} />
-      <InitiatePaymentSection />
+      <InitiatePaymentSection series={series} />
       <ContactSection />
       <FooterSection />
     </div>

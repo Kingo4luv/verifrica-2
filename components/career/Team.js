@@ -9,13 +9,14 @@ const CareerTeamSection = () => {
             </div>
             <div className="w-full md:w-1/2 flex justify-center items-center">
                 <div className="w-full md:w-4/5 space-y-3 md:space-y-6">
-                    <h2 className="text-2xl lg:text-5xl font-bold leading-snug">
-                        We’re growing,  <br className="hidden md:block" /> fast. <br className="block md:hidden" /> Join us!
+                    <h2 className="text-2xl lg:text-[34px] lg:leading-[50.32px] font-bold leading-snug">
+                        We are growing fast excellent time to join Verifrica! 
                     </h2>
-                    <p className="text-subtitle-3 lg:text-subtitle-1">
-                        Across our offices, teams at Verifrica come together with a shared purpose.We believe everyone
-                        deserves to work in a welcoming, respectful, and empathetic culture, and we work hard to
-                        make sure everyone at Verifrica has the support they need to thrive.
+                    <p className="text-subtitle-3 lg:text-subtitle-2">
+                        Across our offices, teams at Verifrica come together with a common goal.We believe everyone deserves to work in a supportive, compassionate, and empathetic environment and we work hard to ensure that everyone at Verifrica has the resources they need to succeed.
+                    </p>
+                    <p className="text-subtitle-3 lg:text-subtitle-2">
+                        In every given day, we represent hundreds of thousands of end users.We have huge ambitions to achieve and difficult technological difficulties to overcome in order to provide them with the best possible experience.
                     </p>
                 </div>
             </div>

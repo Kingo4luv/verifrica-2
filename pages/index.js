@@ -24,7 +24,7 @@ export default function Home() {
       <BlueSection />
       <StarImage />
       <ExperienceSection />
-      <ForDevelopersSection />
+      {/* <ForDevelopersSection /> */}
       <FooterSection />
     </div>
   )

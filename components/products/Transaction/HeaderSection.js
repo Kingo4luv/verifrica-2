@@ -5,14 +5,14 @@ import LinkButton from "../../button/LinkButton";
 const HeaderSection = () => {
     return (
         <header className="w-full">
-        <Nav theme="dark" />
+        <Nav theme="white" />
         <div className="w-full max-w-[1100px] py-6 md:py-12 xl:py-32 mx-auto flex flex-col md:flex-row px-4 overflow-hidden">
           <div className="w-full md:w-1/2 space-y-6 sm:space-y-12">
             <div className="w-full space-y-4 md:space-y-6 max-w-xl">
               <h3 className="text-black">Transactions</h3>
-              <h1 className="text-2xl md:text-headline-5 lg:text-headline-4 text-black font-bold max-w-lg">Retrieve details of previous bank transactions</h1>
+              <h1 className="text-2xl md:text-headline-5 lg:text-headline-4 text-black font-bold max-w-lg">Direct access to complete transaction history</h1>
               <p className="text-black text-subtitle-3 lg:text-head-text max-w-lg">
-                Gain access to every transaction data carried out. Verifrica provides a secure, easy, and reliable to use platform where you can securely and reliably retrieve balance, past transactions, personal identity, expenses, financial reports, and more. 
+                Retrieve transaction details up to the previous 24months, including geolocation, merchant, and category details.
               </p>
             </div>
             <div className="flex space-x-4 md:space-x-12 w-full">

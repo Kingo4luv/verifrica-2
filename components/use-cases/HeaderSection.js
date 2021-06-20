@@ -9,10 +9,10 @@ const HeaderSection = ({heroContent:{title, description, image}}) => {
             <div className="w-full md:w-1/2 flex justify-center items-center pt-4 pb-12 md:py-24 px-4">
                 <div className="w-full max-w-xl space-y-2 sm:space-y-5 md:space-y-12">
                     <div className="space-y-5">
-                        <h1 className="text-2xl md:text-4xl lg:text-head font-bold">
+                        <h1 className="text-2xl md:text-4xl lg:text-[40px] lg:leading-[49.6px] font-bold">
                          {title}
                         </h1>
-                        <p className="text-black text-subtitle-3 sm:text-head-text">
+                        <p className="text-black text-subtitle-3 sm:text-head-text max-w-lg">
                            {description}
                         </p>
 

@@ -15,35 +15,52 @@ import ContactSection from "../../components/use-cases/ContactSection";
 const items = [{
         title: "Encourage users to save",
         icon: DartIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio ac felis in libero. Nisl.'
+        description: 'Verifrica analyzes up to 24 months of clean, categorized transaction history to help users minimize unnecessary spending and direct them toward investment and savings goals.'
     },
     {
         title: "Enable in-app balance checks",
         icon: BalanceCheckIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio ac felis in libero. Nisl.'
+        description: 'Make checking the balances of their connected accounts inside your app an enjoyable experience for your customers by using Balance linked depository accounts in real-time.'
     },
     {
         title: "Understand’s a user’s investments",
         icon: ChartIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio ac felis in libero. Nisl.'
+        description: `Take advantage of investment and gain a better understanding of user's investment accounts, including account balances, holdings, and transactions that create a change in a holding.`
     },
     {
         title: "Help people manage debt",
         icon: ManageDebtIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio ac felis in libero. Nisl.'
+        description: 'Transactions can be used to alert users of pending debt and to offer debt repayment and refinancing options.'
     }
 ]
 
 const heroContent = {
-    title: "Help users improve their financial health with categorized transactions",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra enim viverra cras urna pretium. Nunc aliquet pretium, integer nulla nunc nisi viverra purus. Orci, pretium ut nisl neque, viverra vitae, in.",
+    title: "Help users boost financial health with analyzed transaction history and account data.",
+    description: "Build personalized financial solutions by safely and efficiently retrieving account statements, account balances, revenue to encourage users to save, budget, and improve finances. ",
     image: "/assets/img/personal-finances.jpg"
 }
 
 const  problemSolution = {
-    problem: "Obtaining a comprehensive picture of users' financial health is often times difficult when they have accounts at multiple financial institutions.",
-    solution: "Verifrica consolidates financial data from multiple sources and categorizes transaction data with typically 24 months of history, making it easy to use and analyze."
+    problem: "When users have accounts at various financial institutions, obtaining a detailed image of their financial health can be quite challenging.",
+    solution: "Verifrica brings together financial data from various financial institutions and categorizes transaction data over a 24-month period, making it easy to use and analyze."
 }
+
+const series = [{
+        title: "Integrate with Verifrica",
+        description: "Our front-end module can be integrated into your app or digital service with only a few lines of code. Your users will be able to log in using the Verifrica token.",
+        image: '/assets/img/initiate-payment.svg'
+    },
+    {
+        title: "Customize for conversion",
+        description: "Personalize the module to match your brand or user expectations, including the order in which financial institutions appear. Select their bank, locate accounts, and enter bank username and password to connect to their account.",
+        image: '/assets/svgs/conversion.svg'
+    },
+    {
+        title: "Get user-permissioned bank data",
+        description: "Our front-end module can be integrated into your app or digital service with only a few lines of code. Your users will be able to log in using the Verifrica token.",
+        image: '/assets/svgs/conversion.svg'
+    },
+]
 
 const PersonalFinances = () => {
     return(
@@ -59,7 +76,7 @@ const PersonalFinances = () => {
       <ClientSection />
       <ProblemSolutionSection problemSolution={problemSolution} />
       <ProductFeatureSection items={items} />
-      <InitiatePaymentSection />
+      <InitiatePaymentSection series={series} />
       <ContactSection />
       <FooterSection />
     </div>

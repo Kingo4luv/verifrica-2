@@ -13,17 +13,17 @@ const items = [
     {
         title: "Increase conversion rates",
         icon: ConfirmDataIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: ''
     },
     {
         title: "Prevent misdirected payments",
         icon: PreventSearchIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: 'Verifrica authentication helps you verify every information provided to ensure, each information is accurate thereby preventing the instances of misdirected payments and invalid data.'
     },
     {
         title: "Open Banking and PSD2 integrations",
         icon: OpenBankingIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: `Our API provides open access to financial data from financial institutions. Third parties are provided access to customer's financial data based on their approval and the benefit of leveraging this data with the aim of improving customer authentication processes with a seamless user experience.`
     },
 ]
 
@@ -38,6 +38,9 @@ const usecases = {
     ]
 }
 
+const title = `Seamless account authentication`
+const description = `The /auth/get endpoint allows you to make a request to retrieve the bank account and routing numbers, as well as high-level account data and balances, when open, after a user connects their account using bank credentials.`
+
 const Authentication = () => {
     return(
     <div className="Home">
@@ -50,7 +53,7 @@ const Authentication = () => {
       </Head>
       <HeaderSection />
       <ProductFeatures items={items} />
-      <HowItWorkSection disclosure={true} hasCode={true} />
+      <HowItWorkSection disclosure={true} hasCode={true} title={title} description={description} />
       <UseCases usecases={usecases}/>
       <FooterSection />
     </div>

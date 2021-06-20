@@ -4,17 +4,17 @@ import Nav from "../../nav"
 const HeaderSection = () => {
     return(
         <header className="w-full">
-        <Nav theme="dark" />
+        <Nav theme="white" />
         <div className = "w-full bg-[#B6FAAB] px-0 lg:px-4">
           <div className="w-full max-w-[1100px] py-12 md:py-32 lg:py-40 mx-auto flex flex-col md:flex-row px-4">
             <div className="w-full md:w-1/2 space-y-6 sm:space-y-12">
               <div className="w-full space-y-4 md:space-y-6 max-w-lg">
                 <h3 className="text-black">Balance</h3>
                 <h1 className="text-2xl md:text-headline-5 lg:text-headline-4 text-black font-bold">
-                    Verify real time account balances
+                    Verify account balances in real - time
                 </h1>
                 <p className="text-black text-subtitle-3 lg:text-head-text ">
-                  Verifrica Balance product retrieves up - to - the - minute transactions and income balances from the user 's financial accounts.  
+                  With Verifrica Balance product, confirm up - to - the - minute transactions and income balances from your user 's financial accounts.    
                 </p>
               </div>
               <div className="flex space-x-4 md:space-x-12 w-full">  

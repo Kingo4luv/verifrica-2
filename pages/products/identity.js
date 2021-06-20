@@ -4,7 +4,8 @@ import HowItWorkSection from "../../components/products/HowItworkSection";
 import HeaderSection from "../../components/products/Identity/HeaderSection.js";
 import StarImageSection from "../../components/products/Identity/StarImageSection.js";
 
-
+const title = `Identity data straight from the source`;
+const description = `The /identity/get endpoint helps you to access account holder information such as names, emails, phone numbers, and addresses directly from the financial institution's database.`
 
 const Identity = () => {
     return(
@@ -18,7 +19,7 @@ const Identity = () => {
       </Head>
       <HeaderSection />
       <StarImageSection />
-      <HowItWorkSection disclosure={false} hasCode={true} />
+      <HowItWorkSection disclosure={false} hasCode={true} title={title} description={description}/>
       <FooterSection />
     </div>
     )

@@ -20,32 +20,32 @@ const items = [
     {
         title: "Improve UX/conversion",
         icon: ImproveConversionIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: 'With our seamless user experience, SDKs, and integration option, you can improve your user interaction and perception of your product. '
     },
     {
         title: "Reduce Cost",
         icon: ReduceCostIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: 'Get rid of expensive card fees and pay a low fixed-cost per transaction.'
     },
     {
         title: "Instant payments",
         icon: InstantPaymentsIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: 'Payments are made directly to your bank account allowing you access funds in no time.'
     },
     {
         title: "Fight fraud",
         icon: FightFraudIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: `Your user's bank handles authentication, lowering fraud risk and growing success rates.`
     },
     {
         title: "Offer flexible payment types",
         icon: FlexiblePaymentIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: 'With only one integration, you can make one-time and recurring payments to any bank account.'
     },
     {
         title: "Verify payment status",
         icon: VerifyPaymentIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: 'For verification, Verifrica redirects your customer to their bank to authenticate their account.'
     },
 ]
 
@@ -75,6 +75,28 @@ const usecases = {
     ]
 }
 
+const series = [{
+        title: "Initiate",
+        description: "Send the payment information to Verifrica, and we'll get in touch with the bank to start the process.",
+        image: '/assets/img/initiate-payment.svg'
+    },
+    {
+        title: "Select bank",
+        description: "Select their bank, locate accounts, and enter bank username and password to connect to their account.",
+        image: '/assets/img/institutions-image.svg'
+    },
+    {
+        title: "Authenticate bank",
+        description: "Your customer would be forwarded to their bank to verify and authenticate their account using Verifrica. ",
+        image: '/assets/img/authenticate-bank.svg'
+    },
+    {
+        title: "Confirm bank payment",
+        description: "A quick API call can be used to check the transaction status. Proceed to confirm that the payment was done successfully.",
+        image: '/assets/img/confirm-bank.svg'
+    },
+]
+
 const PaymentInitiation = () => {
     return(
     <div className="Balance">
@@ -87,7 +109,7 @@ const PaymentInitiation = () => {
       </Head>
       <HeaderSection />
       <ProductFeatures items={items}/>
-      <InitiatePaymentSection />
+      <InitiatePaymentSection series={series} />
       <HowItWorkSection disclosure={false} hasCode={true} />
       <UseCases usecases={usecases} />
       <FooterSection />

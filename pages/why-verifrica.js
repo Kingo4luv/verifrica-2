@@ -7,6 +7,8 @@ import FooterSection from '../components/FooterSection';
 import Nav from '../components/nav';
 import Link from 'next/link';
 
+const blueSectionDescription = `Verifrica prioritizes the interest of our users, with a flexibility that allows you connect with your financial institution securing services, and sharing data across various banking channels.`
+const experienceDescription = `We focus on having a sound understanding of users, what they need, and value. With our beautiful user experience, we hope to improve the quality of our user’s interaction and  perception of our product. `
 export default function Home() {
   return (
     <div className="Why">
@@ -23,7 +25,7 @@ export default function Home() {
             <h1 className="text-center text-2xl md:text-4xl lg:text-headline-3 font-bold leading-normal text-black mt-12 px-2">
                 The future of financial services in Africa
            </h1>
-            <p className="mt-6 lg:mt-12 text-subtitle-3 lg:text-subtitle-1 text-grey text-center px-4 max-w-3xl">Verifrica is a payment platform that helps individuals and businesses access a broad range of high-quality financial data from banks across Africa aiding users to make and receive payments with ease. </p>
+            <p className="mt-6 lg:mt-12 text-subtitle-3 lg:text-subtitle-1 text-black text-center px-4 max-w-3xl">Verifrica is a payment platform that helps individuals and businesses access a broad range of high-quality financial data from banks across Africa aiding users to make and receive payments with ease. </p>
             <ul className="w-full sm:w-auto hero-action flex flex-col sm:flex-row space-x-0 sm:space-x-16 space-y-6 lg:space-y-0 mt-12 text-black items-center px-4 lg:px-0">
                 <li className="w-full sm:w-auto"><button className="w-full sm:w-auto border border-hair px-16 py-3 lg:py-4 rounded text-sm font-medium bg-hair text-white">Try Demo</button></li>
                 <li> <Link href="/contact-us">
@@ -43,9 +45,9 @@ export default function Home() {
           </div>
           <img src="/assets/img/verifrica-video.png" className="w-full" />
       </div>
-      <BlueSection video={true} />
+      <BlueSection video={true} description={blueSectionDescription} />
       <StarImage />
-      <ExperienceSection />
+      <ExperienceSection description={experienceDescription} />
       <ForDevelopersSection />
       <FooterSection />
     </div>

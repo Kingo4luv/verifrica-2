@@ -8,7 +8,7 @@ const ProductFeatureSection = ({items}) => {
                   <h4 className="text-2xl lg:text-2xl font-medium leading-snug relative z-10 mt-0 md:mt-14">
                         Products & Benefits
                    </h4>
-                   <p className="text-subtitle-3 sm:text-subtitle-2 text-grey pr-0 lg:pr-16">Fermentum vel massa blandit metus nam odio amet rhoncus. Praesent. </p>
+                   <p className="text-subtitle-3 sm:text-subtitle-2 text-grey pr-0 lg:pr-16">Discover how to make the most of financial data. </p>
               </div>
               <ul className="w-full grid grid-cols-1 md:grid-cols-2 gap-x-2 gap-y-6 mt-12 md:mt-0">
                  {items.map((item , index) => {

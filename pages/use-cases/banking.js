@@ -19,40 +19,57 @@ import ContactSection from "../../components/use-cases/ContactSection";
 const items = [{
         title: "Faster account opening and account funding",
         icon: RocketIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: 'When users bind their account using login credentials, Auth retrieves account and routing information immediately. Verifrica works with every ACH processor to make account funding quick and easy.'
     },
     {
         title: "Seamless user experience",
         icon: UserExperienceIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: 'Balance automatically checks to see if users have sufficient money to complete a transaction and payment. With a smooth balance check, you can boost your account funding rate.'
     },
     {
         title: "Reduce fraudulent sign ups",
         icon: GearIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: `Identity verifies users' identities against information held on file at the bank, such as their identification, phone number, address, and email address.`
     },
     {
         title: "Switch direct deposits",
         icon: BankingIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: 'With Deposit Switch users can adjust the destination of their direct deposits more easily and quickly'
     },
     {
         title: "Verify income and employment",
         icon: SuitcaseIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: 'Income enables people easily check their earnings and jobs in the way that suits them best.'
     },
 ]
 
 const heroContent = {
-    title: "Make bank onboarding easy and fast for customers",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra enim viverra cras urna pretium. Nunc aliquet pretium, integer nulla nunc nisi viverra purus. Orci, pretium ut nisl neque, viverra vitae, in.",
+    title: "Make bank enrollment simple and fast",
+    description: "Provide users with full  banking experience, help fund their accounts, manage savings, and plan for their financial future.",
     image: "/assets/img/banking.jpg"
 }
 
 const  problemSolution = {
-    problem: "Opening a new bank account today often requires manually verifying 2 small micro-deposits. This process can take 2-3 days and is prone to user input errors, which can result in lost customers for your bank.",
-    solution: "Verifrica allows users to link their bank account securely, in a matter of seconds, using their login credentials. By integrating with Plaid, customers can be up and running with your banking products on the same day. This can mean more active and engaged users for your bank."
+    problem: "In today's world, opening a new bank account always necessitates manually checking two tiny micro-deposits. This procedure will take up to two days and is vulnerable to user input mistakes, which can cost the bank customers.",
+    solution: "Verifrica helps users to safely connect their bank account using their login credentials in a matter of seconds. Customers will be up and running on your banking items the next day if you integrate with Plaid. For your bank, this might mean more loyal and committed customers."
 }
+
+const series = [{
+        title: "Integrate with Verifrica",
+        description: "Our front-end module can be integrated into your app or digital service with only a few lines of code. Your users will be able to log in using the Verifrica token.",
+        image: '/assets/img/initiate-payment.svg'
+    },
+    {
+        title: "Customize for conversion",
+        description: "Personalize the module to match your brand or user expectations, including the order in which financial institutions appear. Select their bank, locate accounts, and enter bank username and password to connect to their account.",
+        image: '/assets/svgs/conversion.svg'
+    },
+    {
+        title: "Get user-permissioned bank data",
+        description: "Our front-end module can be integrated into your app or digital service with only a few lines of code. Your users will be able to log in using the Verifrica token.",
+        image: '/assets/svgs/conversion.svg'
+    },
+]
 
 const Banking = () => {
     return(
@@ -68,7 +85,7 @@ const Banking = () => {
       <ClientSection />
       <ProblemSolutionSection problemSolution={problemSolution} />
       <ProductFeatureSection items={items} />
-      <InitiatePaymentSection />
+      <InitiatePaymentSection series={series}/>
       <ContactSection />
       <FooterSection />
     </div>

@@ -6,11 +6,13 @@ const CompanyHeaderSection = () => {
     return(
         <header className="w-full">
           <Nav theme="white" />
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
               <h1 className="text-2xl md:text-4xl lg:text-5xl text-left sm:text-center px-4 font-bold leading-tight lg:leading-snug text-black mt-6 md:mt-32">
-                  Our mission is to unlock financial freedom for everyone
+                 Our mission is to enable a world of access to financial possibilities with data.
               </h1>
-              <p className="text-left md:text-center px-4 text-sm md:text-xl mt-6 md:mt-12 leading-relaxed text-grey md:text-black max-w-2xl lg:text-center mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae varius diam et, condimentum integer amet. Quis cras.</p>
+              <p className="text-left md:text-center px-4 text-sm md:text-xl mt-6 md:mt-12 leading-relaxed text-grey md:text-black max-w-3xl lg:text-center mx-auto">
+                  We are making it possible for everyone to achieve financial freedom with data. Using financial data to open up a world of possibilities.
+              </p>
           </div>
           <div className="w-full flex justify-center items-center mt-12 md:mt-24 relative box-border px-4">
               <div className="w-full lg:w-1/2">

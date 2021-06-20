@@ -4,17 +4,18 @@ import Nav from "../../nav"
 const HeaderSection = () => {
     return(
         <header className="w-full">
-        <Nav theme="dark" />
+        <Nav theme="white" />
         <div className="w-full bg-[#FFE177] px-0 lg:px-4">
           <div className="w-full max-w-[1100px] py-12 md:py-24 lg:py-32 mx-auto flex flex-col md:flex-row px-4">
             <div className="w-full md:w-1/2 space-y-6 sm:space-y-12">
-              <div className="w-full space-y-4 md:space-y-6 max-w-lg">
+              <div className="w-full space-y-4 md:space-y-6 max-w-md">
                 <h3 className="text-black">Assets</h3>
                 <h1 className="text-2xl md:text-headline-5 lg:text-headline-4 text-black font-bold">
-                    Verify borrowers’ assets
+                    Verify the assets of borrowers and safely grant credit.
                 </h1>
                 <p className="text-black text-subtitle-3 lg:text-head-text">
-                  Gain access to every transaction data carried out. Verifrica provides a secure, easy, and reliable to use platform where you can securely and reliably retrieve balance, past transactions, personal identity, expenses, financial reports, and more. 
+                  Get a consolidated overview of account, balances, previous transactions, and account holder records to ensure the borrower has sufficient assets to qualify
+                  for a loan.
                 </p>
               </div>
               <div className="flex space-x-4 md:space-x-12 w-full">  

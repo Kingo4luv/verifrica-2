@@ -15,35 +15,52 @@ import ContactSection from "../../components/use-cases/ContactSection";
 const items = [{
         title: "Faster  payment enrollment",
         icon: RocketIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio ac felis in libero. Nisl.'
+        description: `Users' account and routing details are pulled by Auth products, which can be used to make payments and transactions more smooth.`
     },
     {
         title: "Smoother Invoicing",
         icon: InvoiceIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio ac felis in libero. Nisl.'
+        description: 'Balance product instantly checks whether users have the funds to make a payment or transfer.'
     },
     {
         title: "Simplify expense management",
         icon: CoinIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio ac felis in libero. Nisl.'
+        description: `Identity verifies users' identities to what the bank has on hand, and Transactions can assist with locating a reimbursable transaction.`
     },
     {
         title: "Better Bookkeeping",
         icon: FolderIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio ac felis in libero. Nisl.'
+        description: 'For personal and business accounts, Transactions usually offers 24 months of tidy, categorized data.'
     }
 ]
 
 const heroContent = {
-    title: "Make it easy for everyone to manage business finances",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra enim viverra cras urna pretium. Nunc aliquet pretium, integer nulla nunc nisi viverra purus. Orci, pretium ut nisl neque, viverra vitae, in.",
+    title: "Provide a seamless way for everyone to manage their business finances",
+    description: "Verifrica helps businesses manage funds, make payments, analyze financial reports and send payroll. Making it easy for people to manage their business finances.",
     image: "/assets/img/business-finances.jpg"
 }
 
 const  problemSolution = {
-    problem: "From bookkeeping to payroll, business finance and accounting processes are complex experiences for employees and customers alike.",
-    solution: "Verifrica reduces administrative time by giving users an easier way to connect their financial accounts to your software or app."
+    problem: "Company finance and accounting procedures are complicated experiences for both staff and clients, from bookkeeping to payroll.",
+    solution: "Verifrica saves time by making it easy for consumers to link their financial accounts to your technology or app."
 }
+
+const series = [{
+        title: "Integrate with Verifrica",
+        description: "Our front-end module can be integrated into your app or digital service with only a few lines of code. Your users will be able to log in using the Verifrica token.",
+        image: '/assets/img/initiate-payment.svg'
+    },
+    {
+        title: "Customize for conversion",
+        description: "Personalize the module to match your brand or user expectations, including the order in which financial institutions appear. Select their bank, locate accounts, and enter bank username and password to connect to their account.",
+        image: '/assets/svgs/conversion.svg'
+    },
+    {
+        title: "Get user-permissioned bank data",
+        description: "Our front-end module can be integrated into your app or digital service with only a few lines of code. Your users will be able to log in using the Verifrica token.",
+        image: '/assets/svgs/conversion.svg'
+    },
+]
 
 const BusinessFinances = () => {
     return(
@@ -59,7 +76,7 @@ const BusinessFinances = () => {
       <ClientSection />
       <ProblemSolutionSection problemSolution={problemSolution} />
       <ProductFeatureSection items={items} />
-      <InitiatePaymentSection />
+      <InitiatePaymentSection  series={series}/>
       <ContactSection />
       <FooterSection />
     </div>

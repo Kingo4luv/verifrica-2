@@ -5,14 +5,14 @@ import OpenBankingIcon from '../../../public/assets/svgs/open-banking.svg'
 import IconCard from '../../IconCard';
 
 const items = [{
-    title: "Confirming user data with their bank data",
+    title: "Using bank data to verify user identities.",
     icon: ConfirmDataIcon,
-    description: 'Gain access to user data such as names, phone numbers, addresses, and emails for individual, business, and joint accounts. These data can be used to complement verification processes.',
+    description: 'Access user data such as names, phone numbers, addresses, and emails for individual, business, and joint accounts. These data can be used to supplement verification processes to ensure they are correct.',
   },
   {
-    title: "Open Banking",
+    title: "Open Banking/PSD2 Integrations",
     icon: OpenBankingIcon,
-    description: 'Verifrica identity product provides financial service providers access to users transactions and other financial data from financial institutions through the use of our (API) in other to improve customer authentication processes.',
+    description: 'Verifrica payment platform helps you meet open banking and PSD2 requirements, including secure access to accounts, strong customer authentication, and consent management to improve customer authentication processes.',
   }
 ]
 
@@ -20,22 +20,17 @@ const StarImageSection = () => {
     return(
       <section className="py-6 lg:py-24 w-full">
         <div className="max-w-[1100px] mx-auto">
-            <div className="w-full h-96 sm:h-100 lg:h-116 max-w-3xl mx-auto px-4">
+            <div className="w-full h-96 sm:h-100 lg:h-112 max-w-2xl mx-auto px-4">
               <div className="w-full h-full flex flex-col justify-between">
                 <div className="w-full h-20 lg:h-36 flex justify-center items-center">
                   <div className="w-20 lg:w-36 h-full rounded-full flex justify-center items-center">
-                    <Slide bottom>
                     <img src="/assets/img/top-boy.png" className="w-full h-full object-cover object-center" />
-                    </Slide>
                   </div>
                 </div>
                 <div className="w-full h-20 lg:h-36 flex items-center justify-between">
                   <div className="w-20 lg:w-36 h-full rounded-full flex items-center justify-center">
-                    <Slide right>
                     <img src="/assets/img/left-girl.png" className="w-full h-full object-cover object-center" />
-                    </Slide>
                   </div>
-                  <Rotate>
                   <div className=" w-20 lg:w-32 h-full rounded-full flex items-center justify-center">
                     
                     <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,18 +44,13 @@ const StarImageSection = () => {
                     </svg>
                   
                   </div>
-                  </Rotate>
                   <div className="w-20 lg:w-36 h-full rounded-full">
-                    <Slide left>
                     <img src="/assets/img/right-boy.png" className="w-full h-full object-cover object-center" />
-                    </Slide>
                   </div>
                 </div>
                 <div className="w-full h-20 lg:h-36 flex justify-center items-center">
                   <div className="w-20 lg:w-36 h-full rounded-full">
-                    <Slide top>
                     <img src="/assets/img/bottom-girl.png" className="w-full h-full object-cover object-center" />
-                    </Slide>
                   </div>
                 </div>
               </div>

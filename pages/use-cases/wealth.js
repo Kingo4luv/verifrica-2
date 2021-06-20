@@ -14,30 +14,47 @@ import ContactSection from "../../components/use-cases/ContactSection";
 const items = [{
         title: "Understand a user’s investments",
         icon: BarChartIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: `Investments provide information about a user's financial records, such as account balances, shares, and transfers that change a holding`
     },
     {
         title: "Streamline ACH account funding",
         icon: BankingIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: 'To power ACH account financing transfers, Auth helps you to authenticate accounts at all financial institutions. Use our Balance and Identity products to further reduce ACH chance.'
     },
     {
         title: "Smart, simple money investment",
         icon: SmartMoneyIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: 'With insight into payment performance, different payment forms, and bank partner versatility, Bank Transfers offers a smarter, smoother money flow approach and a way to quicker customer activation.'
     }
 ]
 
 const heroContent = {
-    title: "Provide users holistic advice and grow assets under management",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra enim viverra cras urna pretium. Nunc aliquet pretium, integer nulla nunc nisi viverra purus. Orci, pretium ut nisl neque, viverra vitae, in.",
+    title: "Provide practical guides to users and help them expand their assets under management ",
+    description: "With Verifrica, help people make sound financial choices, good business insight, and plan for the future with a holistic guide.",
     image: "/assets/img/banking.jpg"
 }
 
 const  problemSolution = {
-    problem: "Sourcing robust held-away account information is challenging due to low-fidelity data and poor conversion rates. Additionally, account funding workflows remain error prone and cumbersome for investors, creating roadblocks to growing assets under management.",
-    solution: "Verifrica enables financial advisors and wealth management platforms to aggregate held-away account information to deliver more holistic financial advice. Firms can also use Plaid to better grow AUM through streamlined ACH account funding — with conversion rates that often far exceed the competition."
+    problem: "Due to low-fidelity records and low transfer rates, obtaining reliable held-away account information is difficult. Furthermore, account financing workflows continue to be error-prone and time-consuming for borrowers, posing a barrier to increasing funds under control.",
+    solution: "Verifrica allows investment advisers and wealth management platforms to integrate knowledge from held-away accounts in order to provide more holistic financial guidance. Verifrica will also help businesses expand their Assets under Management(AUM) by facilitating ACH account financing, which has transfer rates that always outperform the competition."
 }
+
+const series = [{
+        title: "Integrate with Verifrica",
+        description: "Our front-end module can be integrated into your app or digital service with only a few lines of code. Your users will be able to log in using the Verifrica token.",
+        image: '/assets/img/initiate-payment.svg'
+    },
+    {
+        title: "Customize for conversion",
+        description: "Personalize the module to match your brand or user expectations, including the order in which financial institutions appear. Select their bank, locate accounts, and enter bank username and password to connect to their account.",
+        image: '/assets/svgs/conversion.svg'
+    },
+    {
+        title: "Get user-permissioned bank data",
+        description: "Our front-end module can be integrated into your app or digital service with only a few lines of code. Your users will be able to log in using the Verifrica token.",
+        image: '/assets/svgs/conversion.svg'
+    },
+]
 
 const Wealth = () => {
     return(
@@ -53,7 +70,7 @@ const Wealth = () => {
       <ClientSection />
       <ProblemSolutionSection problemSolution={problemSolution} />
       <ProductFeatureSection items={items} />
-      <InitiatePaymentSection />
+      <InitiatePaymentSection series={series} />
       <ContactSection />
       <FooterSection />
     </div>

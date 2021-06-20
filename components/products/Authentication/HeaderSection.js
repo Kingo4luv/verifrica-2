@@ -3,17 +3,17 @@ import Nav from '../../nav';
 const HeaderSection = () => {
     return(
         <header className="w-full">
-        <Nav theme="dark" />
+        <Nav theme="white" />
          <div className="w-full bg-[#D2EDF9] px-0 lg:px-4">
           <div className="w-full max-w-[1100px] py-12 md:py-32 mx-auto flex flex-col md:flex-row px-4">
             <div className="w-full md:w-1/2 space-y-6 sm:space-y-12">
               <div className="w-full space-y-4 md:space-y-6">
-                <h3 className="text-black">Authentication</h3>
+                <h3 className="text-black">Account authentication and linking</h3>
                 <h1 className="text-2xl md:text-headline-5 lg:text-headline-4 text-black font-bold">
-                    Seamlessly setup enabling users retrieve and verify information.
+                    Authenticate bank accounts using bank data quickly.
                 </h1>
                 <p className="text-black text-subtitle-3 lg:text-head-text max-w-lg">
-                  Providing a seamless way to initiate debits and payouts, Verifrica Authentication product enables users retrieve account information. Verifrica Authentication also provides verification of users information to minimize the risk of incorrect account information.
+                  Verifrica Authentication provides a seamless way of using bank data to authenticate account ownership.When users use bank information to connect their accounts, these routing numbers are retrieved and used to authenticate identity and account ownership instantly.
                 </p>
               </div>
               <div className="flex space-x-4 md:space-x-12 w-full">  

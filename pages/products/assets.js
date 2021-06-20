@@ -11,21 +11,24 @@ import HowItWorkSection from "../../components/products/HowItworkSection";
 
 const items = [
     {
-        title: "Snapshot of a user’s finances",
+        title: "Details of a user's finances",
         icon: SnapshotIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: `Retrieve summary of user's previous transactions, current account balances, and identity information.`
     },
     {
         title: "Transaction Insights",
         icon: PreventSearchIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: `Inspect customer's transaction data, such as type, location, and customer name— the information is standardized across institutions enabling you to give out loan with confidence`
     },
     {
         title: "Open Banking/PSD2 integrations",
         icon: OpenBankingIcon,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet enim, vel varius risus. Leo scelerisque mauris morbi eu viverra diam potenti. Orci odio consectetur fusce aliquet.'
+        description: 'Verifrica payment platform helps you meet open banking and PSD2 requirements which include secure access to accounts, strong customer authentication, and consent management with the aim of improving customer authentication processes.'
     },
 ]
+
+const title = `Make request and gain access to users asset report`;
+const description = `Send a POST request to the Assets endpoint to call users financial data and identity.`;
 
 const Assets = () => {
     return(
@@ -39,7 +42,7 @@ const Assets = () => {
       </Head>
       <HeaderSection />
       <ProductFeatures items={items}/>
-      <HowItWorkSection hasDisclosure={true} hasCode={true} />
+      <HowItWorkSection hasDisclosure={false} hasCode={true} title={title} description={description} />
       <BlueMobile />
       <FooterSection />
     </div>

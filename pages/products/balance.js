@@ -10,14 +10,17 @@ const items = [
     {
         title: "Real-time data",
         icon: RealTimeIcon,
-        description: "Retrieve user's expenses and income transactions balance information from both current and available balance."
+        description: "With an easy account and balance check, you can instantly check if users have the funds to make an effective payment and increase your account funding rate."
     },
     {
         title: "Open Banking/PSD2 integrations",
         icon: OpenBankingIcon,
-        description: "Retrieve user's expenses and income transactions balance information from both current and available balance. "
+        description: "Verifrica payment platform helps you meet open banking and PSD2 requirements which include secure access to accounts, strong customer authentication, and consent management with the aim of improving customer authentication processes."
     },
 ]
+
+const title = `Make request and gain access to real-time balance data.`;
+const description = `Verify user's income and expenses transaction balance by requesting the accounts/balance/get endpoint up-to-the-minute balance data can be received. Once the user's account is connected to their bank credentials`;
 
 const Balance = () => {
     return(
@@ -31,7 +34,7 @@ const Balance = () => {
       </Head>
       <HeaderSection />
       <ProductFeatures items={items}/>
-      <HowItWorkSection hasDisclosure={true} hasCode={true} />
+      <HowItWorkSection hasDisclosure={false} hasCode={true} title={title} description={description}/>
       <FooterSection />
     </div>
     )

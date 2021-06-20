@@ -4,6 +4,8 @@ const theme = {
     dark: "border border-hair text-white bg-hair",
     primary: "border border-blue text-white bg-blue",
     secondary: "border border-black text-black",
+    yellow: 'bg-yellow text-hair',
+    white: 'bg-white text-black'
 }
 
 const LinkButton = ({text, url, color, textColor}) => {

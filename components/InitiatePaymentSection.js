@@ -1,24 +1,6 @@
 import { useState } from "react"
-
-const series = [{
-        title: "Initiate",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam morbi etiam dolor ac bibendum cras congue sed vitae. Malesuada mollis."
-    },
-    {
-        title: "Select bank",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam morbi etiam dolor ac bibendum cras congue sed vitae. Malesuada mollis."
-    },
-    {
-        title: "Authenticate bank",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam morbi etiam dolor ac bibendum cras congue sed vitae. Malesuada mollis."
-    },
-    {
-        title: "Confirm bank payment",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam morbi etiam dolor ac bibendum cras congue sed vitae. Malesuada mollis."
-    },
-]
-
-const InitiatePaymentSection = () => {
+import { AnimateSharedLayout, AnimatePresence, motion } from "framer-motion"
+const InitiatePaymentSection = ({series}) => {
     const [currentItem, setCurrentItem] = useState(series[0]);
     const [currentItemIndex, setCurrentItemIndex] = useState(0);
     const [touchStart, setTouchStart] = useState(0);
@@ -63,7 +45,38 @@ const InitiatePaymentSection = () => {
         }
     }
 
+    const Title = ({item}) =>{
+        return(
+            <motion.li layout className={`text-xl font-bold hover:text-gray-300 ${currentItem.title === item.title ? "text-white": ""}`} key={item.title}
+        initial={{ opacity: 0, scale:0.9 }}
+        animate={{ opacity: 1, scale:1 }}
+        transition={{duration: 0.5}}
+        exit={{ opacity: 0, scale:0 }}
+        >{item.title}</motion.li>
+        )
+    }
+
+    const Content = () => {
+        return(
+            <motion.dl layout className="w-full max-w-sm text-white space-y-4 text-center md:text-left"
+            layout
+            initial={{ opacity: 0.5, scale:0.9 }}
+            animate={{ opacity: 1, scale:1 }}
+            transition={{duration: 0.5}}
+            exit={{ opacity: 0, scale:0 }}
+            >
+                <dt className="font-bold text-2xl md:text-3xl"
+                >{currentItem.title}</dt>
+                <dd className="text-gray-300 font-light text-subtitle-3 lg:text-subtitle-2 px-4 md:px-0"
+                >
+                    {currentItem.description}
+                </dd>
+            </motion.dl>
+        )
+    }
+
     return(
+        <AnimateSharedLayout>
         <section className="bg-footer-black py-24 px-4 xl:px-0" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd} onTouchMove={handleTouchMove}>
         <div className="w-full md:max-w-screen-sm lg:max-w-[1100px] mx-auto flex flex-col md:flex-row">
             <div className="w-full md:w-1/2 flex space-x-0 lg:space-x-6">
@@ -77,7 +90,7 @@ const InitiatePaymentSection = () => {
                         <ul className="text-gray-500 text-right space-y-6">
                             {series.map((item, i) => {
                                return(
-                                    <li className={`text-xl font-bold hover:text-gray-300 ${currentItem.title === item.title ? "text-white": ""}`} key={i}>{item.title}</li>
+                                    <AnimatePresence key={i}><Title item={item} /></AnimatePresence>
                                )
                             })}
                         </ul>
@@ -91,8 +104,13 @@ const InitiatePaymentSection = () => {
                     </div>
                 </div>
                 <div className="w-full md:w-1/2 flex flex-col justify-center items-center">
-                    <img src="/assets/img/mobile-1.png" className="w-4/5 sm:w-2/5 md:w-full lg:w-10/12 xl:w-auto" alt="phone"/>
-
+                     <AnimatePresence>
+                        <motion.img layout src={currentItem.image} className="w-4/5 sm:w-2/5 md:w-full lg:w-10/12 xl:w-auto" alt="phone"
+                        initial={{ opacity: 0, scale: 0 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{duration: 0.5}}
+                        exit={{ opacity: 0, scale:0 }}/>
+                    </AnimatePresence>
                     <div className="flex items-center space-x-3 mt-5 lg:hidden">
                         {series.map((item, i) => {
                             return(
@@ -108,18 +126,17 @@ const InitiatePaymentSection = () => {
                             )
                         })}
                     </div>
+                   
                 </div>
             </div>
             <div className="w-full md:w-1/2 flex justify-center items-center mt-12 md:mt-0">
-                <dl className="w-full max-w-sm text-white space-y-4 text-center md:text-left">
-                    <dt className="font-bold text-2xl md:text-3xl">{currentItem.title}</dt>
-                    <dd className="text-gray-300 font-light text-subtitle-3 lg:text-subtitle-2 px-4 md:px-0">
-                        {currentItem.description}
-                    </dd>
-                </dl>
+                <AnimatePresence>
+                    <Content />
+                </AnimatePresence>
             </div>
         </div>
       </section>
+    </AnimateSharedLayout>
     )
 }
 

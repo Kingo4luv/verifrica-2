@@ -1,20 +1,19 @@
-import Link from "next/link"
 import LinkButton from "../../button/LinkButton"
 import Nav from "../../nav"
 const HeaderSection = () => {
     return(
         <header className="w-full">
-        <Nav theme="dark" />
+        <Nav theme="white" />
         <div className="w-full bg-[#D2D6F9] px-0 lg:px-4">
           <div className="w-full max-w-[1100px] py-6 md:py-12 xl:py-32 mx-auto flex flex-col md:flex-row px-4 md:px-0">
             <div className="w-full md:w-1/2 space-y-6 sm:space-y-12">
               <div className="w-full space-y-4 md:space-y-6">
                 <h3 className="text-black">Identity</h3>
                 <h1 className="text-2xl md:text-headline-5 lg:text-headline-4 text-black font-bold max-w-lg">
-                    Confirming user's identity to avoid risk of fraud. 
+                    Reduce fraud by confirming user identities.
                 </h1>
                 <p className="text-black text-subtitle-3 lg:text-head-text max-w-lg">
-                  Verifrica confirms the identity of users with its identity product, by accessing the information of users from their financial institutions to avoid fraud. User data is confirmed through a trusted source to ensure the details provided are accurate.
+                  Verifrica's identity product verifies users' identities by accessing data from their financial institutions to prevent fraud. This data is double-checked with a reliable source to ensure the accuracy of the information provided.
                 </p>
               </div>
               <div className="flex space-x-4 md:space-x-12 w-full">  
