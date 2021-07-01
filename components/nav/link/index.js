@@ -98,11 +98,11 @@ const links = [
             },
         ]
     },
-    {
-        name: 'For Developers',
-        hasDropdown: false,
-        url: "/developers"
-    },
+    // {
+    //     name: 'For Developers',
+    //     hasDropdown: false,
+    //     url: "/developers"
+    // },
     {
         name: 'Pricing',
         hasDropdown: false,

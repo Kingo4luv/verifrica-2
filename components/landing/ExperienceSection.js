@@ -18,7 +18,7 @@ const ExperienceSection = ({description}) => {
                     </dd>
                   </dl>
                   <div className="w-full lg:w-3/5 xl:w-2/5">
-                    <LinkButton color="dark" url="/" text="Request access" />
+                    <LinkButton color="primary" url="/" text="Get started" />
                   </div>
                 </div>
               </div>
@@ -27,7 +27,7 @@ const ExperienceSection = ({description}) => {
               <div className="w-4/5 md:w-3/5 h-auto relative">
                 <img src="/assets/img/phone-background.png" className="w-full h-full" />
                 <div className="w-full h-full absolute top-0 rounded-lg flex justify-center items-center pr-6 pl-6 lg:pl-8 pt-4 lg:pt-6 pb-8">
-                  <img src="/assets/img/phone-screen.gif" className="w-full h-full rounded-2xl" />
+                  <img src="/assets/img/prototype.gif" className="w-full h-full rounded-2xl" />
                 </div>
               </div>
             </div>

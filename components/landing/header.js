@@ -13,6 +13,10 @@ const icon = {
 }
 const HeaderComponent = () => {
     return(
+      <>
+        <div className="w-full py-2 md:py-3 bg-yellow text-center text-sm text-hair  px-6">
+          <a href="/" className="border-b border-hair">Verifrica launches MyKey ( Digital identity verification App)</a>
+        </div>
         <header className="bg-[#0295C5] w-full overflow-hidden">
           <Nav/>
           <div className="hero pt-8 lg:pt-16 flex flex-col justify-center items-center bg-center max-w-[1100px] mx-auto">
@@ -23,7 +27,7 @@ const HeaderComponent = () => {
                 <p className="mt-6 md:mt-12 text-white font-light text-left md:text-center max-w-xl mx-auto text-sm md:text-base">Verifrica provides a seamless and convenient way of connecting people's financial accounts to an app with easy and secure access</p>
                 <div className="mt-12 flex flex-col md:flex-row space-x-0 md:space-x-5 space-y-4 md:space-y-0 items-center justify-center">
                    <div className="w-full md:w-52">
-                     <LinkButton color="yellow" url="/" text="Request access" />
+                     <LinkButton color="yellow" url="/" text="Get Started" />
                    </div>
                   <div className="w-full md:w-52">
                      <LinkButton color="white" url="/contact-us" text="Contact sales" />
@@ -35,6 +39,7 @@ const HeaderComponent = () => {
               </div>
           </div>
       </header>
+    </>
     )
 }
 

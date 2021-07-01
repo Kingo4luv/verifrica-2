@@ -27,7 +27,7 @@ export default function Home() {
            </h1>
             <p className="mt-6 lg:mt-12 text-subtitle-3 lg:text-subtitle-1 text-black text-center px-4 max-w-3xl">Verifrica is a payment platform that helps individuals and businesses access a broad range of high-quality financial data from banks across Africa aiding users to make and receive payments with ease. </p>
             <ul className="w-full sm:w-auto hero-action flex flex-col sm:flex-row space-x-0 sm:space-x-16 space-y-6 lg:space-y-0 mt-12 text-black items-center px-4 lg:px-0">
-                <li className="w-full sm:w-auto"><button className="w-full sm:w-auto border border-hair px-16 py-3 lg:py-4 rounded text-sm font-medium bg-hair text-white">Try Demo</button></li>
+                <li className="w-full sm:w-auto"><button className="w-full sm:w-auto border border-hair px-16 py-3 lg:py-4 rounded text-sm font-medium bg-hair text-white">Get Started</button></li>
                 <li> <Link href="/contact-us">
                 <a className="underline font-medium text-black">Contact Us</a>
                 </Link></li>

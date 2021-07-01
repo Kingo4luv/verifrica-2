@@ -17,7 +17,7 @@ const HeaderSection = () => {
             </div>
             <div className="flex space-x-4 md:space-x-12 w-full">
               <div className="w-1/2 md:w-2/5 lg:w-2/6">
-                 <LinkButton color="dark" url="/" text="Try demo" />
+                 <LinkButton color="dark" url="/" text="Get Started" />
               </div>
               <div className="w-1/2 md:w-2/5 lg:w-2/6">
                 <LinkButton color="secondary" url="/" text="View Api docs" />

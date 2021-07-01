@@ -14,7 +14,7 @@ const pricingList = [
         type: "Test API",
         title: "Free",
         description: "Build and test using our core set of products with up to 100 live items",
-        btnText : "Try demo",
+        btnText : "Get Started",
         products: [
             {
                 name: "Transactions",

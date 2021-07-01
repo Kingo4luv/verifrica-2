@@ -20,7 +20,7 @@ const HeaderSection = ({heroContent:{title, description, image}}) => {
                     <div className="flex space-x-4 md:space-x-12 w-full">
                         <div className="w-1/2 sm:w-auto">
                             <Link href="/" className="block">
-                            <a className="px-0 sm:px-8 lg:px-16 py-3 md:py-4 border border-hair rounded text-sm font-medium text-white w-full block sm:inline text-center tracking-wide mt-6 bg-hair">Try demo</a>
+                            <a className="px-0 sm:px-8 lg:px-16 py-3 md:py-4 border border-hair rounded text-sm font-medium text-white w-full block sm:inline text-center tracking-wide mt-6 bg-hair">Get Started</a>
                         </Link>
                         </div>
                         <div className="w-1/2 sm:w-auto">

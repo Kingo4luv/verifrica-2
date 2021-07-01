@@ -64,8 +64,8 @@ const Nav = ({theme}) => {
               <ul className="lg:flex space-x-12 items-center hidden">
                 <li className={` font-medium text-sm ${theme === 'white' || theme === "dark" || !theme  ? 'text-black':'text-white'}`}>Sign in</li>
                 <li>
-                  <button className={`${theme === 'white' || !theme  ? 'bg-card-blue text-white': theme === "dark"  ?"bg-hair text-white":"bg-yellow text-hair"} px-5 py-2 leading-loose tracking-wider rounded font-medium text-sm focus:outline-none`}>
-                    Try demo
+                  <button className={`${theme === 'white' || !theme  ? 'bg-card-blue text-white': theme === "dark"  ?"bg-hair text-white":"bg-yellow text-hair"} px-8 py-2 leading-loose tracking-wider rounded font-medium text-sm focus:outline-none`}>
+                    Get Started
                   </button>
                 </li>
               </ul>

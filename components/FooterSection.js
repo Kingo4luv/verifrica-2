@@ -1,24 +1,23 @@
 import Link from "next/link";
-import Slide from 'react-reveal/Slide';
 const FooterSection = () => {
     return(
         <footer className="py-6 px-4 bg-footer-black">
           {/* <div className="text-white flex flex-col justify-start sm:justify-center itmes-start sm:items-center">
-            <Slide bottom>
+            
             <h2 className="text-left md:text-center text-2xl md:text-4xl font-bold leading-relaxed">
               Ready to use Verifrica?<br/>
               Get started for free
             </h2>
-            </Slide>
+            
             <ul className="w-full md:w-auto hero-action flex flex-col md:flex-row space-x-0 md:space-x-16 space-y-6 lg:space-y-0 mt-12 text-white items-center">
-                  <Slide bottom>
-                  <li className="w-full sm:w-auto"><button className="w-full md:w-auto border border-white px-16 py-3 lg:py-4 rounded text-sm font-medium bg-transparent">Try demo</button></li>
-                  </Slide>
-                  <Slide bottom>
+                  
+                  <li className="w-full sm:w-auto"><button className="w-full md:w-auto border border-white px-16 py-3 lg:py-4 rounded text-sm font-medium bg-transparent">Get Started</button></li>
+                  
+                  
                   <li> <Link href="/">
                     <a className="underline font-light">Talk to an expert</a>
                   </Link></li>
-                  </Slide>
+                  
               </ul>
           </div> */}
           <div className="max-w-screen-xl mx-auto">
@@ -37,11 +36,10 @@ const FooterSection = () => {
               
               <div className="w-full sm:w-5/6 md:w-5/7 lg:w-5/6 mt-12 sm:mt-0 flex flex-wrap">
                 
-                <div className="space-y-6 w-1/2 sm:w-1/3 lg:w-1/5 pb-12 ">
-                  <Slide bottom>
+                <div className="space-y-6 w-1/2 sm:w-1/3 lg:w-1/4 pb-12 ">
+                  
                   <h4 className="font-medium">Products</h4>
-                  </Slide>
-                  <Slide bottom cascade>
+                  
                   <ul className="text-sm font-light space-y-3 text-gray-400">
                     <li>
                       <Link href="/products/transactions">
@@ -79,15 +77,15 @@ const FooterSection = () => {
                       </Link> 
                     </li>
                   </ul>
-                  </Slide>
+                  
                 </div>
                 
                 
-                <div className="space-y-6 w-1/2 sm:w-1/3 lg:w-1/5 pb-12">
-                  <Slide bottom>
+                <div className="space-y-6 w-1/2 sm:w-1/3 lg:w-1/4 pb-12">
+                  
                   <h4 className="font-medium">Use Cases</h4>
-                  </Slide>
-                  <Slide bottom cascade>
+                  
+                  
                   <ul className="text-sm font-light space-y-3 text-gray-400">
                     <li>
                       <Link href="/use-cases/personal-finances">
@@ -120,15 +118,15 @@ const FooterSection = () => {
                       </Link> 
                     </li>
                   </ul>
-                  </Slide>
+                  
                 </div>
                 
                 
-                <div className = "space-y-6 w-1/2 sm:w-1/3 lg:w-1/5 pb-12">
-                  <Slide bottom>
+                <div className = "space-y-6 w-1/2 sm:w-1/3 lg:w-1/4 pb-12">
+                  
                   <h4 className="font-medium">About</h4>
-                  </Slide>
-                  <Slide bottom cascade>
+                  
+                  
                   <ul className="text-sm font-light space-y-3 text-gray-400">
                     <li>
                       <Link href="/company">
@@ -161,15 +159,12 @@ const FooterSection = () => {
                       </Link> 
                     </li>
                   </ul>
-                  </Slide>
+                  
                 </div>
                 
                 
-                <div className="space-y-6 w-1/2 sm:w-1/3 lg:w-1/5 pb-12">
-                  <Slide bottom>
+                <div className="space-y-6 w-1/2 sm:w-1/3 lg:w-1/4 pb-12">
                   <h4 className="font-medium">For Consumers</h4>
-                  </Slide>
-                  <Slide bottom cascade>
                   <ul className="text-sm font-light space-y-3 text-gray-400">
                     <li>
                       <Link href="/why-verifrica">
@@ -181,30 +176,15 @@ const FooterSection = () => {
                         <a>Help Desk?</a>
                       </Link> 
                     </li>
-                    <li>What's new</li>
+                    {/* <li>What's new</li> */}
                   </ul>
-                  </Slide>
-                </div>
-                
-                
-                <div className="space-y-6 w-1/2 sm:w-1/3 lg:w-1/5 pb-12">
-                  <Slide bottom>
-                  <h4 className="font-medium">For Developers</h4>
-                  </Slide>
-                  <Slide bottom cascade>
-                  <ul className="text-sm font-light space-y-3 text-gray-400">
-                    <li>Quickstart</li>
-                    <li>API documentation</li>
-                    <li>Libraries</li>
-                  </ul>
-                  </Slide>
                 </div>
                 
               </div>
             </div>
             
             <div className="flex flex-col-reverse sm:flex-row justify-center sm:justify-between items-center pl-4 pr-0 sm:pr-32">
-                <p className="text-xs text-gray-400 font-light mt-4 sm:mt-0">© Reef financial solutions</p>
+                <p className="text-xs text-gray-400 font-light mt-4 sm:mt-0">© Reef financial solutions Ltd</p>
                 <ul className="flex space-x-3">
                   <li>
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">

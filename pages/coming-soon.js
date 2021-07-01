@@ -87,10 +87,10 @@ export default function ComingSoon(){
             <img src="/assets/img/mobile-small.png" className="block md:hidden"/>
         </div>
       </header>
-      <footer className="w-full bg-[#191919] py-6 lg:py-12 text-white hidden md:block px-4 z-10 mt-12 lg:mt-0">
+      <footer className="w-full bg-[#191919] py-6 text-white hidden md:block px-4 mt-12 lg:mt-0 z-0">
            <div className="mx-auto max-w-[1100px] flex justify-end">
                <div className="flex items-center space-x-12">
-                   <p className="text-sm text-gray-200 font-light mt-4 sm:mt-0 capitalize">© Reef financial solutions</p>
+                   <p className="text-sm text-gray-200 font-light mt-4 sm:mt-0 capitalize">© Reef financial solutions Ltd</p>
                     <ul className="flex space-x-5">
                     <li>
                         <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -3,7 +3,7 @@ import { Transition } from "@headlessui/react";
 export default function ModalLayout(props){
     return(
         <Transition
-        className="w-full h-screen max-h-screen min-h-screen fixed bg-hair bg-opacity-50 flex justify-center items-center px-4 py-4"
+        className="w-full h-screen max-h-screen min-h-screen fixed bg-hair bg-opacity-50 flex justify-center items-center px-4 py-4 overflow-y-auto"
         show={props.isOpen}
         enter="transition duration-100 ease-out"
         enterFrom="transform scale-95 opacity-0"
@@ -12,7 +12,7 @@ export default function ModalLayout(props){
         leaveFrom="transform scale-100 opacity-100"
         leaveTo="transform scale-95 opacity-0"
         >
-          <div className="max-w-6xl py-6 sm:py-10 bg-white rounded shadow-lg relative space-y-6 lg:space-y-12 px-4 lg:px-12 overflow-y-auto">
+          <div className="max-w-6xl py-6 sm:py-10 bg-white rounded shadow-lg relative space-y-6 lg:space-y-12 px-4 lg:px-12 overflow-y-auto z-50">
               {props.type !== "confirm" && <div className="modal-head flex justify-center">
                   <button className="absolute top-4 right-4 focus:outline-none" onClick={props.toggle}>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 md:h-7 md:w-7 text-grey" fill="none" viewBox="0 0 24 24" stroke="currentColor">
