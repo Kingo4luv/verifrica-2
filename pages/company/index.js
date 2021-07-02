@@ -6,7 +6,6 @@ import CompanyHeaderSection from '../../components/company/HeaderSection';
 import Culture from '../../components/company/Culture';
 import CareerSection from '../../components/company/Career';
 import WhiteBlueSection from '../../components/WhiteBlueSection';
-
 const whiteBlue = {
   white: {
     title: "Our Vision",

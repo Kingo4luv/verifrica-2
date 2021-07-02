@@ -1,11 +1,14 @@
 import Link from "next/link";
 import Nav from "../nav"
+import News from "../News";
 
 const HeaderSection = ({heroContent:{title, description, image}}) => {
     return(
+    <>
+    <News />
     <header className="w-full">
         <Nav theme="white" />
-        <div className="w-full flex flex-col md:flex-row mx-auto h-auto lg:h-screen">
+        <div className="w-full flex flex-col md:flex-row mx-auto h-auto lg:h-[752px]">
             <div className="w-full md:w-1/2 flex justify-center items-center pt-4 pb-12 md:py-24 px-4">
                 <div className="w-full max-w-xl space-y-2 sm:space-y-5 md:space-y-12">
                     <div className="space-y-5">
@@ -31,11 +34,12 @@ const HeaderSection = ({heroContent:{title, description, image}}) => {
                         </div>
                     </div>
             </div>
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 h-full">
                 <img src={image} className="w-full h-96 md:h-full object-cover object-center"/>
             </div>
         </div>
       </header>
+      </>
     )
 }
 

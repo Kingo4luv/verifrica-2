@@ -4,7 +4,7 @@ import Zoom from 'react-reveal/Zoom';
 import LinkButton from "../button/LinkButton";
 const ExperienceSection = ({description}) => {
     return(
-        <section className="bg-light-shade-blue">
+        <section className="bg-white">
           <div className="flex flex-col sm:flex-row mx-auto max-w-[1100px]">
             <div className="w-full sm:w-1/2 flex justify-center items-center py-12 lg:py-32 px-4">
               <div className="w-full flex flex-col justify-center">

@@ -3,6 +3,7 @@ import FooterSection from '../../components/FooterSection';
 import { SupportHero } from '../../components/help-desk/Hero';
 import { SupportPost } from '../../components/help-desk/Post';
 import Nav from '../../components/nav';
+import News from '../../components/News';
 
 
 
@@ -73,6 +74,7 @@ export default function HelpDesk() {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
+      <News />
       <Nav theme="black" />
       <SupportHero title={true} />
       <SupportPost posts={posts} />

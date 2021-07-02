@@ -6,6 +6,7 @@ import ForDevelopersSection from '../components/landing/ForDevelopersSection';
 import FooterSection from '../components/FooterSection';
 import Nav from '../components/nav';
 import Link from 'next/link';
+import News from '../components/News';
 
 const blueSectionDescription = `Verifrica prioritizes the interest of our users, with a flexibility that allows you connect with your financial institution securing services, and sharing data across various banking channels.`
 const experienceDescription = `We focus on having a sound understanding of users, what they need, and value. With our beautiful user experience, we hope to improve the quality of our user’s interaction and  perception of our product. `
@@ -19,6 +20,7 @@ export default function Home() {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
+      <News />
       <Nav theme="white" />
       <section className="w-full py-4 lg:py-24 mb-12">
         <div className="max-w-5xl mx-auto flex flex-col justify-center items-center">

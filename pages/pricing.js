@@ -7,6 +7,7 @@ import FooterSection from '../components/FooterSection';
 import Hero from "../components/pricing/hero";
 import PricingDetails from "../components/pricing/details";
 import Contact from "../components/pricing/contact";
+import News from "../components/News";
 
 const pricingList = [
     {
@@ -119,6 +120,7 @@ export default function Pricing() {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
+      <News />
       <Nav theme="white" />
       <Hero pricingList={pricingList} />
       <PricingDetails />

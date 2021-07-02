@@ -130,7 +130,7 @@ const MobileNav = ({toggleMobileNav, theme}) => {
                 })}
                 </ul>
                 <ul className="flex flex-col items-center w-full space-y-3 px-4 mt-16">
-                <LinkButton text="Request access" url="/" color={ theme === 'white' || theme === "dark" || theme === 'black' ? 'primary' : 'yellow' } />
+                <LinkButton text="Get started" url="/" color={ theme === 'white' || theme === "dark" || theme === 'black' ? 'primary' : 'yellow' } />
                 <li className="w-full">
                     <LinkButton text="Contact sales" url="/contact-us" color={theme === 'white' || theme === "dark" || theme === 'black' ? 'secondary' : 'white'} />
                 </li>

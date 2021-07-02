@@ -4,6 +4,7 @@ import Nav from '../../components/nav';
 import { BlogHero } from '../../components/blog/Hero';
 import { BlogPost } from '../../components/blog/Post';
 import { fetchAPI } from "../../libs/api";
+import News from '../../components/News';
 
 export default function Blog({tags, posts}) {
   return (
@@ -15,6 +16,7 @@ export default function Blog({tags, posts}) {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
+      <News />
       <Nav theme="black" />
       <BlogHero />
       <BlogPost posts={posts} tags={tags}/>

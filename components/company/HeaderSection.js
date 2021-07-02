@@ -1,16 +1,17 @@
-import Image from "next/image"
 import Nav from '../nav';
-import Slide from 'react-reveal/Slide'
+import News from "../News";
 
 const CompanyHeaderSection = () => {
     return(
+        <>
+        <News />
         <header className="w-full">
           <Nav theme="white" />
-          <div className="max-w-6xl mx-auto">
-              <h1 className="text-2xl md:text-4xl lg:text-5xl text-left sm:text-center px-4 font-bold leading-tight lg:leading-snug text-black mt-6 md:mt-32">
+          <div className="max-w-4xl mx-auto">
+              <h1 className="text-2xl md:text-[40px] text-left sm:text-center px-4 font-bold leading-tight lg:leading-snug text-black mt-6 md:mt-32">
                  Our mission is to enable a world of access to financial possibilities with data.
               </h1>
-              <p className="text-left md:text-center px-4 text-sm md:text-xl mt-6 md:mt-12 leading-relaxed text-grey md:text-black max-w-3xl lg:text-center mx-auto">
+              <p className="text-left md:text-center px-4 text-sm md:text-lg mt-6 md:mt-12 leading-relaxed text-grey md:text-black max-w-3xl lg:text-center mx-auto">
                   We are making it possible for everyone to achieve financial freedom with data. Using financial data to open up a world of possibilities.
               </p>
           </div>
@@ -326,6 +327,7 @@ const CompanyHeaderSection = () => {
                 
           </div>
       </header>
+      </>
     )
 }
 

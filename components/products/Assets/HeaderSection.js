@@ -1,8 +1,10 @@
-import Link from "next/link"
 import LinkButton from "../../button/LinkButton"
 import Nav from "../../nav"
+import News from "../../News"
 const HeaderSection = () => {
     return(
+       <>
+       <News />
         <header className="w-full">
         <Nav theme="white" />
         <div className="w-full bg-[#FFE177] px-0 lg:px-4">
@@ -20,7 +22,7 @@ const HeaderSection = () => {
               </div>
               <div className="flex space-x-4 md:space-x-12 w-full">  
                 <div className="w-1/2 md:w-2/5 lg:w-2/6">
-                 <LinkButton color="blue" url="/" text="Get Started" />
+                 <LinkButton color="dark" url="/" text="Get Started" />
                 </div>
                 <div className="w-1/2 md:w-2/5 lg:w-2/6">
                   <LinkButton color="secondary" url="/" text="View Api docs" />
@@ -165,6 +167,7 @@ const HeaderSection = () => {
           </div>
         </div>
       </header>
+      </>
     )
 }
 

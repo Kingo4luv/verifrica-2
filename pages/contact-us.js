@@ -4,6 +4,7 @@ import LinkButton from "../components/button/LinkButton";
 import ContactForm from "../components/ContactForm";
 import FooterSection from "../components/FooterSection"
 import Nav from "../components/nav"
+import News from "../components/News";
 
 const ContactUs = () => {
     const [successIsOpen, setSuccessIsOpen] = useState(false);
@@ -19,6 +20,7 @@ const ContactUs = () => {
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Head>
+            <News />
             <Nav theme="white" />
             <main className="w-full">
                 <section className="max-w-6xl py-12 mx-auto space-y-6 px-4">

@@ -1,9 +1,12 @@
 import Link from "next/link";
 import Nav from "../../nav";
 import LinkButton from "../../button/LinkButton";
+import News from "../../News";
 
 const HeaderSection = () => {
     return (
+        <>
+        <News />
         <header className="w-full">
         <Nav theme="white" />
         <div className="w-full max-w-[1100px] py-6 md:py-12 xl:py-32 mx-auto flex flex-col md:flex-row px-4 overflow-hidden">
@@ -205,6 +208,7 @@ const HeaderSection = () => {
           </div>
         </div>
       </header>
+      </>
     )
 }
 

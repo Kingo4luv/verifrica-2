@@ -1,8 +1,10 @@
-import Link from "next/link"
 import LinkButton from "../../button/LinkButton"
 import Nav from "../../nav"
+import News from "../../News"
 const HeaderSection = () => {
     return(
+      <>
+      <News />
         <header className="w-full">
         <Nav theme="white" />
         <div className="w-full bg-[#FC7C84] px-0 lg:px-4">
@@ -153,6 +155,7 @@ const HeaderSection = () => {
           </div>
         </div>
       </header>
+      </>
     )
 }
 

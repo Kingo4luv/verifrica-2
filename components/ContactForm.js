@@ -142,7 +142,7 @@ const ContactForm = ({toggleEarlyAccess, toggleSuccess}) => {
                 {loading ? "Please wait ...":"Contact us"}
                 </button>
             </div>
-            {/* <p className="text-black mt-4 text-sm text-center">Looking to request access? <span onClick={toggleEarlyAccess} className="font-medium cursor-pointer">Request Access</span></p> */}
+            {/* <p className="text-black mt-4 text-sm text-center">Looking to request access? <span onClick={toggleEarlyAccess} className="font-medium cursor-pointer">Get started</span></p> */}
         </form>
     </div>
     )

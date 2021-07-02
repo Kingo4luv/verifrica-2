@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Nav from "../components/nav";
 import FooterSection from '../components/FooterSection';
+import News from "../components/News";
 
 export default function Privacy(){
     return(
@@ -12,6 +13,7 @@ export default function Privacy(){
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
+      <News />
       <Nav theme="white" />
       <section className="max-w-screen-xl mx-auto py-2 lg:py-32 px-4 flex flex-col lg:flex-row">
           <div className="w-full lg:w-1/4">

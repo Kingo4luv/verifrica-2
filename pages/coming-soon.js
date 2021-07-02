@@ -78,7 +78,7 @@ export default function ComingSoon(){
                 <p className="max-w-sm lg:max-w-xl text-[15px] lg:text-[16px] leading-[28.8px] font-light">Verifrica is a platform that provides access to a broad range of individuals and businesses' financial accounts for financial data across various banks in Africa with ease.</p>
             </div>
             <div className="flex flex-col lg:flex-row space-x-0 lg:space-x-5 space-y-4 lg:space-y-0">
-                <button onClick={toggleEarlyAccess} className="w-full md:w-1/2 lg:w-auto text-sm focus:outline-none rounded py-[13px] sm:py-4 px-4 lg:px-8 bg-blue hover:bg-[#0798c4]">Request access</button>
+                <button onClick={toggleEarlyAccess} className="w-full md:w-1/2 lg:w-auto text-sm focus:outline-none rounded py-[13px] sm:py-4 px-4 lg:px-8 bg-blue hover:bg-[#0798c4]">Get started</button>
                 <button onClick={toggleContact} className="w-full md:w-1/2 lg:w-auto text-sm focus:outline-none rounded py-[13px] sm:py-4 px-4 lg:px-8 bg-[#1F1F1F] hover:bg-[#1d1c1c]">Contact sales</button>
             </div>
         </div>

@@ -62,11 +62,6 @@ const FooterSection = () => {
                       </Link> 
                     </li>
                     <li>
-                      <Link href="/products/investments">
-                        <a>Investments</a>
-                      </Link> 
-                    </li>
-                    <li>
                       <Link href="/products/assets">
                         <a>Assets</a>
                       </Link> 
@@ -184,7 +179,7 @@ const FooterSection = () => {
             </div>
             
             <div className="flex flex-col-reverse sm:flex-row justify-center sm:justify-between items-center pl-4 pr-0 sm:pr-32">
-                <p className="text-xs text-gray-400 font-light mt-4 sm:mt-0">© Reef financial solutions Ltd</p>
+                <p className="text-xs text-gray-400 font-light mt-4 sm:mt-0 capitalize">© Reef financial solutions Ltd</p>
                 <ul className="flex space-x-3">
                   <li>
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">

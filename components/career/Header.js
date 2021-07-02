@@ -1,7 +1,10 @@
 
 import Nav from '../nav';
+import News from '../News';
 const CareerHeaderSection = () => {
     return(
+        <>
+        <News />
         <header className="w-full">
         <Nav theme={'white'}/>
         <div className="flex w-full flex-col py-12 lg:py-32 my-4 px-4 lg:px-0">
@@ -122,6 +125,7 @@ const CareerHeaderSection = () => {
                 </div>
         </div>
       </header>
+      </>
     )
 }
 
