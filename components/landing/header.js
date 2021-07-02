@@ -14,7 +14,7 @@ const icon = {
 const HeaderComponent = () => {
     return(
       <>
-        <div className="w-full py-2 md:py-3 bg-yellow text-center text-xs sm:text-sm text-hair px-12">
+        <div className="w-full py-2 md:py-3 bg-yellow text-center text-xs sm:text-sm text-hair px-6">
           <a href="/" className="border-b border-hair">Verifrica launches MyKey ( Digital identity verification App)</a>
         </div>
         <header className="bg-[#0295C5] w-full overflow-hidden">
