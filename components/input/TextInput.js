@@ -13,7 +13,7 @@ export default function TextInput({first, second, last, value, label, required, 
                 value={value}
                 onChange={onChange}
                 className = {
-                    `appearance-none relative bg-white block w-full px-3 py-[14px] sm:py-4 ${first ? 'border-l border-t border-b rounded-tl': second ? 'rounded-tr border-l-0': last ? 'rounded-b border-t-0':'rounded-none border-b border-t-0'} border-[#D1D1D1] placeholder-form-text-grey text-black focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm md:text-base`
+                    `appearance-none relative bg-white block w-full px-3 py-[14px] sm:py-4 ${first ? 'border-l border-t border-b rounded-tl': second ? 'rounded-tr border-l-0': last ? 'rounded-b border-t-0':'rounded-none border-b border-t-0'} border-[#D1D1D1] placeholder-form-text-grey text-black focus:outline-none focus:ring-blue focus:border-blue focus:z-10 text-sm`
                 }
                 placeholder={placeholder}
             />

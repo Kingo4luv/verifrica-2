@@ -20,7 +20,7 @@ const BlueSection = ({video, description}) => {
                       </dd>
                     </dl>
                     <div className="w-full lg:w-3/5 xl:w-2/5">
-                      <LinkButton color="primary" url="/" text="Get started" />
+                      <LinkButton color={video ? 'dark': 'primary'} url="/" text="Get started" />
                     </div>
                   </div>
               </div>
