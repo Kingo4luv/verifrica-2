@@ -52,7 +52,7 @@ const series = [{
     {
         title: "Get user-permissioned bank data",
         description: "Our front-end module can be integrated into your app or digital service with only a few lines of code. Your users will be able to log in using the Verifrica token.",
-        image: '/assets/svgs/conversion.svg'
+        image: '/assets/svgs/permission-success.svg'
     },
 ]
 
